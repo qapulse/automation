@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<suite name="Automation Pledgeling Suite" parallel="tests"
+    thread-count="5">
+
+    <test name="Automation Pledgeling - login - Chrome">
+        <parameter name="host" value="localhost" />
+        <parameter name="browser" value="chrome" />
+        <parameter name="port" value="5555" />
+        <classes>
+            <class name="SignIn.Login" >
+	            <methods>
+	          		<include name="openPledgelingsite" />	
+	          		<include name="openSingInModal" />
+	          		<include name="signInCorrectly" />
+	          		<include name="clickSingIn" />			
+	          	</methods>
+          	</class>
+        </classes>
+    </test>
+    <test name="Automation Pledgeling - login - Firefox">
+        <parameter name="host" value="localhost" />
+        <parameter name="browser" value="internet explorer" />
+        <parameter name="port" value="5555" />
+        <classes>
+            <class name="SignIn.Login" >
+	            <methods>
+	          		<include name="openPledgelingsite" />
+	          		<include name="openSingInModal" />
+	          		<include name="signInCorrectly" />	
+	          		<include name="clickSingIn" />		
+	          	</methods>
+          	</class>
+        </classes>
+    </test>
+
+</suite>
+

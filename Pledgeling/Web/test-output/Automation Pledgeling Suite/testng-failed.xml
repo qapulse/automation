@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Automation Pledgeling Suite]" parallel="tests">
+  <parameter name="port" value="5555"/>
+  <parameter name="host" value="localhost"/>
+  <parameter name="browser" value="internet explorer"/>
+  <test name="Automation Pledgeling - login - Firefox(failed)" parallel="tests">
+    <parameter name="port" value="5555"/>
+    <parameter name="host" value="localhost"/>
+    <parameter name="browser" value="internet explorer"/>
+    <classes>
+      <class name="SignIn.Login">
+        <methods>
+          <include name="signInCorrectly"/>
+          <include name="openSingInModal"/>
+          <include name="openPledgelingsite"/>
+          <include name="clickSingIn"/>
+          <include name="beforeClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- SignIn.Login -->
+    </classes>
+  </test> <!-- Automation Pledgeling - login - Firefox(failed) -->
+  <test name="Automation Pledgeling - login - Chrome(failed)" parallel="tests">
+    <parameter name="port" value="5555"/>
+    <parameter name="host" value="localhost"/>
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="SignIn.Login">
+        <methods>
+          <include name="clickSingIn"/>
+          <include name="beforeClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- SignIn.Login -->
+    </classes>
+  </test> <!-- Automation Pledgeling - login - Chrome(failed) -->
+</suite> <!-- Failed suite [Automation Pledgeling Suite] -->
