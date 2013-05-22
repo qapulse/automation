@@ -1,6 +1,6 @@
-Feature: Send Messages
+Feature: Send test Messages 
 
-Scenario: Login
+Scenario: Send a specific number of test messages
 	Given I wait to see "Log In"
 	Then I press the "Log In" button
 	Then I should see "Email"
