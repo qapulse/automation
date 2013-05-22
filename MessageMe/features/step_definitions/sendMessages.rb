@@ -177,15 +177,14 @@ Then /^I send "([^\"]*)" test messages$/ do |messagesNumber|
     performAction('wait_for_text', 'Awesomeness')
 	
 	#Send # messages
-	for i in 0...Integer(messagesNumber)
-	
+	for i in 0...Integer(messagesNumber)	
 		
 		#Send text message
 		performAction('enter_text_into_id_field','message from automation', 'chat_input')
 		performAction('wait', 2)
 		touch (query("* marked:'Send'"))
 		performAction('wait', 10)
-		
+			
 		#Send "Take Photo" picture message
 		# To be created. On Hold because calabash has not the information to use the camera.
 		
@@ -236,7 +235,5 @@ Then /^I send "([^\"]*)" test messages$/ do |messagesNumber|
 		performAction('click_on_screen',90, 10)
 		performAction('wait_for_text', 'Awesomeness')
 		performAction('wait', 10)
-		
-			
 	end
 end
