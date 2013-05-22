@@ -179,17 +179,12 @@ Then /^I send "([^\"]*)" test messages$/ do |messagesNumber|
 	#Send # messages
 	for i in 0...Integer(messagesNumber)
 	
-		puts "--------"
-		puts "--------"
-		puts " Start send messages"
-		puts "--------"
-		puts "--------"
+		
 		#Send text message
 		performAction('enter_text_into_id_field','message from automation', 'chat_input')
 		performAction('wait', 2)
 		touch (query("* marked:'Send'"))
 		performAction('wait', 10)
-		puts "Send text message Completed"
 		
 		#Send "Take Photo" picture message
 		# To be created. On Hold because calabash has not the information to use the camera.
@@ -207,7 +202,6 @@ Then /^I send "([^\"]*)" test messages$/ do |messagesNumber|
 		performAction('click_on_screen',90, 10)
 		performAction('wait_for_text', 'Awesomeness')
 		performAction('wait', 3)
-		puts "Send simple Doodle completed"
 		
 		#Send "Choose Existing" picture message
 		# This image is a google image
@@ -224,7 +218,6 @@ Then /^I send "([^\"]*)" test messages$/ do |messagesNumber|
 		performAction('click_on_screen',60, 45)
 		performAction('wait_for_text', 'Awesomeness')
 		performAction('wait', 10)
-		puts "Send Choose Existing picture message"
 		
 		#Send Doodle with Google image background 
 		touch ("* id:'add_chat_button'")
@@ -243,12 +236,7 @@ Then /^I send "([^\"]*)" test messages$/ do |messagesNumber|
 		performAction('click_on_screen',90, 10)
 		performAction('wait_for_text', 'Awesomeness')
 		performAction('wait', 10)
-		puts "Send Doodle with Google image background "
-		puts "--------"
-		puts "--------"
-		puts " End of send messages"
-		puts "--------"
-		puts "--------"
+		
 			
 	end
 end
