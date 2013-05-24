@@ -21,3 +21,7 @@ Then /^I press edit profile at the top of the profile screen$/ do
     performAction('click_on_screen',80, 10)
     performAction('wait_for_text', 'Edit My Profile')
 end
+
+Then /^I tab on the "([^\"]*)" text$/ do |text|
+	touch(query("* marked:'#{text}'"))
+end
