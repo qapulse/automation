@@ -1,10 +1,19 @@
 USERS = {
     :valid => {
-        :email => "mobcrtest01@gmail.com",
-        :password => "test1234"
+        :email => "katie+user2@lognllc.com",
+        :password => "logn$"
     },
     :invalid => {
         :email => "jonas2@lesspainful.com",
         :password => "1234567892"
+    }
+}
+
+NEWUSER = {
+    :valid => {
+		:firstName => "Didier",
+		:lastName => "To test",
+        :email => "didier.corrales+16@lognllc.com",
+        :password => "logn$"
     }
 }

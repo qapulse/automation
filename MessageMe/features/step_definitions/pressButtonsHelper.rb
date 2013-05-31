@@ -6,8 +6,10 @@ end
 
 #I press new contact button 
 Then /^I press new contact button$/ do
-    performAction('click_on_screen',90, 10)
+    #Tab on the icon 
+	performAction('click_on_screen',90, 10)
     #wait until the input is shown
+	wait_for(:timeout => 5) { query("* id:'friends_invite_input'").size > 0 }
 end
 
 #I press edit profile button at the top of the profile screen 
@@ -24,4 +26,8 @@ end
 
 Then /^I tab on the "([^\"]*)" text$/ do |text|
 	touch(query("* marked:'#{text}'"))
+end
+
+Then /^I tab on the image with id "([^\"]*)"$/ do |id|
+	touch(query("* id:'#{id}'"))
 end
