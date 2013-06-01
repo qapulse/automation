@@ -1,13 +1,23 @@
-Feature: Contacts
+Feature: Create an new account using the email invite an user and and send messages
 
-Scenario: Invite an user
-	Given I wait to see "MESSAGES"
-	Then I touch the "CONTACTS" text
-	Then I press new contact button
-	Then I enter text "NM 647 QPN" into field with id "friends_invite_input"
-	Then I press the enter button
-	Then I wait to see "Send Message"
+Scenario: As a User I want to try to log in  using invalid credentials
+	Given I wait to see "Log In"
+	Then I press the "Log In" button
+	Then I should see "Email"
+	Then I enter invalid credentials
+	Then I press the "Log In" button
+	Then I wait until I see the login invalid credentials error message
 
+Scenario: As a User I want to log in
+	Given I wait to see "Log In"
+	Then I press the "Log In" button
+	Then I should see "Email"
+	Then I enter valid credentials
+	Then I press the "Log In" button
+	Then I wait to see "Would you like"
+	Then I tab on the "Cancel" text
+	Then I wait to see "MESSAGES"
+	
 Scenario: Block an user
 	Given I wait to see "MESSAGES"
 	Then I touch the "CONTACTS" text
@@ -40,6 +50,24 @@ Scenario: Create Group
 	Then I tab on the "Next" text
 	Then I wait to see "Automation Group"
 	
+Scenario: Delete a conversation
+	Given I wait to see "MESSAGES"
+	Then I long press "Automation Group"
+	Then I wait to see "Conversation"
+	Then I tab on the "Delete" text
+	Then I wait to see "Confirm Deletion"
+	Then I tab on the "Delete Conversation" text
+	
+Scenario: Send message to the group
+	Given I wait to see "MESSAGES"
+	Then I touch the "CONTACTS" text
+	Then I wait to see "Automation Group"
+	Then I touch the "Automation Group" text
+	Then I wait to see "Send Message"
+	Then I press the "Send Message" button
+	Then I send a new text message
+	Then I wait
+	
 Scenario: Leave a Group
 	Given I wait to see "MESSAGES"
 	Then I touch the "CONTACTS" text
@@ -54,10 +82,3 @@ Scenario: Leave a Group
 	Then I tab on the "Leave Group" text
 	Then I wait to see "CONTACTS"
 	
-Scenario: Delete a conversation
-	Given I wait to see "MESSAGES"
-	Then I long press "Automation Group"
-	Then I wait to see "Conversation"
-	Then I tab on the "Delete" text
-	Then I wait to see "Confirm Deletion"
-	Then I tab on the "Delete Conversation" text

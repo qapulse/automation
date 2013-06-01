@@ -5,7 +5,6 @@ Scenario: Invite an user
 	Then I touch the "CONTACTS" text
 	Then I press new contact button
 	Then I enter text "NM 647 QPN" into field with id "friends_invite_input"
-	Then I press the enter button
 	Then I wait to see "Send Message"
 
 Scenario: Block an user
@@ -53,11 +52,3 @@ Scenario: Leave a Group
 	Then I wait to see "Are you sure?"
 	Then I tab on the "Leave Group" text
 	Then I wait to see "CONTACTS"
-	
-Scenario: Delete a conversation
-	Given I wait to see "MESSAGES"
-	Then I long press "Automation Group"
-	Then I wait to see "Conversation"
-	Then I tab on the "Delete" text
-	Then I wait to see "Confirm Deletion"
-	Then I tab on the "Delete Conversation" text

@@ -5,7 +5,7 @@ Scenario: As a User I want to see the error message when enter invalid credentia
 	Then I press the "Create New Account" button
 	Then I wait to see "Connect with Facebook"
 	Then I tab on the "No" text
-	Then I enter valid user information new user
+	Then I enter valid user information 
 	Then I press the "Start Messaging" button
 	Then I wait to see "Would you like"
 	Then I tab on the "Cancel" text
