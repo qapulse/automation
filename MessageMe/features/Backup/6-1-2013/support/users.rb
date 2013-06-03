@@ -13,7 +13,7 @@ NEWUSER = {
     :valid => {
 		:firstName => "Didier",
 		:lastName => "To test",
-        :email => "didier.corrales+48@lognllc.com",
+        :email => "didier.corrales+44@lognllc.com",
         :password => "logn$"
     }
 }

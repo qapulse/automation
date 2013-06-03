@@ -31,9 +31,3 @@ end
 Then /^I tab on the image with id "([^\"]*)"$/ do |id|
 	touch(query("* id:'#{id}'"))
 end
-
-#I press change name button in profile screen
-Then /^I press change profile name button$/ do
-    performAction('click_on_screen',90, 10)
-    performAction('wait_for_text', 'Edit My Profile')
-end

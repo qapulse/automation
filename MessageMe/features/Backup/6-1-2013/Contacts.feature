@@ -7,17 +7,6 @@ Scenario: Invite an user
 	Then I enter text "NM 647 QPN" into field with id "friends_invite_input"
 	Then I press the enter button
 	Then I wait to see "Send Message"
-	
-Scenario: Invite an user and add him as a friend
-	Given I wait to see "MESSAGES"
-	Then I touch the "CONTACTS" text
-	Then I press new contact button
-	Then I enter text "NM 647 QPN" into field with id "friends_invite_input"
-	Then I press the enter button
-	Then I wait to see "Send Message"
-	Then I press the "Add Contact" button
-	Then I wait to see "OK"
-	Then I tab on the "OK" text	
 
 Scenario: Block an user
 	Given I wait to see "MESSAGES"
@@ -72,9 +61,3 @@ Scenario: Delete a conversation
 	Then I tab on the "Delete" text
 	Then I wait to see "Confirm Deletion"
 	Then I tab on the "Delete Conversation" text
-
-Scenario: Rate Later MessageMe
-	Given I wait to see "Rate MessageMe"
-	Then I tab on the "Maybe Later" text
-	Then I wait to see "MESSAGES"
-	
