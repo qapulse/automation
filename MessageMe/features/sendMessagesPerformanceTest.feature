@@ -1,6 +1,6 @@
-Feature: Create an new account using the email invite an user and and send messages
+Feature: Send test Messages 
 
-Scenario: As a User I want to log in
+Scenario: As a User I want to log in and send many messages using the special funtion to test the performance
 	Given I wait to see "Log In"
 	Then I wait for 2 seconds
 	Then I touch the screeen to activate it

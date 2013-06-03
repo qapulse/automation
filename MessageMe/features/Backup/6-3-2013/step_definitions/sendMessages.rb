@@ -156,8 +156,8 @@ Then /^I send "([^\"]*)" test messages$/ do |messagesNumber|
 		#Send text message
 		performAction('enter_text_into_id_field','message from automation', 'chat_input')
 		performAction('wait', 2)
-		touch (query("* id:'send_button'"))
-		performAction('wait', 3)
+		touch (query("* id:'send_button"))
+		performAction('wait', 10)
 			
 		#Send "Take Photo" picture message
 		# To be created. On Hold because calabash has not the information to use the camera.
@@ -188,8 +188,6 @@ Then /^I send "([^\"]*)" test messages$/ do |messagesNumber|
 		performAction('click_on_screen',90, 15)
 		performAction('wait', 20)
 		performAction('click_on_screen',60, 45)
-		performAction('wait_for_view_by_id', 'picture_confirmation_accept')
-		touch ("* id:'picture_confirmation_accept'")
 		wait_for(:timeout => 15) { query("* id:'package_chooser_button'").size > 0 }
 		
 		#Send Doodle with Google image background 
