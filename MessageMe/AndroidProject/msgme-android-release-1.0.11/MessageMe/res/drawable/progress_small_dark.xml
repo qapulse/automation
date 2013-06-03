@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/common_activitycircle_small_dark"
+    android:insetBottom="8dip"
+    android:insetLeft="8dip"
+    android:insetRight="8dip"
+    android:insetTop="8dip" />

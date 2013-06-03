@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <include
+        android:id="@+id/date_divider"
+        layout="@layout/date_divider_layout" />
+
+    <LinearLayout
+        android:id="@+id/bubble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/date_divider"
+        android:orientation="horizontal" >
+
+        <include layout="@layout/sent_message_status_indicator" />
+
+        <LinearLayout
+            android:id="@+id/voice_message_wrapper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/messagesview_bubble_text_base_self"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal" >
+
+                <com.littleinc.MessageMe.widget.PlayButtonImageView
+                    android:id="@+id/voice_audio_play_btn"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:clickable="true"
+                    android:contentDescription="@string/voice_message_playback_label" />
+
+                <ProgressBar
+                    android:id="@+id/progress_spinner"
+                    style="@style/Widget.ProgressBar.MediaMessage"
+                    android:layout_width="@dimen/song_message_play_btn_width"
+                    android:layout_height="@dimen/song_message_play_btn_height" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:contentDescription="@null"
+                android:src="@drawable/messagesview_bubble_audio_icon_voice_self" />
+
+            <TextView
+                android:id="@+id/audio_message_timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/messages_bubble_secondary_text"
+                android:textSize="26sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/readers_label" />
+
+</RelativeLayout>

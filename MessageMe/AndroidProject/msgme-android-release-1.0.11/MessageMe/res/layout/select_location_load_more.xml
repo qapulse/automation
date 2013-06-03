@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/min_row_height"
+    android:clickable="true" >
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:id="@+id/location_load_more_label"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/min_row_height"
+        android:layout_centerInParent="true"
+        android:background="@color/list_view_background"
+        android:gravity="center"
+        android:text="@string/select_location_loadmore"
+        android:textColor="@color/light_blue"
+        android:textStyle="bold" />
+
+</RelativeLayout>

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/messagesview_packagepicker_base"
+    android:stretchColumns="0,2,4,6,8"
+    android:shrinkColumns="0,2,4,6,8"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp" >
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+        
+        <TextView
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:visibility="invisible" />
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/picture_btn"
+                android:contentDescription="@string/picture_button_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:src="@drawable/messagesview_packagepicker_icon_picture" />
+
+            <TextView
+                style="@style/PackagePickerLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/picture_label" />
+        </LinearLayout>
+        
+        <TextView
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:visibility="invisible" />
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/doodle_btn"
+                android:contentDescription="@string/doodle_button_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:src="@drawable/messagesview_packagepicker_icon_doodle" />
+
+            <TextView
+                style="@style/PackagePickerLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/doodle_label" />
+        </LinearLayout>
+        
+        <TextView
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:visibility="invisible" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/video_btn"
+                android:contentDescription="@string/video_button_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:src="@drawable/messagesview_packagepicker_icon_video" />
+
+            <TextView
+                style="@style/PackagePickerLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/video_label" />
+        </LinearLayout>     
+        
+        <TextView
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:visibility="invisible" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/voice_btn"
+                android:contentDescription="@string/voice_button_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:src="@drawable/messagesview_packagepicker_icon_voice" />
+
+            <TextView
+                style="@style/PackagePickerLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/voice_label" />
+        </LinearLayout>   
+        
+        <TextView
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:visibility="invisible" />
+        
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="10dip" >
+                
+        <TextView
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:visibility="invisible" />
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/location_btn"
+                android:contentDescription="@string/location_button_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:src="@drawable/messagesview_packagepicker_icon_location" />
+
+            <TextView
+                style="@style/PackagePickerLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/location_label" />
+        </LinearLayout>
+        
+        <TextView
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:visibility="invisible" />
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/music_btn"
+                android:contentDescription="@string/music_button_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:src="@drawable/messagesview_packagepicker_icon_music" />
+
+            <TextView
+                style="@style/PackagePickerLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/music_label" />
+        </LinearLayout>
+        
+        <TextView
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:visibility="invisible" />
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/sticker_btn"
+                android:contentDescription="@string/sticker_button_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:src="@drawable/messagesview_packagepicker_icon_sticker_disabled" />
+
+            <TextView
+                style="@style/PackagePickerLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sticker_label"
+                android:enabled="false" />
+        </LinearLayout> 
+        
+        <TextView
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:visibility="invisible" />
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/money_btn"
+                android:contentDescription="@string/money_button_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:src="@drawable/messagesview_packagepicker_icon_money_disabled" />
+
+            <TextView
+                style="@style/PackagePickerLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/money_label"
+                android:enabled="false" />
+        </LinearLayout>
+        
+        <TextView
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:visibility="invisible" />
+        
+    </TableRow>
+
+</TableLayout>

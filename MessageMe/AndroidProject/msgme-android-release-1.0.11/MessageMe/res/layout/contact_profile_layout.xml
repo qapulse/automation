@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/groupedtable_background" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include layout="@layout/contact_profile_picture_layout" />
+
+        <Button
+            android:id="@+id/contact_profile_send_btn"
+            style="@style/primaryButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dip"
+            android:text="@string/contact_send_message" />
+
+        <TextView
+            android:id="@+id/section_title"
+            style="@style/gtableSectionTitle"
+            android:text="@string/menu_settings" />
+
+        <include
+            android:id="@+id/alerts_container"
+            layout="@layout/alert_settings" />
+
+        <LinearLayout 
+	        android:orientation="vertical"
+	        android:layout_width="match_parent"
+	    	android:layout_height="wrap_content">
+	    	
+            <Button
+	            android:id="@+id/contact_profile_add_btn"
+	            style="@style/baseButton"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="4dip"
+	            android:onClick="toggleContact"
+	            android:text="@string/contact_profile_add_contact_label" />
+	    	
+	        <Button
+	            android:id="@+id/contact_profile_remove_btn"
+	            style="@style/baseButton"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="4dip"
+	            android:onClick="toggleContact"
+	            android:text="@string/remove_contact_label" />
+	
+	        <Button
+	            android:id="@+id/contact_profile_block_btn"
+	            style="@style/baseButton"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginBottom="8dip"
+	            android:onClick="blockContact"
+	            android:text="@string/block_label" />
+	        
+	        <Button
+                android:id="@+id/contact_profile_unblock_btn"
+                style="@style/baseButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dip"
+                android:onClick="unblockContact"
+                android:text="@string/unblock_label"
+                android:visibility="gone" />
+	    </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

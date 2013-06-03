@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/groupedtable_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/add_contacts_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:paddingTop="11dip"
+        android:paddingRight="13dip"
+        android:paddingBottom="11dip"
+        android:paddingLeft="16dip" >
+
+        <ImageView
+            android:id="@+id/add_contact_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/add_group_contact"
+            android:src="@drawable/creategroupview_input_members_button_add" />
+
+        <com.littleinc.MessageMe.widget.ContactAutoCompleteTextView
+            android:id="@+id/contacts_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/add_contact_button"
+            android:background="@null"
+            android:hint="@string/group_add_names_label"
+            android:textColor="@color/text_pill_color"
+            android:textColorHint="@color/text_hint_color" />
+        
+    </RelativeLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/actionbar_white_border"
+        android:contentDescription="@null" />
+
+</LinearLayout>

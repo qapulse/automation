@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/voice_message_shape" >
+
+    <TextView
+        android:id="@+id/recording_lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"  
+        android:layout_marginTop="30dip"     
+        android:text="@string/voice_message_recording_label"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/timer_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-8dip"
+        android:layout_below="@+id/recording_lbl"
+        android:layout_centerHorizontal="true"        
+        android:textColor="@color/white"
+        android:textSize="48sp" />
+
+</RelativeLayout>

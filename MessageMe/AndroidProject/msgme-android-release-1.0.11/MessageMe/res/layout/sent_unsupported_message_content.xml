@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <include
+        android:id="@+id/date_divider"
+        layout="@layout/date_divider_layout" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dip"
+        android:paddingBottom="10dip"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/bubble"
+        android:contentDescription="@null"
+        android:src="@drawable/messagesview_messagestatus_icon_failed" />
+
+    <LinearLayout
+        android:id="@+id/bubble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/date_divider"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/messagesview_bubble_unsupported_base_self" >
+
+        <TextView
+            android:id="@+id/text_message_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="20dp"
+            android:shadowColor="@color/shadow_color"
+            android:shadowDx="0"
+            android:shadowDy="2"
+            android:shadowRadius="1"
+            android:text="@string/unsupported_message_text"
+            android:textColor="@color/unsuported_message_text_color"
+            android:textIsSelectable="false"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:contentDescription="@null"
+            android:gravity="center"
+            android:src="@drawable/messagesview_bubble_unsupported_icon_disclosure_self" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,912 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <!-- ======================================== -->
+    <!--
+         Global configuration for the application 
+         These strings must NOT be translated!
+    -->
+    <!-- ======================================== -->
+
+    
+    <!-- ======================================== -->
+    <!--
+         Text for display within the application 
+         The strings below SHOULD be translated!
+    -->
+    <!-- ======================================== -->
+
+    <string name="app_name">MessageMe</string>
+    <string name="app_title">Message Me</string>
+    <string name="splash">Selamat Datang ke MessageMe</string>
+    <string name="menu_settings">Tetapan</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="menu_refresh">Muat semula</string>
+    <string name="menu_search">Cari</string>
+    <string name="menu_share">Kongsi</string>
+    <string name="menu_send_photo">Hantar Foto</string>
+    <string name="menu_send_location">Hantar Lokasi</string>
+    <string name="menu_send_song">Hantar Lagu</string>
+    <string name="menu_send_doodle">Hantar Doodle</string>
+    <string name="menu_send_video">Hantar Video</string>
+    <string name="menu_user_add">Tambah Kenalan</string>
+    <string name="menu_done">Selesai</string>
+    <string name="menu_compose">Gubah</string>
+    <string name="menu_edit">Sunting</string>
+    <string name="loading">Sedang muat…</string>
+    <string name="adding_contact">Sedang menambah kenalan</string>
+    <string name="removing_contact">Sedang mengalih keluar kenalan</string>
+    <string name="network_settings">Tetapan</string>
+    <string name="network_error_title">Tidak dapat Disambungkan</string>
+    <string name="network_error_start_up">Sila pastikan anda bukan dalam Mod Kapalterbang dan mempunyai capaian WiFi atau rangkaian bersel.</string>
+    <string name="network_error">Sila semak semula tetapan Wayarles &amp; Rangkaian anda dan cuba lagi.</string>
+    <string name="invalid_email">E-mel tidak sah</string>
+    <string name="network_timed_out">Sambungan tamat tempoh, sila cuba lagi kemudian</string>
+    <string name="invalid_number">Nombor telefon bukan dalam format yang dikehendaki. Sila betulkan dan cuba lagi (tidak perlu masukkan kod negara).</string>
+    <string name="unexpected_error_title">Ralat Tidak Dijangka</string>
+    <string name="unexpected_error">Ralat yang tidak dijangka telah berlaku, sila cuba lagi.</string>
+    <string name="next_btn">Seterusnya</string>
+    <string name="db_upgrade_message">Menaik Taraf Pangkalan Data</string>
+    <string name="db_upgrading_message">Mengemaskini...</string>
+    <string name="db_downgrade_title">Ralat turun taraf</string>
+    <string name="db_downgrade_message">Anda tidak boleh memasang versi yang lebih tua daripada permohonan bahagian atas yang lebih baru.\n\nJika anda benar-benar ingin memasang versi yang lebih lama, anda mesti benar-benar mengeluarkan versi MessageMe terlebih dahulu.</string>
+    <string name="app_upgrade_optional_title">Kemas kini sedia ada</string>
+    <string name="app_upgrade_optional_message">Versi baru MessageMe terdapat di sini.</string>
+    <string name="app_upgrade_mandatory_title">Perlu Kemaskini</string>
+    <string name="app_upgrade_mandatory_message">Ada kemas kini yang diperlukan untuk MessageMe. Sila Kemaskini terus.</string>
+    <string name="app_upgrade_btn_update">Kemaskini</string>
+    <string name="app_upgrade_btn_later">Kemudian</string>
+
+    <!-- Create Group Chat -->
+    <string name="add_group_contact">Tambah kenalan kumpulan</string>
+    <string name="group_name_input">Masukkan nama kumpulan</string>
+    <string name="group_creation_question_label">Apakah nama panggilan kumpulan ini?</string>
+    <string name="group_add_names_label">Masukkan nama ahli </string>
+    <string name="group_select_contacts_title">Pilih ahli</string>
+    <string name="group_warning_title">Tidak dapat Membuat Kumpulan</string>
+    <string name="group_name_invalid">Nama kumpulan tidak boleh kosong.</string>
+
+    <!-- Contact List -->
+    <string name="invite_friends_label">Jemput Rakan</string>
+    <string name="create_new_group_label">Sembang Berkumpulan Baharu</string>
+    <string name="connection_error">Ralat sewaktu memuatkan semula kenalan, tiada sambungan Internet</string>
+    <string name="search_contacts_hint">Cari Kenalan</string>
+
+    <!--
+         Popup text shown if the device does not have any SMS or Email 
+         applications.  This is shown in the user's current language.
+    -->
+    <string name="picker_invite_unavailable_title">http://msg.me</string>
+    <string name="picker_invite_unavailable">Maklumkan sahabat handai anda supaya pergi ke pautan di atas melalui telefon bimbit mereka untuk mendapatkan MessageMe dan mula menghantar mesej teks kepada anda secara percuma, hari ini!</string>
+
+    <!-- Tabs Headers -->
+    <string name="messages_tab_header">MESEJ</string>
+    <string name="contacts_tab_header">KENALAN</string>
+    <string name="myprofile_tab_header">PROFIL SAYA</string>
+    <string name="refresh_contacts">Muat semula</string>
+    <string name="new_message_lbl">Mesej Baharu</string>
+    <string name="unread_messages_top_value">99+</string>
+
+    <!-- Chat Client UI -->
+    <string name="send_btn">HANTAR</string>
+    <string name="message_input">Masukkan mesej</string>
+    <string name="voice_message_recording_label">Rakaman</string>
+    <string name="voice_input_instruction_a">Tekan &amp; Tahan Di Mana Sahaja</string>
+    <string name="voice_input_instruction_b">untuk Rakam dan Hantar</string>
+    <string name="voice_input_done_btn">Selesai</string>
+    <string name="voice_message_playback_label">Main atau jeda pesanan suara ini</string>
+    <string name="media_message_playback_label">Main atau jeda media ini</string>
+    <string name="chat_failure_title">Mesej anda tidak dihantar</string>
+    <string name="chat_failure_try_again">Cuba Lagi</string>
+    <string name="chat_failure_delete">Padam</string>
+    <string name="chat_failure_cancel">Batal</string>
+    <string name="chat_seen_by">Dilihat oleh %1$s</string>
+    <string name="chat_and">dan</string>
+    <string name="chat_at">pada</string>
+    <string name="chat_on">pada</string>
+    <string name="chat_yesterday">semalam</string>
+    <string name="chat_others">lain</string>
+    <string name="info_label">Maklumat</string>
+    <string name="sending_video_error_title">Ralat Menghantar Video</string>
+    <string name="sending_image_error_title">Ralat ketika Menghantar Imej</string>
+    <string name="sending_image_error_description">Imej yang anda pilih terlalui besar, atau memori dalam peranti anda terlalu rendah. Sila pilih imej yang lebih kecil atau cuba lagi kemudian.</string>
+    <string name="sending_image_error_disk_space">Sila semak untuk memastikan ada ruang yang sedia ada dalam storan dalaman anda.</string>
+    <string name="forward_text_message_meta">%1$s: \"%2$s\" pada%3$s</string>
+    <string name="no_google_maps_error">Peranti anda tidak muncul untuk mempunyai Peta Google yang dipasang. Sila pasang Google Maps dan cuba lagi.</string>
+    <string name="no_google_maps_error_title">Peta Google yang diperlukan</string>
+
+    <!-- Log In UI -->
+    <string name="welcome">Selamat Datang ke MessageMe</string>
+    <string name="first_name_label">Nama Pertama</string>
+    <string name="last_name_label">Nama Keluarga</string>
+    <string name="password_label">Kata Laluan</string>
+    <string name="log_in_label">Log Masuk</string>
+    <string name="required_fields_alert_title">Medan yang diperlukan</string>
+    <string name="required_fields_alert_body">Sila isi semua medan yang diperlukan</string>
+    <string name="auth_progress_message">Mengesahkan</string>
+    <string name="auth_error">Ralat Log Masuk</string>
+    <string name="login_error">E-mel atau kata laluan yang anda masukkan salah. Sila semak semula dan cuba lagi.</string>
+    <string name="password_invalid_title">Kata Laluan Tidak Sah</string>
+    <string name="password_invalid_body">Panjang kata laluan baharu anda hendaklah sekurang-kurangnya 5 aksara.</string>
+    <string name="phone_invalid_title">Nombor Telefon Tidak Sah</string>
+    <string name="phone_invalid_message">Sila semak semula dan cuba lagi</string>
+    <string name="signup_email_auth_error_email_title">E-mel Tidak Sah</string>
+    <string name="signup_email_auth_error_email_message">Alamat e-mel yang anda masukkan tidak sah. Sila semak semula dan cuba lagi.</string>
+    <string name="auth_error_email_exists">E-mel yang anda masukkan sudah didaftar dengan pengguna MessageMe. Jika anda pemilik akaun tersebut, anda mungkin hanya mahu log masuk sahaja.</string>
+    <string name="login_incorrect_email">E-mel Salah</string>
+    <string name="login_incorrect_email_message">Tidak terdapat akaun bagi e-mel yang anda masukkan. Sila semak semula dan cuba lagi.</string>
+    <string name="login_invalid_phone_title">Nombor telefon yang betul atau kata laluan</string>
+    <string name="login_invalid_phone_body">Sila semak nombor telefon anda (termasuk kod negara anda) dan kata laluan anda dan cuba lagi.</string>
+    <string name="login_incorrect_phone">Nombor telefon yang betul</string>
+    <string name="login_incorrect_phone_message">Nombor telefon yang anda masukkan tidak dipunyai oleh mana-mana akaun. Sila semak nombor telefon anda (termasuk kod negara anda) dan cuba lagi.</string>
+    <string name="login_account_not_found">Akaun Tidak Ditemui</string>
+    <string name="login_account_not_found_message">Kami gagal menemui akaun yang berkait dengan: %1$s.</string>
+    <string name="signup">Daftar</string>
+    <string name="bullet_separator">·</string>
+    <string name="signup_pin_call_pending">Hubungi dalam masa %1$s</string>
+    <string name="signup_pin_call_ready">Hubungi Saya Sekarang</string>
+    <string name="signup_pin_callin">Sedang Membuat Panggilan</string>
+    <string name="signup_pin_sent_title">Kod Pengesahan Telah Dihantar</string>
+    <string name="signup_pin_sms_sent">Kami telah menghantar semula SMS dengan kod pengesahan kepada anda  di %1$s. Jika anda tidak menerimanya, sila hubungi bahagian sokongan.</string>
+    <string name="contact_support">Hubungi Bahagian Sokongan</string>
+    <string name="okay">Okay</string>
+    <string name="support_email">support@messageme.com</string>
+
+    <!-- ChatActivity UI -->
+    <string name="send_message">Hantar</string>
+    <string name="sending_message">Sedang menghantar mesej…</string>
+    <string name="forwarding_message">Sedang memajukan mesej…</string>
+    <string name="send_voice_dialog">Sedang menghantar pesanan suara…</string>
+    <string name="send_video_dialog">Sedang menghantar mesej video…</string>
+    <string name="select_source">Pilih satu tindakan</string>
+    <string name="clipboard_copy">Disalin ke papan klip</string>
+    <string name="load_earlier_messages">Muatkan Mesej Terdahulu</string>
+    <string name="unsupported_message_text">Sila kemas kini untuk melihat mesej ini</string>
+    <string name="copy_lbl">Salin</string>
+    <string name="select_action">Pilih satu tindakan</string>
+
+    <!-- MessagesFragment UI -->
+    <string name="attachment_msg">Mesej lampiran</string>
+    <string name="yesterday_label">Semalam</string>
+    <string name="messages_failure">Kegagalan penghantaran mesej</string>
+    <string name="search_messages_lbl">Cari mesej</string>
+    <string name="conversation_lbl">Perbualan</string>
+    <string name="delete_lbl">Padam</string>
+    <string name="confirm_deletion">Sahkan Pemadaman</string>
+    <string name="confirm_deletion_message">Mesej dalam perbualan ini akan dihapuskan buat selama-lamanya.</string>
+    <string name="delete_conversation">Padam Perbualan</string>
+
+    <!-- Select Photo -->
+    <string name="accept">Terima</string>
+    <string name="cancel">Batal</string>
+    <string name="select_photo">Pilih Foto</string>
+    <string name="select_photo_preview">Pilih pratonton foto</string>
+
+    <!-- Select location -->
+    <string name="select_location_title">Lokasi Berdekatan</string>
+    <string name="select_location_hint">Cari lokasi berdekatan</string>
+    <string name="select_location_current">Lokasi Semasa</string>
+    <string name="select_location_loadmore">Lebih banyak tempat yang berdekatan…</string>
+    <string name="select_location_getting_location">Sedang mencari lokasi semasa…</string>
+    <string name="distance_format">%1$.1f</string>
+    <string name="miles_unit">BT</string>
+    <string name="feet_unit">kaki</string>
+    <string name="kilometers_unit">km</string>
+    <string name="meters_unit">meter</string>
+    <string name="location_unavailable">Lokasi semasa anda tiada buat sementara waktu</string>
+    <string name="search_location_lbl">Cari lokasi berdekatan</string>
+
+    <!-- Select Youtube video -->
+    <string name="views_label">Telah Dilihat</string>
+    <string name="loading_videos_lbl">Sedang memuatkan video…</string>
+
+    <!-- Video Selector -->
+    <string name="select_camera_video">Rakam Video</string>
+    <string name="select_youtube_video">Video Youtube</string>
+    <string name="select_gallery_video">Pilih Yang Sedia Ada</string>
+
+    <!-- Menu Options -->
+    <string name="doodle_label">Doodle</string>
+    <string name="doodle_button_label">Butang Doodle</string>
+    <string name="location_label">Lokasi</string>
+    <string name="location_button_label">Butang Lokasi</string>
+    <string name="picture_label">Gambar</string>
+    <string name="picture_button_label">Butang Gambar</string>
+    <string name="music_label">Muzik</string>
+    <string name="music_button_label">Butang Muzik</string>
+    <string name="video_label">Video</string>
+    <string name="video_button_label">Butang Video</string>
+    <string name="voice_label">Suara</string>
+    <string name="voice_button_label">Butang Suara</string>
+    <string name="sticker_label">Pelekat</string>
+    <string name="sticker_button_label">Butang Pelekat</string>
+    <string name="money_label">Wang</string>
+    <string name="money_button_label">Butang Wang</string>
+    <string name="send_by_sms">Hantar melalui SMS</string>
+    <string name="send_by_email">Hantar melalui E-mel</string>
+
+    <!-- Profile/Cover Action Sheet -->
+    <string name="pic_update_dialog_title">Pilih tindakan</string>
+
+    <string-array name="pic_update_dialog_options">
+        <item>Kemas Kini Gambar Profil</item>
+        <item>Kemas Kini Gambar Hiasan Kulit</item>
+    </string-array>
+
+    <!-- Video Action Sheet -->
+    <string name="video_dialog_title">Pilih tindakan</string>
+
+    <!-- Doodle Composer -->
+    <string name="background_dialog_title">Tukar Latar Belakang</string>
+    <string name="background_is_not_available">Imej yang dipilih tiada</string>
+    <string name="error_downloading_image">Ralat memuat turun imej yang dipilih, sila cuba lagi kemudian.</string>
+    <string name="doodle_exit_title">Doodle anda akan dibersihkan!</string>
+    <string name="doodle_exit_msg">Adakah anda pasti hendak meneruskan?</string>
+
+    <!-- In-App Notifications -->
+    <string name="notification_icon_description">Ikon pemberitahuan MessageMe</string>
+    <string name="notification_media_thumbnail_description">Ikon lakaran kecil Media</string>
+    <string name="error_uploading_media">Berlaku ralat ketika memuat naik media, sila cuba lagi kemudian.</string>
+    <string name="notification_contact_description">Telah berkongsi kenalan dengan anda: %1$s</string>
+    <string name="notification_image_description">Telah menghantar Foto kepada anda</string>
+    <string name="notification_doodle_description">Telah menghantar Doodle kepada anda</string>
+    <string name="notification_doodlepic_description">Telah menghantar Doodlepic kepada anda</string>
+    <string name="notification_location_description_them">Telah menghantar lokasi mereka kepada anda</string>
+    <string name="notification_location_description_other"> Telah menghantar lokasi kepada anda: %1$s</string>
+    <string name="notification_unsupported_msg_type">Telah menghantar mesej kepada anda</string>
+    <string name="notification_video_description">Telah menghantar video kepada anda</string>
+    <string name="notification_video_with_name_description">Video: %1$s</string>
+    <string name="notification_voice_description">Telah menghantar pesanan suara kepada anda</string>
+    <string name="notification_sticker_description">Menghantar pelekat</string>
+    <!-- e.g. Music: "Hey Jude" by The Beatles -->
+    <string name="notification_song_description">Muzik: %1$s oleh %2$s</string>
+    <string name="group_addition">Telah ditambah kepada kumpulan:</string>
+    <string name="notification_online_status">adalah:</string>
+    <string name="user_banner_desc">baru sahaja menyertai MessageMe</string>
+    <string name="ab_match_desc">Hantarkan mesej kepada mereka sekarang!</string>
+
+    <!-- My Profile -->
+    <string name="contact_information_label">Maklumat Kenalan</string>
+    <string name="contact_id_label">Pin MessageMe Anda:</string>
+    <string name="contact_friends_add">Rakan anda boleh menambah anda dengan menggunakan pin ini</string>
+    <string name="contact_share_profile_btn">Kongsi Profil</string>
+    <string name="contact_forward_contact">Majukan Kenalan</string>
+    <string name="contact_send_message">Hantar Mesej</string>
+    <string name="image_upload_fail_title">Ralat Muat Naik</string>
+    <string name="image_upload_fail">Muat naik imej gagal, sila cuba lagi</string>
+    <string name="find_friends_lbl">Cari dan Tambah Rakan</string>
+    <string name="settings_alert_title">Tetapan Akan Datang</string>
+    <string name="settings_alert_message">Sila hubungi support@messageme.com untuk mendapatkan bantuan.</string>
+    <string name="uploading_photo">Sedang muat naik foto…</string>
+    <string name="aws_time_offset_error_title">Tidak dapat muat naik</string>
+    <string name="aws_time_offset_error_message">Jadilah satu isu yang mendapat tarikh yang betul dan masa dari peranti anda. Sila pergi ke peranti anda Seting &gt; tarikh &amp; masa, Tetapkan tarikh dan masa kepada automatik, dan cuba lagi.</string>
+
+    <!-- Contact Profile -->
+    <string name="alerts_label">Amaran</string>
+    <string name="notifications_label">Pemberitahuan</string>
+    <string name="alerts_on">Sentiasa hidup</string>
+    <string name="alerts_off_for_1_hour">Dimatikan selama 1 jam</string>
+    <string name="alerts_off_for_3_days">Dimatikan selama 3 hari</string>
+    <string name="alerts_off_until">Dimatikan sehingga</string>
+    <string name="remove_contact_label">Alih Keluar Kenalan</string>
+    <string name="alerts_dialog_title">Buat pilihan amaran</string>
+    <string name="contact_profile_add_contact_label">Tambah Kenalan</string>
+
+    <!-- Blocking / unblocking users -->
+    <string name="block_label">Sekat</string>
+    <string name="unblock_label">Buka Sekatan</string>
+    <string name="profile_block_contact_action">Sedang menyekat kenalan…</string>
+    <string name="profile_unblock_contact_action">Sedang buka sekatan kenalan…</string>
+    <string name="composer_user_is_blocked">Anda telah menyekat pengguna ini. Buka sekatan mereka untuk menghantar mesej.</string>
+    <string name="composer_user_blocked_by">Anda telah disekat oleh pengguna ini dan tidak boleh menghantar mesej kepada mereka.</string>
+    <string name="blocked">Disekat</string>
+    <string name="unblocked">Sekatan telah dibuka</string>
+    <string name="blocked_msg">Anda telah menyekat %1$s</string>
+    <string name="blocked_by_msg">Anda telah disekat oleh %1$s</string>
+    <string name="unblocked_msg">Anda telah membuka sekatan bagi %1$s</string>
+    <string name="forward_blocked_by_msg">Anda tidak boleh memajukan mesej kepada %1$s. Anda telah disekat oleh %2$s</string>
+    <string name="group_add_user_unauthorized">Anda telah disekat oleh %1$s dan tidak boleh menambah mereka kepada kumpulan ini.</string>
+    <string name="group_add_user_not_found">Kami tidak dapat menemui orang yang anda mahu tambah kepada kumpulan ini.</string>
+    <!-- Message shown when you try to add a user to a group and that user has blocked you -->
+    <string name="create_room_members_blocked_by">%1$s tidak boleh ditambah kepada %2$s. Anda telah disekat oleh %3$s.</string>
+    <!-- Message shown when you try to add a user to a group and you have blocked that user -->
+    <string name="create_room_members_is_blocked">%1$s tidak boleh ditambah kepada %2$s. Anda telah menyekat %3$s.</string>
+
+    <!-- Mentor banners -->
+    <string name="mentor_banner_blockedby_title">%1$s Telah Menyekat Anda</string>
+    <string name="mentor_banner_blockedby_desc">Anda tidak boleh menghantar atau menerima mesej daripada %1$s</string>
+    <string name="mentor_banner_blocked_title">%1$s telah Disekat</string>
+    <string name="mentor_banner_blocked_desc">Buka sekatan %1$s untuk menghantar dan menerima mesej</string>
+    <string name="mentor_banner_not_contact_title">%1$s Bukan Kenalan</string>
+    <string name="mentor_banner_not_contact_desc">Adakah anda mahu menambah %1$s kepada Senarai Kenalan anda?</string>
+    <string name="mentor_banner_add_btn">Tambah</string>
+
+    <!-- Group Profile -->
+    <string name="group_profile_send_message">Hantar Mesej</string>
+    <string name="group_profile_invite">Jemput Orang ke Kumpulan</string>
+    <string name="group_profile_leave">Tinggalkan Kumpulan</string>
+    <string name="group_profile_num_members">Ahli</string>
+    <string name="group_profile_no_contacts">Sila pilih sekurang-kurangnya satu ahli.</string>
+    <string name="group_profile_view_all">Lihat semua %1$s ahli</string>
+    <string name="group_next">Seterusnya</string>
+    <string name="group_invite">Jemput</string>
+    <string name="unable_leave_group">Tidak dapat meninggalkan bilik. Sila cuba lagi kemudian.</string>
+    <string name="leave_group_alert_title">Anda pasti?</string>
+    <string name="leave_group_alert_message">Anda tidak boleh menyertai bilik ini lagi!</string>
+    <string name="group_dialog_leave_message">Meninggalkan kumpulan</string>
+    <string name="group_dialog_join_message">Menambah  kenalan kepada kumpulan</string>
+
+    <!-- Detail Screen -->
+    <string name="detail_screen_reply_doodle">Balas dengan Doodle</string>
+    <string name="detail_screen_open_map">Buka dalam Peta</string>
+    <string name="forward">Majukan</string>
+    <string name="detail_screen_wait_download">Sila tunggu sehingga imej sudah dimuat turun</string>
+    <string name="detail_screen_saved_to_gallery">Imej telah disimpan</string>
+    <string name="detail_screen_saved_to_gallery_error">MessageMe mengalami masalah sewaktu menyimpan imej ke dalam Galeri.</string>
+    <string name="detail_screen_saved_to_gallery_no_sdcard_error">Tolong pastikan kad SD telah disisipkan dan boleh ditulis, dan cuba lagi.</string>
+    <string name="detail_screen_saved_to_gallery_no_space">Kad SD sudah penuh. Sila bebaskan sedikit ruang dan cuba lagi.</string>
+    <string name="detail_screen_unable_to_copy_title">Tidak Dapat Disimpan</string>
+
+    <!-- Search Music -->
+    <string name="search_music_title">Cari Muzik</string>
+    <string name="search_music_hint">Cari sebarang lagu</string>
+    <string name="loading_songs_lbl">Sedang memuatkan lagu…</string>
+
+    <!-- Search Youtube Video -->
+    <string name="search_youtube_hint">Hantar Video YouTube</string>
+
+    <!-- Profile Picture -->
+    <string name="google_images_lbl">Imej Google</string>
+    <string name="take_photo_lbl">Tangkap Gambar</string>
+    <string name="choose_existing_lbl">Pilih Yang Sedia Ada</string>
+    <string name="search_google_images">Cari Imej Google</string>
+    <string name="image_search">Carian Imej</string>
+
+    <!-- Landing Page -->
+    <string name="landing_text">Menyeronokkan, percuma mesej :)</string>
+    <string name="landing_login_btn">Log Masuk</string>
+    <string name="landing_sign_up_btn">Buat Akaun Baharu</string>
+
+    <!-- Phone Entry -->
+    <string name="phone_entry_header">Akaun Baharu</string>
+    <string name="phone_entry_legend">Sila sahkan kod negara anda dan masukkan nombor telefon anda</string>
+    <string name="phone_entry_hint">Nombor Telefon</string>
+    <string name="phone_entry_dulplicate_number">Nombor yang anda masukkan sudah berkait dengan akaun lain. Jika anda pemilik akaun tersebut, anda mungkin ingin log masuk sahaja.</string>
+    <string name="phone_entry_dialog_message">Mengesahkan nombor telefon</string>
+    <string name="signup_error">Ralat Pendaftaran</string>
+
+    <!--
+         Choose Country 
+         This is only shown if the user chooses to sync their address book
+         and they do not have a phone number registered with their account.
+    -->
+    <string name="choose_country_title">Pilih Negara Anda</string>
+    <string name="choose_country_legend">Pilih negara tempat anda tinggal sekarang untuk mencari sahabat handai yang sudah mendaftar dengan MessageMe.</string>
+
+    <!-- Verify Number -->
+    <string name="verify_number_header">Mengesahkan Nombor Telefon Anda</string>
+    <string name="verify_number_legend">Kami baru sahaja menghantar SMS dengan kod pengesahan kepada anda di </string>
+    <string name="verify_number_digit_numbers">Masukkan kod pengesahan 3 digit di bawah</string>
+    <string name="verify_number_signs">###</string>
+    <string name="verify_number_resend_code">Hantar Semula Kod</string>
+    <string name="verify_number_dialog_message">Menyerahkan pin</string>
+    <string name="verify_number_error">Pin yang anda masukkan salah. Sila semak semula SMS yang kami hantar kepada anda dan cuba lagi.</string>
+
+    <!-- Complete Profile -->
+    <string name="complete_profile_header">Lengkapkan Profil</string>
+    <string name="complete_profile_legend">Beritahu sahabat handai siapa anda</string>
+    <string name="email_address">Alamat E-mel</string>
+    <string name="email_or_phone_hint">E-mel atau telefon</string>
+    <string name="email_lbl">E-mel</string>
+    <string name="password_lbl">Kata Laluan</string>
+    <string name="first_name_hint">Diperlukan</string>
+    <string name="last_name_hint">Diperlukan</string>
+    <string name="email_hint">you@email.com</string>
+    <string name="password_hint">Pilih kata laluan</string>
+    <string name="complete_profile_submit">Mula Menghantar Mesej</string>
+    <string name="complete_profile_no_data">Sila isi semua medan.</string>
+    <string name="complete_profile_registered_email_error">E-mel ini sudah pun didaftarkan dengan seorang pengguna MessageMe.</string>
+    <string name="connect_with_fb">Sambungkan dengan Facebook?</string>
+    <string name="complete_profile_fb">Adakah anda mahu melengkapkan profil anda dengan Facebook?</string>
+    <string name="facebook_auth_collision">%1$s, Nampaknya anda sudah pun ada akaun</string>
+
+    <!-- Create Login -->
+    <string name="create_login_legend">Masukkan e-mel anda dan pilih kata laluan untuk log masuk kemudian.</string>
+    <string name="fb_account_link_error">Ralat memautkan akaun Facebook anda, sila cuba lagi kemudian</string>
+
+    <!-- Search Web Images UI -->
+    <string name="generic_error_title">Ralat</string>
+    <string name="loading_images_lbl">Sedang memuatkan imej…</string>
+    <string name="download_image_lbl">Sedang memuat turun imej…</string>
+
+    <!-- Message Bubble Accessibility Text -->
+    <string name="msg_bubble_sent_location">Telah menghantar lakaran kecil lokasi, tekan untuk lihat</string>
+    <string name="msg_bubble_sent_photo">Telah menghantar lakaran kecil foto, tekan untuk lihat</string>
+    <string name="msg_bubble_sent_song">Telah menghantar lakaran kecil lagu, tekan untuk dengar</string>
+    <string name="msg_bubble_sent_video">Telah menghantar lakaran kecil video, tekan untuk main</string>
+    <string name="msg_bubble_sent_youtube">Telah menghantar lakaran kecil YouTube, tekan untuk main</string>
+    <string name="msg_bubble_received_location">Telah menerima lakaran kecil lokasi, tekan untuk lihat</string>
+    <string name="msg_bubble_received_photo">Telah menerima lakaran kecil foto, tekan untuk lihat</string>
+    <string name="msg_bubble_received_song">Telah menerima lakaran kecil lagu, tekan untuk dengar</string>
+    <string name="msg_bubble_received_video">Telah menerima lakaran kecil video, tekan untuk main</string>
+    <string name="msg_bubble_received_youtube">Telah menerima lakaran kecil YouTube, tekan untuk main</string>
+
+    <!-- Friends Invite -->
+    <string name="friends_invite_coming_soon">Akan Datang</string>
+    <string name="friends_invite_title">Cari &amp; Tambah Rakan</string>
+    <string name="friends_invite_header">Tambah Rakan Baharu</string>
+    <string name="friends_invite_sub_header">Masukkan nombor telefon, e-mel atau pin mereka</string>
+    <string name="friends_invite_input_hint">Telefon, E-mel atau Pin</string>
+    <string name="friends_invite_button">Jemput Rakan Anda</string>
+    <string name="friends_invite_facebook_button">Tambah Rakan Facebook</string>
+    <string name="friends_invite_search_error_title">Ralat Carian</string>
+    <string name="friends_invite_no_user_title">Tiada Pengguna Ditemui</string>
+    <string name="friends_invite_no_user_body">Rakan anda mungkin tidak mempunyai MessageMe. Jemput rakan anda untuk mula mengirim teks kepada anda secara percuma hari ini!</string>
+    <string name="friends_invite_search_error_invalid">Sila masukkan e-mel, nombor telefon atau pin yang sah</string>
+    <string name="friends_invite_search_error_body">Kami tidak dapat menemui sesiapa pun. Sila semak semula apa yang anda masukkan dan cuba lagi.</string>
+    <string name="friends_invite_contact_added">%1$s telah ditambah ke dalam Senarai Kenalan.</string>
+    <string name="friends_invite_contact_removed">%1$s telah dialih keluar daripada Senarai Kenalan anda.</string>
+    <string name="friends_invite_send_invite">Hantar Jemputan</string>
+
+    <!-- No Results Listview -->
+    <string name="no_results_label">Tiada Hasil</string>
+
+    <!-- Room Notices -->
+    <string name="room_new_message">Selamat datang ke kumpulan baharu anda!</string>
+    <string name="room_new_message_added">%1$s telah menambah anda ke dalam kumpulan</string>
+    <string name="room_join_message_self">Anda telah menambah %1$s ke dalam kumpulan</string>
+    <string name="room_join_message_other">%1$s telah menambah %2$s ke dalam kumpulan</string>
+    <string name="room_leave_message_self">Anda telah pun meninggalkan kumpulan ini</string>
+    <string name="room_leave_message_other">%1$s telah meninggalkan kumpulan ini</string>
+    <string name="room_update_message_profile_pic_self">Anda telah menukar gambar profil</string>
+    <string name="room_update_message_profile_pic_other">%1$s telah menukar gambar profil</string>
+    <string name="room_update_message_cover_pic_self">Anda telah menukar gambar hiasan kulit</string>
+    <string name="room_update_message_cover_pic_other">%1$s telah menukar gambar hiasan kulit</string>
+    <string name="room_update_message_name_self">Anda telah menukar nama kumpulan kepada %1$s</string>
+    <string name="room_update_message_name_other">%1$s telah menukar nama kumpulan kepada %2$s</string>
+    <!-- Settings Page -->
+    <string name="version_lbl">Versi</string>
+    <string name="change_password">Tukar Kata Laluan</string>
+    <string name="edit_profile">Edit Profil Saya</string>
+    <string name="connected_accounts">Akaun Berkait</string>
+    <string name="connect_with_friends">Kini lebih mudah untuk berhubung dengan rakan-rakan anda! Maklumat anda tidak akan sekali-kali dipaparkan kepada awam.</string>
+    <string name="add_new_phone">Tambah Nombor Telefon Baharu</string>
+    <string name="diagnostics_section_title">Diagnostik</string>
+    <string name="diagnostics_section_description">Sila tanda \'Simpan log\' di bawah, tunggu masalah berlaku, kemudian tekan butang \'Hantar Log\'.</string>
+    <string name="logging_label">Simpan log</string>
+    <string name="send_logs">Hantar Log</string>
+    <string name="logging_is_on">Log DIHIDUPKAN, sila hasilkan semula masalah berkenaan sekarang</string>
+    <string name="logging_is_off">Log DIMATIKAN</string>
+    <string name="send_logs_too_large">Fail log terlalu besar untuk dihantar melalui e-mel</string>
+    <string name="send_logs_failed">Gagal melancarkan aplikasi e-mel</string>
+    <string name="diagnostics_email_recipient">help@messageme.com</string>
+    <string name="diagnostics_email_subject">Diagnostik</string>
+    <string name="diagnostics_email_reason">Sedang menghantar log…</string>
+    <string name="diagnostics_email_body">Sila beri langkah-langkah terperinci yang menjelaskan masalah yang berlaku. Terima kasih atas bantuan anda!</string>
+    <string name="facebook">Facebook</string>
+    <string name="twitter">Twitter</string>
+    <string name="settings_title">Tetapan</string>
+    <string name="get_help">Dapatkan Bantuan</string>
+    <string name="about"> Tentang MessageMe</string>
+    <string name="logout">Log Keluar</string>
+    <string name="faq">Soalan Lazim</string>
+    <string name="service_status">Lihat Status Perkhidmatan</string>
+    <string name="coming_soon">Akan Datang</string>
+    <string name="terms_service">Terma Perkhidmatan</string>
+    <string name="privacy_policy">Dasar Privasi</string>
+    <string name="no_phone">Tiada nombor telefon yang berdaftar</string>
+    <string name="edit_my_profile">Edit Profil Saya</string>
+    <string name="save">Simpan</string>
+    <string name="succesfull_update">Maklumat pengguna berjaya dikemas kini</string>
+    <string name="saving">Sedang simpan…</string>
+    <string name="off_until">Dimatikan sehingga %1$s</string>
+    <string name="logout_message">Log Keluar daripada MessageMe</string>
+    <string name="yes_lbl">Ya</string>
+    <string name="no_lbl">Tidak</string>
+    <string name="ok_lbl">OK</string>
+    <string name="log_out_progress_dialog_message">Sedang Log Keluar</string>
+    <string name="logging_out_error">Ralat ketika log keluar</string>
+    <string name="setting_page_alert_play_sound">"Main bunyi pada amaran"</string>
+    <string name="settings_page_alert_vibrate">Bergetar pada amaran</string>
+    <string name="settings_page_notification_light">Pemberitahuan cahaya</string>
+    <string name="sound_alerts_on">Amaran bunyi HIDUP</string>
+    <string name="sound_alerts_off">Amaran bunyi MATI</string>
+    <string name="vibrate_alerts_on">Getar bagi Amaran HIDUP</string>
+    <string name="vibrate_alerts_off">Getar bagi Amaran MATI</string>
+    <string name="notification_lights_on">Pemberitahuan cahaya pada</string>
+    <string name="notification_lights_off">Pemberitahuan light OFF</string>
+    <string name="retry">Cuba  Lagi</string>
+
+    <!-- AddressBook Sync -->
+    <string name="alert_sync_contacts_title">Segerakkan Kenalan dengan Buku Alamat</string>
+    <string name="alert_sync_contacts_message">Adakah anda mahu mencari rakan dengan menyegerakkan buku alamat peranti anda dengan MessageMe?</string>
+
+    <!-- Date Divider -->
+    <string name="date_divier_text">%1$s - %2$s</string>
+
+    <!-- Welcome Message -->
+    <string name="welcome_we_hope">Kami harap anda mendapat pengalaman yang menyeronokkan sewaktu menghantar kepada rakan anda…</string>
+    <string name="welcome_and_more">…dan banyak lagi!</string>
+    <string name="welcome_tell_us">Beritahu kami apa yang anda fikirkan di feedback@messageme.com</string>
+    <string name="welcome_doodle_url">u/886796681331478528/m/v7HIOu_0.jpg</string>
+    <string name="welcome_doodle_thumb_url">u/886796681331478528/m/v7HIOu_2.jpg</string>
+    <string name="welcome_user_name">Selamat Datang!</string>
+    <string name="welcome_user_email">welcome@user.com</string>
+    <string name="welcome_song_artist_name">PSY</string>
+    <string name="welcome_song_track_name">Gangnam Style</string>
+    <string name="welcome_song_artwork_url">http://a1093.phobos.apple.com/us/r1000/094/Music/v4/34/d8/8c/34d88cf8-194d-c8c8-d520-65161d28b4e5/UMG_cvrart_00602537178032_01_RGB72_1200x1200_12UMGIM50914.60x60-50.jpg</string>
+    <string name="welcome_song_preview_url">http://a324.phobos.apple.com/us/r1000/063/Music/10/9c/d8/mzi.htmfnsfo.aac.p.m4a</string>
+    <string name="welcome_song_track_url">https://itunes.apple.com/us/album/gangnam-style-gangnamseutail/id560398387?i=560398388</string>
+    <string name="welcome_location_latitude">37.781703949</string>
+    <string name="welcome_location_longitude">-122.392936707</string>
+    <string name="welcome_location_id">300647603292750</string>
+    <string name="welcome_location_name">Lokasi Semasa</string>
+    <string name="welcome_location_address">300 Brannan St, San Francisco, CA, USA</string>
+
+    <!-- GCM Notifications -->
+    <string name="gcm_new_message">Mesej baharu</string>
+    <string name="more_lbl">lagi</string>
+    <string name="puj">%1$s telah menyertai MessageMe</string>
+    <string name="pgl">%1$s telah meninggalkan kumpulan %2$s</string>
+    <string name="pgup">%1$s telah menukar gambar profil %2$s</string>
+    <string name="pguc">%1$s telah menukar gambar hiasan kulit %2$s </string>
+    <string name="pgun">%1$s telah menukar nama daripada %2$s kepada %3$s </string>
+    <string name="pgao">%1$s telah ditambah ke dalam %2$s</string>
+    <string name="pga">%1$s telah menambah anda ke dalam kumpulan %2$s</string>
+    <string name="pm">mesej tidak diketahui</string>
+    <string name="pmp">%1$s telah menghantar gambar kepada anda</string>
+    <string name="pmd">%1$s telah menghantar Doodle kepada anda</string>
+    <string name="pmdp">%1$s telah menghantar DoodlePic kepada anda</string>
+    <string name="pmv">%1$s telah menghantar video kepada anda</string>
+    <string name="pmy">%1$s telah menghantar video kepada anda: %2$s</string>
+    <string name="pmvc">%1$s telah menghantar pesanan suara kepada anda</string>
+    <string name="pms">%1$s telah menghantar lagu kepada anda: %2$s oleh %3$s</string>
+    <string name="pml">%1$s telah menghantar lokasi kepada anda: %2$s</string>
+    <string name="pmlc">%1$s telah menghantar lokasi mereka kepada anda</string>
+    <string name="pmc">%1$s telah berkongsi kenalan dengan anda: %2$s</string>
+    <string name="pmst">%1$smenghantar pelekat</string>
+    <string name="pabmo">Seorang Rakan dijumpai di MessageMe</string>
+    <string name="pabm">%1$s Rakan dijumpai di MessageMe</string>
+    <string name="pabm_missing_count_value">Rakan telah dijumpai di MessageMe</string>
+    <string name="pm_unsupported">telah menghantar mesej kepada anda</string>
+    <string name="messageme_system_notif_title">MessageMe</string>
+
+    <!-- Forgot Reset -->
+    <string name="login_forgot_your_password">Terlupa kata laluan anda?</string>
+    <string name="login_forgot_password">Lupa Kata Laluan</string>
+    <string name="login_forgot_enter_email">Sila masukkan e-mel yang berkait dengan akaun anda.</string>
+    <string name="login_enter_valid_email">Sila masukkan e-mel yang sah.</string>
+    <string name="login_password_reset_message">Satu e-mel yang mengandungi arahan tentang bagaimana anda boleh menetapkan semula kata laluan telah dihantar ke alamat e-mel yang anda beri.</string>
+    <string name="reset">Tetapkan Semula</string>
+    <string name="login_contact_support_message">Ralat telah berlaku. Sila hantar e-mel kepada support@messageme.com untuk menetapkan semula kata laluan anda.</string>
+
+    <!-- MessagesFragment labels to display -->
+    <string name="convo_preview_msg_desc_self_picture">Anda telah menghantar gambar</string>
+    <string name="convo_preview_msg_desc_other_picture">%1$s telah menghantar gambar</string>
+    <string name="convo_preview_msg_desc_self_doodle">Anda telah menghantar Doodle</string>
+    <string name="convo_preview_msg_desc_other_doodle">%1$s telah menghantar Doodle</string>
+    <string name="convo_preview_msg_desc_self_doodlepic">Anda telah menghantar DoodlePic</string>
+    <string name="convo_preview_msg_desc_other_doodlepic">%1$s telah menghantar DoodlePic</string>
+    <string name="convo_preview_msg_desc_self_video">Anda telah menghantar video</string>
+    <string name="convo_preview_msg_desc_other_video">%1$s telah menghantar video</string>
+    <string name="convo_preview_msg_desc_self_youtube">Anda telah menghantar video: %1$s</string>
+    <string name="convo_preview_msg_desc_other_youtube">%1$s telah menghantar video: %2$s</string>
+    <string name="convo_preview_msg_desc_self_voice">Anda telah menghantar pesanan suara</string>
+    <string name="convo_preview_msg_desc_other_voice">%1$s telah menghantar pesanan suara</string>
+    <string name="convo_preview_msg_desc_self_song">Anda telah menghantar lagu: %1$s</string>
+    <string name="convo_preview_msg_desc_other_song">%1$s telah menghantar lagu: %2$s </string>
+    <string name="convo_preview_msg_desc_self_song">Anda telah menghantar lagu: %1$s</string>
+    <string name="convo_preview_msg_desc_other_song">%1$s telah menghantar lagu: %2$s </string>
+    <string name="convo_preview_msg_desc_self_location_current">Anda telah menghantar lokasi anda</string>
+    <string name="convo_preview_msg_desc_other_location_current">%1$s telah menghantar lokasi mereka</string>
+    <string name="convo_preview_msg_desc_self_location">Anda telah menghantar lokasi: %1$s</string>
+    <string name="convo_preview_msg_desc_other_location">%1$s telah menghantar lokasi: %2$s</string>
+    <string name="convo_preview_msg_desc_self_contact">Anda telah memajukan kenalan: %1$s</string>
+    <string name="convo_preview_msg_desc_other_contact">%1$s telah memajukan kenalan: %2$s</string>
+    <string name="convo_preview_msg_desc_self_unknown">Anda telah menghantar mesej yang tidak diketahui.</string>
+    <string name="convo_preview_msg_desc_other_unknown">%1$s telah menghantar mesej yang tidak diketahui</string>
+    <string name="convo_preview_msg_desc_self_sticker">Anda hantar pelekat</string>
+    <string name="convo_preview_msg_desc_other_sticker">%1$sdihantar pelekat</string>
+
+    <!-- No GCM Message Notification -->
+    <string name="no_gcm_notification_title">Pemberitahuan Dimatikan</string>
+    <string name="no_gcm_notification_message_both">Mesej akan hanya diterima apabila MessageMe dibuka. Untuk menghidupkan pemberitahuan, sediakan satu akaun Google, pasang Google Play Store dan mulakan semula peranti anda.</string>
+    <string name="no_gcm_notification_message_account">Mesej akan hanya diterima apabila MessageMe dibuka. Untuk menghidupkan pemberitahuan, sediakan satu akaun Google dan mulakan semula peranti anda.</string>
+    <string name="no_gcm_notification_message_play_app">Mesej akan hanya diterima apabila MessageMe dibuka. Untuk menghidupkan pemberitahuan, pasang Google Play Store dan mulakan semula peranti anda.</string>
+    <string name="no_gcm_notification_message_unrecognized">MessageMe mengalami masalah sewaktu mendayakan pemberitahuan. Pemberitahuan tidak disediakan buat sementara waktu.</string>
+
+    <!-- Errors -->
+    <string name="no_camera_title">Tiada Kamera Ditemui</string>
+    <string name="no_camera_message">MessageMe tidak dapat mengesan kamera pada peranti ini.</string>
+    <string name="no_image_capture_app_title">Tidak dapat Menangkap Foto</string>
+    <string name="no_image_capture_app_message">Nampaknya anda tiada apl untuk menangkap foto yang dipasangkan.</string>
+    <string name="no_video_camera_app_title">Tiada Perakam Video</string>
+    <string name="no_video_camera_app_message">MessageMe tidak dapat mengesan aplikasi untuk merakam video.</string>
+    <string name="no_video_playback_app_title">Tidak dapat Memainkan Video</string>
+    <string name="no_video_playback_app_message">Nampaknya anda tiada apl yang dipasangkan yang boleh memainkan fail video ini.</string>
+
+    <!-- Title when failing to record a voice message -->
+    <string name="unable_to_record_title">Tidak Dapat Merakam</string>
+
+    <!-- Rate the app popup -->
+    <string name="rating_prompt_title">Tarafkan MessageMe</string>
+    <string name="rating_prompt_msg">Jika anda mendapati MessageMe menyeronokkan, bolehkah anda meluangkan sedikit masa untuk menarafkannya? Terima kasih atas sokongan anda!</string>
+    <string name="remind_me_later">Bukan Sekarang</string>
+    <string name="rating_prompt_option_postpone">Bukan Sekarang</string>
+    <string name="rating_prompt_option_rate">Tarafkan MessageMe</string>
+    <string name="rating_prompt_option_support">Hubungi Bahagian Sokongan</string>
+    <string name="rating_prompt_option_never">Tidak</string>
+
+    <!-- Invite flow -->
+    <string name="confirm_invites_title">Sahkan Jemputan</string>
+    <string name="confirm_invites_body">Anda telah memilih %1$s jemputan untuk dihantar menerusi SMS. Anda mungkin dikenakan caj pembawa.</string>
+    <string name="invites_sent_title">Terima kasih!</string>
+    <string name="invites_sent_body">Jemputan anda telah dihantar. Terima kasih atas sokongan anda!</string>
+    <string name="multi_invite_select_all">PILIH SEMUA</string>
+    <string name="multi_invite_deselect_all">NYAHPILIH SEMUA</string>
+    <string name="multi_invite_friends_selected">%1$s RAKAN DIPILIH</string>
+
+    <!-- Share Image -->
+    <string name="sharing_image_not_available_title">Tidak Dapat Kongsi</string>
+    <string name="sharing_image_not_available_message">Imej ini seperti tiada.</string>
+
+    <!-- Stickers -->
+    <string name="sticker_bundle_controller_title">Butir-butir pakej pelekat</string>
+    <string name="sticker_settings_controller_title">Pelekat saya</string>
+    <string name="sticker_buy_button_install">Memasang</string>
+    <string name="sticker_buy_button_installed">Dipasang</string>
+    <string name="sticker_buy_button_purchased">Dibeli</string>
+    <string name="sticker_expires_day">Terhad: Akan tamat dalam 1 hari</string>
+    <string name="sticker_expires_days">Terhad: Tamat pada %1$s hari</string>
+    <string name="sticker_expires_hour">Terhad: Tamat dalam 1 jam</string>
+    <string name="sticker_expires_hours">Terhad: Tamat pada %1$s jam</string>
+    <string name="sticker_expires_minute">Terhad: Tamat dalam 1 minit</string>
+    <string name="sticker_expires_minutes">Terhad: Tamat pada %1$s minit</string>
+    <string name="sticker_expired">Tiada lagi</string>
+    <string name="sticker_shop_controller_title">Mendapatkan lebih banyak pelekat</string>
+    <string name="sticker_alert_installed_title">Pek pelekat yang dipasang</string>
+    <string name="sticker_alert_installed_body">Anda kini boleh menghantar pelekat dari %1$s kepada rakan-rakan anda.</string>
+    <string name="sticker_message_none_installed">Anda tidak mempunyai mana-mana pek pelekat yang dipasang.</string>
+    <string name="sticker_message_none_purchased">Anda tidak membeli apa-apa pelekat pek.</string>
+    <string name="sticker_button_get_more">Mendapatkan lebih banyak pelekat</string>
+
+    <!-- Country names -->
+    <string name="AF">Afghanistan</string>
+    <string name="AL">Albania</string>
+    <string name="DZ">Algeria</string>
+    <string name="AS">Samoa Amerika</string>
+    <string name="AD">Andorra</string>
+    <string name="AO">Angola</string>
+    <string name="AI">Anguilla</string>
+    <string name="AG">Antigua dan Barbuda</string>
+    <string name="AR">Argentina</string>
+    <string name="AM">Armenia</string>
+    <string name="AW">Aruba</string>
+    <string name="AU">Australia</string>
+    <string name="AT">Austria</string>
+    <string name="AZ">Azerbaijan</string>
+    <string name="BS">Bahamas</string>
+    <string name="BH">Bahrain</string>
+    <string name="BD">Bangladesh</string>
+    <string name="BB">Barbados</string>
+    <string name="BY">Belarus</string>
+    <string name="BE">Belgium</string>
+    <string name="BZ">Belize</string>
+    <string name="BJ">Benin</string>
+    <string name="BM">Bermuda</string>
+    <string name="BT">Bhutan</string>
+    <string name="BO">Bolivia</string>
+    <string name="BA">Bosnia dan Herzegovina</string>
+    <string name="BW">Botswana</string>
+    <string name="BR">Brazil</string>
+    <string name="IO">Wilayah Lautan India British</string>
+    <string name="BN">Brunei</string>
+    <string name="BG">Bulgaria</string>
+    <string name="BF">Burkina Faso</string>
+    <string name="BI">Burundi</string>
+    <string name="KH">Kambodia</string>
+    <string name="CM">Cameroon</string>
+    <string name="CA">Kanada</string>
+    <string name="CV">Tanjung Verde</string>
+    <string name="KY">Kepulauan Cayman</string>
+    <string name="CF">Republik Afrika Tengah</string>
+    <string name="TD">Chad</string>
+    <string name="CL">Chile</string>
+    <string name="CN">China</string>
+    <string name="CX">Pulau Krismas</string>
+    <string name="CC">Kepulauan Cocos (Keeling)</string>
+    <string name="CO">Colombia</string>
+    <string name="CG">Congo</string>
+    <string name="CK">Kepulauan Cook</string>
+    <string name="CR">Costa Rica</string>
+    <string name="CI">Cote d\'Ivoire</string>
+    <string name="HR">Croatia</string>
+    <string name="CU">Cuba</string>
+    <string name="CW">Curaçao</string>
+    <string name="CY">Cyprus</string>
+    <string name="CZ">Republik Czech</string>
+    <string name="CD">Republik Demokratik Congo</string>
+    <string name="DK">Denmark</string>
+    <string name="DJ">Djibouti</string>
+    <string name="DM">Dominica</string>
+    <string name="DO">Republik Dominika</string>
+    <string name="EC">Ecuador</string>
+    <string name="EG">Mesir</string>
+    <string name="SV">El Salvador</string>
+    <string name="GQ">Guinea Khatulistiwa</string>
+    <string name="ER">Eritrea</string>
+    <string name="EE">Estonia</string>
+    <string name="ET">Habsyah</string>
+    <string name="FK">Kepulauan Falkland (Malvinas)</string>
+    <string name="FO">Kepulauan Faroe</string>
+    <string name="FJ">Fiji</string>
+    <string name="FI">Finland</string>
+    <string name="FR">Perancis</string>
+    <string name="GF">Guiana Perancis</string>
+    <string name="PF">Polynesia Perancis</string>
+    <string name="GA">Gabon</string>
+    <string name="GM">Gambia</string>
+    <string name="GE">Georgia</string>
+    <string name="DE">Jerman</string>
+    <string name="GH">Ghana</string>
+    <string name="GI">Gibraltar</string>
+    <string name="GR">Greece</string>
+    <string name="GL">Greenland</string>
+    <string name="GD">Grenada</string>
+    <string name="GP">Guadeloupe</string>
+    <string name="GU">Guam</string>
+    <string name="GT">Guatemala</string>
+    <string name="GG">Guernsey</string>
+    <string name="GN">Guinea</string>
+    <string name="GW">Guinea-Bissau</string>
+    <string name="GY">Guyana</string>
+    <string name="HT">Haiti</string>
+    <string name="VA">Takhta Suci (Negara Kota Vatikan)</string>
+    <string name="HN">Honduras</string>
+    <string name="HK">Hong Kong</string>
+    <string name="HU">Hungary</string>
+    <string name="IS">Iceland</string>
+    <string name="IN">India</string>
+    <string name="ID">Indonesia</string>
+    <string name="IR">Iran</string>
+    <string name="IQ">Iraq</string>
+    <string name="IE">Ireland</string>
+    <string name="IM">Isle of Man</string>
+    <string name="IL">Israel</string>
+    <string name="IT">Italy</string>
+    <string name="JM">Jamaica</string>
+    <string name="JP">Jepun</string>
+    <string name="JE">Jersey</string>
+    <string name="JO">Jordan</string>
+    <string name="KZ">Kazakhstan</string>
+    <string name="KE">Kenya</string>
+    <string name="KI">Kiribati</string>
+    <string name="KW">Kuwait</string>
+    <string name="KG">Kyrgyzstan</string>
+    <string name="LA">Laos</string>
+    <string name="LV">Latvia</string>
+    <string name="LB">Lubnan</string>
+    <string name="LS">Lesotho</string>
+    <string name="LR">Liberia</string>
+    <string name="LY">Libya</string>
+    <string name="LI">Liechtenstein</string>
+    <string name="LT">Lithuania</string>
+    <string name="LU">Luxembourg</string>
+    <string name="MO">Macau</string>
+    <string name="MK">Macedonia</string>
+    <string name="MG">Madagascar</string>
+    <string name="MW">Malawi</string>
+    <string name="MY">Malaysia</string>
+    <string name="MV">Kepulauan Maldives</string>
+    <string name="ML">Mali</string>
+    <string name="MT">Malta</string>
+    <string name="MH">Kepulauan Marshall</string>
+    <string name="MQ">Martinique</string>
+    <string name="MR">Mauritania</string>
+    <string name="MU">Mauritius</string>
+    <string name="YT">Mayotte</string>
+    <string name="MX">Mexico</string>
+    <string name="FM">Mikronesia</string>
+    <string name="MD">Moldova</string>
+    <string name="MC">Monaco</string>
+    <string name="MN">Mongolia</string>
+    <string name="ME">Montenegro</string>
+    <string name="MS">Montserrat</string>
+    <string name="MA">Maghribi</string>
+    <string name="MZ">Mozambique</string>
+    <string name="MM">Myanmar</string>
+    <string name="NA">Namibia</string>
+    <string name="NR">Nauru</string>
+    <string name="NP">Nepal</string>
+    <string name="NL">Belanda</string>
+    <string name="NC">New Caledonia</string>
+    <string name="NZ">New Zealand</string>
+    <string name="NI">Nicaragua</string>
+    <string name="NE">Niger</string>
+    <string name="NG">Nigeria</string>
+    <string name="NU">Niue</string>
+    <string name="NF">Pulau Norfolk</string>
+    <string name="MP">Mariana Utara</string>
+    <string name="NO">Norway</string>
+    <string name="OM">Oman</string>
+    <string name="PK">Pakistan</string>
+    <string name="PW">Palau</string>
+    <string name="PS">Wilayah Palestin</string>
+    <string name="PA">Panama</string>
+    <string name="PG">Papua New Guinea</string>
+    <string name="PY">Paraguay</string>
+    <string name="PE">Peru</string>
+    <string name="PH">Filipina</string>
+    <string name="PL">Poland</string>
+    <string name="PT">Portugal</string>
+    <string name="PR">Puerto Rico</string>
+    <string name="QA">Qatar</string>
+    <string name="RE">Reunion</string>
+    <string name="RO">Romania</string>
+    <string name="RU">Rusia</string>
+    <string name="RW">Rwanda</string>
+    <string name="BL">Saint Barthélemy</string>
+    <string name="SH">Saint Helena</string>
+    <string name="KN">Saint Kitts dan Nevis</string>
+    <string name="LC">Saint Lucia</string>
+    <string name="MF">Saint Martin (Wilayah Perancis)</string>
+    <string name="PM">Saint Pierre dan Miquelon</string>
+    <string name="VC">Saint Vincent dan Grenadines</string>
+    <string name="WS">Samoa</string>
+    <string name="SM">San Marino</string>
+    <string name="ST">Sao Tome dan Principe</string>
+    <string name="SA">Arab Saudi</string>
+    <string name="SN">Senegal</string>
+    <string name="RS">Serbia</string>
+    <string name="SC">Seychelles</string>
+    <string name="SL">Sierra Leone</string>
+    <string name="SG">Singapura</string>
+    <string name="SX">Sint Maarten</string>
+    <string name="SK">Slovakia</string>
+    <string name="SI">Slovenia</string>
+    <string name="SB">Kepulauan Solomon</string>
+    <string name="SO">Somalia</string>
+    <string name="ZA">Afrika Selatan</string>
+    <string name="SS">Sudan Selatan</string>
+    <string name="KR">Korea Selatan</string>
+    <string name="ES">Sepanyol</string>
+    <string name="LK">Sri Lanka</string>
+    <string name="SD">Sudan</string>
+    <string name="SR">Suriname</string>
+    <string name="SJ">Svalbard dan Jan Mayen</string>
+    <string name="SZ">Swaziland</string>
+    <string name="SE">Swedia</string>
+    <string name="CH">Switzerland</string>
+    <string name="SY">Syria</string>
+    <string name="TW">Taiwan</string>
+    <string name="TJ">Tajikistan</string>
+    <string name="TZ">Tanzania</string>
+    <string name="TH">Thailand</string>
+    <string name="TL">Timor-Leste</string>
+    <string name="TG">Togo</string>
+    <string name="TK">Tokelau</string>
+    <string name="TO">Tonga</string>
+    <string name="TT">Trinidad dan Tobago</string>
+    <string name="TN">Tunisia</string>
+    <string name="TR">Turki</string>
+    <string name="TM">Turkmenistan</string>
+    <string name="TC">Kepulauan Turks dan Caicos</string>
+    <string name="TV">Tuvalu</string>
+    <string name="UG">Uganda</string>
+    <string name="UA">Ukraine</string>
+    <string name="AE">Emiriyah Arab Bersatu</string>
+    <string name="GB">United Kingdom</string>
+    <string name="US">Amerika Syarikat</string>
+    <string name="UY">Uruguay</string>
+    <string name="UZ">Uzbekistan</string>
+    <string name="VU">Vanuatu</string>
+    <string name="VE">Venezuela</string>
+    <string name="VN">Vietnam</string>
+    <string name="VG">Kepulauan Virgin United Kingdom</string>
+    <string name="VI">Kepulauan Virgin Amerika Syarikat</string>
+    <string name="WF">Wallis dan Futuna</string>
+    <string name="YE">Yaman</string>
+    <string name="ZM">Zambia</string>
+    <string name="ZW">Zimbabwe</string>
+
+</resources>

@@ -1,0 +1,912 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <!-- ======================================== -->
+    <!--
+         Global configuration for the application 
+         These strings must NOT be translated!
+    -->
+    <!-- ======================================== -->
+
+    
+    <!-- ======================================== -->
+    <!--
+         Text for display within the application 
+         The strings below SHOULD be translated!
+    -->
+    <!-- ======================================== -->
+
+    <string name="app_name">MessageMe</string>
+    <string name="app_title">Message Me</string>
+    <string name="splash">Velkommen til MessageMe</string>
+    <string name="menu_settings">Innstillinger</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="menu_refresh">Oppdater</string>
+    <string name="menu_search">Søk</string>
+    <string name="menu_share">Del</string>
+    <string name="menu_send_photo">Send bilde</string>
+    <string name="menu_send_location">Send lokalitet</string>
+    <string name="menu_send_song">Send sang</string>
+    <string name="menu_send_doodle">Send drodling</string>
+    <string name="menu_send_video">Send video</string>
+    <string name="menu_user_add">Legg til kontakter</string>
+    <string name="menu_done">Ferdig</string>
+    <string name="menu_compose">Skriv </string>
+    <string name="menu_edit">Rediger</string>
+    <string name="loading">Laster inn …</string>
+    <string name="adding_contact">Legger til kontakt …</string>
+    <string name="removing_contact">Fjerner kontakt ...</string>
+    <string name="network_settings">Innstillinger</string>
+    <string name="network_error_title">Kan ikke tilkoble</string>
+    <string name="network_error_start_up">Sørg for at du ikke er i flymodus og at du har tilgang til trådløst internett eller mobilnett.</string>
+    <string name="network_error">Sjekk dine nettverksinnstillinger og dine instillinger for trådøst nettverk.</string>
+    <string name="invalid_email">Ugyldig e-post</string>
+    <string name="network_timed_out">Det oppstod et tidsavbrudd for tilkoblingen, prøv igjen senere</string>
+    <string name="invalid_number">Telefonnummeret er ikke i forventet format. Rett dette opp og prøv på nytt (du trenger ikke å inkludere landskoden).</string>
+    <string name="unexpected_error_title">Uventet feil</string>
+    <string name="unexpected_error">Det oppstod en uventet feil, prøv igjen senere</string>
+    <string name="next_btn">Neste</string>
+    <string name="db_upgrade_message">Oppgraderer database</string>
+    <string name="db_upgrading_message">Oppdaterer…</string>
+    <string name="db_downgrade_title">Nedgrader feil</string>
+    <string name="db_downgrade_message">Du kan ikke installere en eldre versjon av applikasjonen når det allerede er installert en nyere versjon av den. \n\n</string>
+    <string name="app_upgrade_optional_title">Oppdatering tilgjengelig</string>
+    <string name="app_upgrade_optional_message">En ny versjon av MessageMe er tilgjengelig.</string>
+    <string name="app_upgrade_mandatory_title">Nødvendig oppdatering</string>
+    <string name="app_upgrade_mandatory_message">En nødvendig oppdatering er tilgjengelig for MessageMe. Oppdater for å fortsette.</string>
+    <string name="app_upgrade_btn_update">Oppdater</string>
+    <string name="app_upgrade_btn_later">Senere</string>
+
+    <!-- Create Group Chat -->
+    <string name="add_group_contact">Legg til gruppekontakt</string>
+    <string name="group_name_input">Skriv inn gruppenavn</string>
+    <string name="group_creation_question_label">Hva heter gruppen?</string>
+    <string name="group_add_names_label">Skriv inn medlemmens navn</string>
+    <string name="group_select_contacts_title">Velg medlemer</string>
+    <string name="group_warning_title">Kunne ikke opprette gruppe</string>
+    <string name="group_name_invalid">Gruppenavnet kan ikke være tomt.</string>
+
+    <!-- Contact List -->
+    <string name="invite_friends_label">Inivter venner</string>
+    <string name="create_new_group_label">Ny gruppechat</string>
+    <string name="connection_error">Feil ved oppdatering av kontakter, ingen Internett-forbindelse</string>
+    <string name="search_contacts_hint">Søk kontakter</string>
+
+    <!--
+         Popup text shown if the device does not have any SMS or Email 
+         applications.  This is shown in the user's current language.
+    -->
+    <string name="picker_invite_unavailable_title">http://msg.me</string>
+    <string name="picker_invite_unavailable">Fortell vennene dine at de kan følge koblingen ovenfor på mobiltelefonen for å få MessageMe, dermed kan de starte å tekste gratis i dag!</string>
+
+    <!-- Tabs Headers -->
+    <string name="messages_tab_header">MELDINGER</string>
+    <string name="contacts_tab_header">KONTAKTER</string>
+    <string name="myprofile_tab_header">MIN PROFIL</string>
+    <string name="refresh_contacts">Oppdater</string>
+    <string name="new_message_lbl">Ny melding</string>
+    <string name="unread_messages_top_value">99+</string>
+
+    <!-- Chat Client UI -->
+    <string name="send_btn">SEND</string>
+    <string name="message_input">Skriv melding</string>
+    <string name="voice_message_recording_label">Tar opp</string>
+    <string name="voice_input_instruction_a">Klikk og hold hvor som helst</string>
+    <string name="voice_input_instruction_b">for å ta opp og sende</string>
+    <string name="voice_input_done_btn">Ferdig</string>
+    <string name="voice_message_playback_label">Spill av eller sett denne stemmemeldingen på pause.</string>
+    <string name="media_message_playback_label">Spill av eller sett mediaet på pause.</string>
+    <string name="chat_failure_title">Meldingen din ble ikke sendt</string>
+    <string name="chat_failure_try_again">Prøv igjen</string>
+    <string name="chat_failure_delete">Slett</string>
+    <string name="chat_failure_cancel">Avbryt</string>
+    <string name="chat_seen_by">Sett av %1$s</string>
+    <string name="chat_and">og</string>
+    <string name="chat_at">klokken</string>
+    <string name="chat_on">den</string>
+    <string name="chat_yesterday">i går</string>
+    <string name="chat_others">andre</string>
+    <string name="info_label">Informasjon</string>
+    <string name="sending_video_error_title">Feil ved sending av video</string>
+    <string name="sending_image_error_title">Feil ved bildesending</string>
+    <string name="sending_image_error_description">Enten er det valgte bildet for stort, eller så er for mye av enhets minne brukt. Velg et mindre bilde eller prøv på nytt senere.</string>
+    <string name="sending_image_error_disk_space">Sjekk at du har nok plass tilgengelig for intern lagring.</string>
+    <string name="forward_text_message_meta">%1$s: \"%2$s\" den %3$s</string>
+    <string name="no_google_maps_error">Det er ikke installert Google Maps på enheten din. Installer Google Maps og prøv på nytt.</string>
+    <string name="no_google_maps_error_title">Google Maps er nødvendig</string>
+
+    <!-- Log In UI -->
+    <string name="welcome">Velkommen til MessageMe</string>
+    <string name="first_name_label">Fornavn</string>
+    <string name="last_name_label">Etternavn</string>
+    <string name="password_label">Passord</string>
+    <string name="log_in_label">Logg inn</string>
+    <string name="required_fields_alert_title">Obligatoriske felt</string>
+    <string name="required_fields_alert_body">Fyll ut alle de obligatoriske feltene</string>
+    <string name="auth_progress_message">Godkjenner</string>
+    <string name="auth_error">Feil ved innlogging</string>
+    <string name="login_error">E-posten eller passordet som du skrev inn er feil. Sjekk at du skrev rett og prøv på nytt.</string>
+    <string name="password_invalid_title">Feil passord</string>
+    <string name="password_invalid_body">Det nye passordet må bestå av minst 5 tegn.</string>
+    <string name="phone_invalid_title">Ugyldig telefonnummer</string>
+    <string name="phone_invalid_message">Sjekk igjen og prøv på nytt.</string>
+    <string name="signup_email_auth_error_email_title">Ugyldig e-post</string>
+    <string name="signup_email_auth_error_email_message">E-postadressen som du skrev inn er ikke gyldig. Sjekk at den er rett og prøv på nytt.</string>
+    <string name="auth_error_email_exists">E-postadressen som du skrev inn er allerede registrert som en MessageMe-bruker. Dersom du er kontoeieren, anbefaler vi at du logger deg inn.</string>
+    <string name="login_incorrect_email">Feil e-post</string>
+    <string name="login_incorrect_email_message">E-postadressen som du skrev inn tilhører ikke noen konto. Sjekk at den er rett og prøv på nytt.</string>
+    <string name="login_invalid_phone_title">Feil telefonnummer eller passord</string>
+    <string name="login_invalid_phone_body">Kontroller telefonnummeret (inkluder landskoden) og passordet ditt, og prøv igjen.</string>
+    <string name="login_incorrect_phone">Feil telefonnummer</string>
+    <string name="login_incorrect_phone_message">Telefonnummeret som du skrev inn tilhører ingen konto. Kontroller telefonnummeret (inkluder landskoden) ditt og, og prøv igjen.</string>
+    <string name="login_account_not_found">Kontoen ble ikke funnet</string>
+    <string name="login_account_not_found_message">Vi fant ingen konto som er knyttet til: %1$s </string>
+    <string name="signup">Registrerer</string>
+    <string name="bullet_separator">·</string>
+    <string name="signup_pin_call_pending">Ringer om %1$s</string>
+    <string name="signup_pin_call_ready">Ring meg nå</string>
+    <string name="signup_pin_callin">Ringer</string>
+    <string name="signup_pin_sent_title">Bekreftelsekode er sendt</string>
+    <string name="signup_pin_sms_sent">Vi sender deg en SMS som inneholder en bekreftelsekode til %1$s. Dersom du ikke mottar den snart, kontakt kundeservice.</string>
+    <string name="contact_support">Kontakt kundeservice</string>
+    <string name="okay">Ok</string>
+    <string name="support_email">support@messageme.com</string>
+
+    <!-- ChatActivity UI -->
+    <string name="send_message">Send</string>
+    <string name="sending_message">Send melding …</string>
+    <string name="forwarding_message">Videresend melding …</string>
+    <string name="send_voice_dialog">Sender stemmemelding …</string>
+    <string name="send_video_dialog">Sender videomelding …</string>
+    <string name="select_source">Velg en handling</string>
+    <string name="clipboard_copy">Kopiert til utklippstavlen</string>
+    <string name="load_earlier_messages">Laster inn tidligere meldinger</string>
+    <string name="unsupported_message_text">Oppdater for å se denne meldingen</string>
+    <string name="copy_lbl">Kopi</string>
+    <string name="select_action">Velg en handling</string>
+
+    <!-- MessagesFragment UI -->
+    <string name="attachment_msg">Melding med vedlegg</string>
+    <string name="yesterday_label">I går</string>
+    <string name="messages_failure">Feil ved levering av melding</string>
+    <string name="search_messages_lbl">Søk meldinger</string>
+    <string name="conversation_lbl">Samtale</string>
+    <string name="delete_lbl">Slett</string>
+    <string name="confirm_deletion">Bekreft sletting</string>
+    <string name="confirm_deletion_message">Meldingene i denne samtalen blir slettet permanent</string>
+    <string name="delete_conversation">Slett samtale</string>
+
+    <!-- Select Photo -->
+    <string name="accept">Aksepter</string>
+    <string name="cancel">Avbryt</string>
+    <string name="select_photo">Velg bilde</string>
+    <string name="select_photo_preview">Velg fotoforhåndsvisning</string>
+
+    <!-- Select location -->
+    <string name="select_location_title">Steder i nærheten</string>
+    <string name="select_location_hint">Søk etter steder i nærheten</string>
+    <string name="select_location_current">Nåværende sted</string>
+    <string name="select_location_loadmore">Flere steder i nærheten…</string>
+    <string name="select_location_getting_location">Ser etter nåværende lokalisasjon …</string>
+    <string name="distance_format">%1$.1f</string>
+    <string name="miles_unit">MI</string>
+    <string name="feet_unit">fot</string>
+    <string name="kilometers_unit">km</string>
+    <string name="meters_unit">meter</string>
+    <string name="location_unavailable">Din nåværende lokalisasjon er utilgjengelig</string>
+    <string name="search_location_lbl">Søk etter steder i nærheten</string>
+
+    <!-- Select Youtube video -->
+    <string name="views_label">Visninger</string>
+    <string name="loading_videos_lbl">Laster inn videoer …</string>
+
+    <!-- Video Selector -->
+    <string name="select_camera_video">Ta opp en video</string>
+    <string name="select_youtube_video">YouTube-video</string>
+    <string name="select_gallery_video">Velg eksisterende</string>
+
+    <!-- Menu Options -->
+    <string name="doodle_label">Drodling</string>
+    <string name="doodle_button_label">Drodling-knapp</string>
+    <string name="location_label">Sted</string>
+    <string name="location_button_label">Lokaliserings-knapp </string>
+    <string name="picture_label">Bilde</string>
+    <string name="picture_button_label">Bilde-knapp</string>
+    <string name="music_label">Musikk</string>
+    <string name="music_button_label">Musikk-knapp</string>
+    <string name="video_label">Video</string>
+    <string name="video_button_label">Video-knapp</string>
+    <string name="voice_label">Stemme</string>
+    <string name="voice_button_label">Stemmeknapp</string>
+    <string name="sticker_label">Klistremerke</string>
+    <string name="sticker_button_label">Klistremerke-knapp</string>
+    <string name="money_label">Penger</string>
+    <string name="money_button_label">Pengeknapp</string>
+    <string name="send_by_sms">Send via SMS</string>
+    <string name="send_by_email">Send vi e-post</string>
+
+    <!-- Profile/Cover Action Sheet -->
+    <string name="pic_update_dialog_title">Velg en handling</string>
+
+    <string-array name="pic_update_dialog_options">
+        <item>Oppdater profilbildet</item>
+        <item>Oppdater forsidebilde</item>
+    </string-array>
+
+    <!-- Video Action Sheet -->
+    <string name="video_dialog_title">Velg en handling</string>
+
+    <!-- Doodle Composer -->
+    <string name="background_dialog_title">Endre bakgrunn</string>
+    <string name="background_is_not_available">Det valgte bilde er ikke tilgjengelig.</string>
+    <string name="error_downloading_image">Feil ved nedlasting av valgte bilde, prøv igjen senere.</string>
+    <string name="doodle_exit_title">Drodlingen din blir fjernet!</string>
+    <string name="doodle_exit_msg">Er du sikker på at du vil fortsette?</string>
+
+    <!-- In-App Notifications -->
+    <string name="notification_icon_description">Varselikon for MessageMe</string>
+    <string name="notification_media_thumbnail_description">Medieminiatyrbildeikon</string>
+    <string name="error_uploading_media">Det oppstod en feil ved opplasting av media, prøv igjen senere</string>
+    <string name="notification_contact_description">Delte en kontakt med deg: %1$s</string>
+    <string name="notification_image_description">Sendte deg et bilde</string>
+    <string name="notification_doodle_description">Sendte deg en drodling</string>
+    <string name="notification_doodlepic_description">Sende deg et Doodlepic</string>
+    <string name="notification_location_description_them">Sendte deg deres lokalisering</string>
+    <string name="notification_location_description_other">Sendte deg en lokalisering: %1$s</string>
+    <string name="notification_unsupported_msg_type">Sende deg en melding</string>
+    <string name="notification_video_description">Sendte deg en video</string>
+    <string name="notification_video_with_name_description">Video: %1$s</string>
+    <string name="notification_voice_description">Sende deg en stemmemelding</string>
+    <string name="notification_sticker_description">Sendte deg et klistremerke</string>
+    <!-- e.g. Music: "Hey Jude" by The Beatles -->
+    <string name="notification_song_description">Musikk: %1$s av %2$s</string>
+    <string name="group_addition">Lagt til gruppen:</string>
+    <string name="notification_online_status">er:</string>
+    <string name="user_banner_desc">ble nylig medlem av MessageMe</string>
+    <string name="ab_match_desc">Send en melding til dem nå!</string>
+
+    <!-- My Profile -->
+    <string name="contact_information_label">Kontaktinformasjon</string>
+    <string name="contact_id_label">Din PIN-kode på MessageMe:</string>
+    <string name="contact_friends_add">Vennene dine kan legge deg til ved å bruke denne PIN-koden</string>
+    <string name="contact_share_profile_btn">Del profilen</string>
+    <string name="contact_forward_contact">Videre send kontakt</string>
+    <string name="contact_send_message">Send melding</string>
+    <string name="image_upload_fail_title">Opplastingsfeil</string>
+    <string name="image_upload_fail">Bildeopplasting mislykkes, prøv på nytt</string>
+    <string name="find_friends_lbl">Finn og legg til venner</string>
+    <string name="settings_alert_title">Innstillinger kommer snart</string>
+    <string name="settings_alert_message">Kontakt support@messageme.com for hjelp.</string>
+    <string name="uploading_photo">Laster opp bilde…</string>
+    <string name="aws_time_offset_error_title">Kan ikke laste opp</string>
+    <string name="aws_time_offset_error_message">Det oppstod et problem ved å rette tid og dato for enheten din. Gå til enhetens innstillinger &gt; Dato og tid, angi dato og tid til automatisk, prøv deretter igjen.</string>
+
+    <!-- Contact Profile -->
+    <string name="alerts_label">Varslinger</string>
+    <string name="notifications_label">Varslinger</string>
+    <string name="alerts_on">Alltid på</string>
+    <string name="alerts_off_for_1_hour">Av i 1 time</string>
+    <string name="alerts_off_for_3_days">Av i 3 dager</string>
+    <string name="alerts_off_until">Av til</string>
+    <string name="remove_contact_label">Fjern kontakt</string>
+    <string name="alerts_dialog_title">Angi varslingsalternativer</string>
+    <string name="contact_profile_add_contact_label">Legg til kontakt</string>
+
+    <!-- Blocking / unblocking users -->
+    <string name="block_label">Blokk</string>
+    <string name="unblock_label">Opphev blokkering</string>
+    <string name="profile_block_contact_action">Blokker kontakt ...</string>
+    <string name="profile_unblock_contact_action">Opphever blokkering av kontakt ...</string>
+    <string name="composer_user_is_blocked">Du har blokkert denne brukeren. For å oppheve blokkeringen, send dem en melding.</string>
+    <string name="composer_user_blocked_by">Du har blitt blokkert av denne brukeren, dermed kan du ikke sende meldinger til vedkommende.</string>
+    <string name="blocked">Blokkert</string>
+    <string name="unblocked">Blokkering opphevet</string>
+    <string name="blocked_msg">Du har blokkert %1$s</string>
+    <string name="blocked_by_msg">Du har blitt blokkert av %1$s</string>
+    <string name="unblocked_msg">Du har opphevet blokkeringen av %1$s</string>
+    <string name="forward_blocked_by_msg">Du kan ikke videresende til %1$s. Du har blitt blokkert av %2$s</string>
+    <string name="group_add_user_unauthorized">Du har blitt blokkert av %1$s og kan ikke legge dem til gruppen.</string>
+    <string name="group_add_user_not_found">Vi kan ikke finne personen som du vil legge til denne gruppen.</string>
+    <!-- Message shown when you try to add a user to a group and that user has blocked you -->
+    <string name="create_room_members_blocked_by">%1$s  kan ikke legges til %2$s. Du har blitt blokkert av %3$s.</string>
+    <!-- Message shown when you try to add a user to a group and you have blocked that user -->
+    <string name="create_room_members_is_blocked">%1$s kan ikke legges til %2$s. Du har blokkert %3$s.</string>
+
+    <!-- Mentor banners -->
+    <string name="mentor_banner_blockedby_title">%1$s blokkerte deg</string>
+    <string name="mentor_banner_blockedby_desc">Du kan ikke sende eller motta meldinger fra %1$s</string>
+    <string name="mentor_banner_blocked_title">%1$s er blokkert</string>
+    <string name="mentor_banner_blocked_desc">Opphev blokkering av %1$s for å sende og motta meldinger</string>
+    <string name="mentor_banner_not_contact_title">%1$s er ikke en kontakt</string>
+    <string name="mentor_banner_not_contact_desc">Vil du legge til %1$s til kontaktlisten din?</string>
+    <string name="mentor_banner_add_btn">Legg til</string>
+
+    <!-- Group Profile -->
+    <string name="group_profile_send_message">Send melding</string>
+    <string name="group_profile_invite">Inviter personer til gruppen</string>
+    <string name="group_profile_leave">Forlat gruppen</string>
+    <string name="group_profile_num_members">Medlemmer</string>
+    <string name="group_profile_no_contacts">Velg minst ett medlem</string>
+    <string name="group_profile_view_all">Vis alle %1$s medlemmene</string>
+    <string name="group_next">Neste</string>
+    <string name="group_invite">Inviter</string>
+    <string name="unable_leave_group">Kan ikke forlate rommet. Prøv igjen senere.</string>
+    <string name="leave_group_alert_title">Er du sikker?</string>
+    <string name="leave_group_alert_message">Du kan ikke delta på dette rommet igjen!</string>
+    <string name="group_dialog_leave_message">Forlater gruppen</string>
+    <string name="group_dialog_join_message">Legger til kontakt for gruppen</string>
+
+    <!-- Detail Screen -->
+    <string name="detail_screen_reply_doodle">Svar med \"Drodling\"</string>
+    <string name="detail_screen_open_map">Åpne i kart</string>
+    <string name="forward">Videresend</string>
+    <string name="detail_screen_wait_download">Vent mens bilde laster ned</string>
+    <string name="detail_screen_saved_to_gallery">Bilde lagret.</string>
+    <string name="detail_screen_saved_to_gallery_error">Det oppstod en feil på MessageMe ved lagring av bildet til galleriet.</string>
+    <string name="detail_screen_saved_to_gallery_no_sdcard_error">Sørg for at et SD-kort er satt inn og at det ikke er skrivebeskyttet, deretter prøv på nytt.</string>
+    <string name="detail_screen_saved_to_gallery_no_space">SD-kortet er fullt. Frigjør plass og prøv på nytt.</string>
+    <string name="detail_screen_unable_to_copy_title">Kan ikke lagre</string>
+
+    <!-- Search Music -->
+    <string name="search_music_title">Søk musikk</string>
+    <string name="search_music_hint">Søk etter hvilken som helst sang</string>
+    <string name="loading_songs_lbl">Laster inn sanger…</string>
+
+    <!-- Search Youtube Video -->
+    <string name="search_youtube_hint">Send YouTube-video</string>
+
+    <!-- Profile Picture -->
+    <string name="google_images_lbl">Google-bilder</string>
+    <string name="take_photo_lbl">Ta bilde</string>
+    <string name="choose_existing_lbl">Velg eksisterende</string>
+    <string name="search_google_images">Søk Google-bilder</string>
+    <string name="image_search">Bildesøk</string>
+
+    <!-- Landing Page -->
+    <string name="landing_text">Gøy, GRATIS meldinger :)</string>
+    <string name="landing_login_btn">Logg inn</string>
+    <string name="landing_sign_up_btn">Opprett en ny konto</string>
+
+    <!-- Phone Entry -->
+    <string name="phone_entry_header">Ny konto</string>
+    <string name="phone_entry_legend">Bekreft landskoden og skriv inn telefonnummeret ditt</string>
+    <string name="phone_entry_hint">Telefonnummer</string>
+    <string name="phone_entry_dulplicate_number">Nummeret du skrev inn er allerede tilknyttet en konto. Dersom du er kontoeieren, anbefaler vi at du logger deg inn.</string>
+    <string name="phone_entry_dialog_message">Bekrefter telefonnummeret</string>
+    <string name="signup_error">Feil ved registrering</string>
+
+    <!--
+         Choose Country 
+         This is only shown if the user chooses to sync their address book
+         and they do not have a phone number registered with their account.
+    -->
+    <string name="choose_country_title">Velg land</string>
+    <string name="choose_country_legend">Velg landet som du er bosatt i for å finne venner som allerede er på MessageMe.</string>
+
+    <!-- Verify Number -->
+    <string name="verify_number_header">Bekreft nummeret ditt</string>
+    <string name="verify_number_legend">Vi sendte deg nettopp en bekreftelsekode til nummer</string>
+    <string name="verify_number_digit_numbers">Skriv inn den 3-tallsbekreftelsekoden nedenfor</string>
+    <string name="verify_number_signs">###</string>
+    <string name="verify_number_resend_code">Send koden på nytt</string>
+    <string name="verify_number_dialog_message">Sender PIN-koden</string>
+    <string name="verify_number_error">PIN-koden som du skrev inn er feil. Sjekk SMS-en vi sendte og prøv på nytt.</string>
+
+    <!-- Complete Profile -->
+    <string name="complete_profile_header">Fullfør profil</string>
+    <string name="complete_profile_legend">La vennene dine vite hvem du er</string>
+    <string name="email_address">E-postadressen</string>
+    <string name="email_or_phone_hint">E-post eller telefon</string>
+    <string name="email_lbl">E-post</string>
+    <string name="password_lbl">Passord</string>
+    <string name="first_name_hint">Obligatorisk</string>
+    <string name="last_name_hint">Obligatorisk</string>
+    <string name="email_hint">you@email.com</string>
+    <string name="password_hint">Velg passord</string>
+    <string name="complete_profile_submit">Start å sende meldinger</string>
+    <string name="complete_profile_no_data">Fyll ut alle feltene.</string>
+    <string name="complete_profile_registered_email_error">E-posten er allerede registrert med en annen MessageMe-bruker.</string>
+    <string name="connect_with_fb">Koble til med Facebook</string>
+    <string name="complete_profile_fb">Vil du fullføre profilen din med Facebook?</string>
+    <string name="facebook_auth_collision">%1$s, Ser ut som du allerede har en konto</string>
+
+    <!-- Create Login -->
+    <string name="create_login_legend">Skriv inn e-posten og velg et passord for å logge inn senere</string>
+    <string name="fb_account_link_error">Feil ved kobling til Facebook-konto, prøv igjen senere</string>
+
+    <!-- Search Web Images UI -->
+    <string name="generic_error_title">Feil</string>
+    <string name="loading_images_lbl">Laster inn bilder …</string>
+    <string name="download_image_lbl">Laster ned bilde …</string>
+
+    <!-- Message Bubble Accessibility Text -->
+    <string name="msg_bubble_sent_location">Sendt plassering for miniatyrbilde, klikk for å vise</string>
+    <string name="msg_bubble_sent_photo">Sendte et bilde som miniatyrbilde, klikk for å vise</string>
+    <string name="msg_bubble_sent_song">Sendte miniatyrbilde for sang, klikk for å lytte</string>
+    <string name="msg_bubble_sent_video">Sendte en video som miniatyrbilde, klikk for å spille av</string>
+    <string name="msg_bubble_sent_youtube">Send ditt YouTube minatyrbile og klikk på spill av</string>
+    <string name="msg_bubble_received_location">Mottok lokalisasjon for miniatyrbilde, klikk for å vise</string>
+    <string name="msg_bubble_received_photo">Mottok et bilde som miniatyrbilde, klikk for å vise</string>
+    <string name="msg_bubble_received_song">Mottok miniatyrbilde for sang, klikk for å høre</string>
+    <string name="msg_bubble_received_video">Mottok video-miniatyrbilde, klikk for å spille</string>
+    <string name="msg_bubble_received_youtube">Mottok ditt miniatyrbilde fra YouTube, klikk for å spille</string>
+
+    <!-- Friends Invite -->
+    <string name="friends_invite_coming_soon">Kommer snart</string>
+    <string name="friends_invite_title">Finn og legg til venner</string>
+    <string name="friends_invite_header">Legg til en ny venn.</string>
+    <string name="friends_invite_sub_header">Skriv inn deres telefonnummer, e-post eller PIN-kode</string>
+    <string name="friends_invite_input_hint">Telefon, e-post eller PIN-kode</string>
+    <string name="friends_invite_button">Inviter vennene dine</string>
+    <string name="friends_invite_facebook_button">Legg til Facebook-venner</string>
+    <string name="friends_invite_search_error_title">Søk etter feil</string>
+    <string name="friends_invite_no_user_title">Ingen brukere ble funnet</string>
+    <string name="friends_invite_no_user_body">Det kan være at vennen din ikke har MesageMe. Inviter venner for å tekste gratis i dag!</string>
+    <string name="friends_invite_search_error_invalid">Skriv inn en gyldig e-postadresse, telefonnummer eller PIN-kode</string>
+    <string name="friends_invite_search_error_body">Vi fant ingen. Sjekk det du skrev og prøv på nytt.</string>
+    <string name="friends_invite_contact_added">%1$s ble lagt til adresselisten din.</string>
+    <string name="friends_invite_contact_removed">%1$s ble fjernet fra kontaktlisten din.</string>
+    <string name="friends_invite_send_invite">Send invitasjon</string>
+
+    <!-- No Results Listview -->
+    <string name="no_results_label">Ingen resultater</string>
+
+    <!-- Room Notices -->
+    <string name="room_new_message">Velkommen til den nye gruppen din!</string>
+    <string name="room_new_message_added">%1$s la deg til gruppen</string>
+    <string name="room_join_message_self">Du la %1$s til gruppen</string>
+    <string name="room_join_message_other">%1$s la til %2$s til gruppen</string>
+    <string name="room_leave_message_self">Du forlot gruppen</string>
+    <string name="room_leave_message_other">%1$s forlot gruppen</string>
+    <string name="room_update_message_profile_pic_self">Du endret profilbilde</string>
+    <string name="room_update_message_profile_pic_other">%1$s endret profilbilde</string>
+    <string name="room_update_message_cover_pic_self">Du endret framsidebildet</string>
+    <string name="room_update_message_cover_pic_other">%1$s endret forsidebilde</string>
+    <string name="room_update_message_name_self">Du endret gruppenavnet til %1$s</string>
+    <string name="room_update_message_name_other">%1$s endret gruppenavnet til %2$s</string>
+    <!-- Settings Page -->
+    <string name="version_lbl">Versjon</string>
+    <string name="change_password">Endre passord</string>
+    <string name="edit_profile">Rediger min profil</string>
+    <string name="connected_accounts">Tilkoblete kontoer</string>
+    <string name="connect_with_friends">Hold kontakten med venner på en enklere måte! Informasjonen din vises aldri offentlig.</string>
+    <string name="add_new_phone">Legg til et nytt telefonnummer</string>
+    <string name="diagnostics_section_title">Diagnostikk</string>
+    <string name="diagnostics_section_description">Velg avkrysningsboksen \"Lagre logger\" nedenfor, vent til problemet oppstår igjen og trykk deretter på knappen \"Send logger\".</string>
+    <string name="logging_label">Lagre logger</string>
+    <string name="send_logs">Send logger</string>
+    <string name="logging_is_on">Loggføring er PÅ, gjenskap problmet nå</string>
+    <string name="logging_is_off">Loggføring er AV</string>
+    <string name="send_logs_too_large">Loggfilen var for stor til å sende via e-post</string>
+    <string name="send_logs_failed">Kunne ikke starte e-postapplikasjonen</string>
+    <string name="diagnostics_email_recipient">help@messageme.com</string>
+    <string name="diagnostics_email_subject">Diagnostikk</string>
+    <string name="diagnostics_email_reason">Sender logger …</string>
+    <string name="diagnostics_email_body">Forklar problemet trinn for trinn, med mest mulig informasjon. Takk for hjelpen!</string>
+    <string name="facebook">Facebook</string>
+    <string name="twitter">Twitter</string>
+    <string name="settings_title">Innstillinger</string>
+    <string name="get_help">Få hjelp</string>
+    <string name="about">Om MessageMe</string>
+    <string name="logout">Logg ut</string>
+    <string name="faq">Ofte stilte spørsmål (FAQ)</string>
+    <string name="service_status">Se tjenestestatus</string>
+    <string name="coming_soon">Kommer snart</string>
+    <string name="terms_service">Vilkår for bruk</string>
+    <string name="privacy_policy">Personvernerklæring</string>
+    <string name="no_phone">Ingen registrerte telefonnumre</string>
+    <string name="edit_my_profile">Rediger min profil</string>
+    <string name="save">Lagre</string>
+    <string name="succesfull_update">Brukerinformasjon opplastet</string>
+    <string name="saving">Lagrer …</string>
+    <string name="off_until">Av til %1$s</string>
+    <string name="logout_message">Logg av MessageMe</string>
+    <string name="yes_lbl">Ja</string>
+    <string name="no_lbl">Nei</string>
+    <string name="ok_lbl">OK</string>
+    <string name="log_out_progress_dialog_message">Logger ut</string>
+    <string name="logging_out_error">Feil ved utlogging</string>
+    <string name="setting_page_alert_play_sound">"Spill av lyd ved varsling"</string>
+    <string name="settings_page_alert_vibrate">Vibrer ved varsling</string>
+    <string name="settings_page_notification_light">Varslingslys</string>
+    <string name="sound_alerts_on">Lydvarsling PÅ</string>
+    <string name="sound_alerts_off">Lydvarsler AV</string>
+    <string name="vibrate_alerts_on">Vibrasjon ved varslinger PÅ</string>
+    <string name="vibrate_alerts_off">Vibrasjon ved varslinger AV</string>
+    <string name="notification_lights_on">Varslingslys PÅ</string>
+    <string name="notification_lights_off">Varslingslys AV</string>
+    <string name="retry">Prøv på nytt</string>
+
+    <!-- AddressBook Sync -->
+    <string name="alert_sync_contacts_title">Synkroniser kontakter med adresseboken</string>
+    <string name="alert_sync_contacts_message">Vil du finne venner ved å synkronisere enhetens adressebok med MessageMe?</string>
+
+    <!-- Date Divider -->
+    <string name="date_divier_text">%1$s - %2$s</string>
+
+    <!-- Welcome Message -->
+    <string name="welcome_we_hope">Vi håper at du har det moro med å sende til vennene dine …</string>
+    <string name="welcome_and_more">… og mer!</string>
+    <string name="welcome_tell_us">Gi oss en tilbakemelding på feedback@messageme.com</string>
+    <string name="welcome_doodle_url">u/886796681331478528/m/v7HIOu_0.jpg</string>
+    <string name="welcome_doodle_thumb_url">u/886796681331478528/m/v7HIOu_2.jpg</string>
+    <string name="welcome_user_name">Velkommen!</string>
+    <string name="welcome_user_email">welcome@user.com</string>
+    <string name="welcome_song_artist_name">PSY</string>
+    <string name="welcome_song_track_name">Gangnam Style</string>
+    <string name="welcome_song_artwork_url">http://a1093.phobos.apple.com/us/r1000/094/Music/v4/34/d8/8c/34d88cf8-194d-c8c8-d520-65161d28b4e5/UMG_cvrart_00602537178032_01_RGB72_1200x1200_12UMGIM50914.60x60-50.jpg</string>
+    <string name="welcome_song_preview_url">http://a324.phobos.apple.com/us/r1000/063/Music/10/9c/d8/mzi.htmfnsfo.aac.p.m4a</string>
+    <string name="welcome_song_track_url">https://itunes.apple.com/us/album/gangnam-style-gangnamseutail/id560398387?i=560398388</string>
+    <string name="welcome_location_latitude">37.781703949</string>
+    <string name="welcome_location_longitude">-122.392936707</string>
+    <string name="welcome_location_id">300647603292750</string>
+    <string name="welcome_location_name">Nåværende lokalisasjon</string>
+    <string name="welcome_location_address">300 Brannan St, San Francisco, CA, USA</string>
+
+    <!-- GCM Notifications -->
+    <string name="gcm_new_message">Ny melding</string>
+    <string name="more_lbl">mer</string>
+    <string name="puj">%1$s har blitt medlem av MessageMe</string>
+    <string name="pgl">%1$s  forlot gruppen %2$s</string>
+    <string name="pgup">%1$s endret %2$ss profilbilde</string>
+    <string name="pguc">%1$s endret %2$ss forsidebilde</string>
+    <string name="pgun">%1$s  endret navnet fra %2$s til %3$s</string>
+    <string name="pgao">%1$s ble lagt til %2$s</string>
+    <string name="pga">%1$s la deg til gruppen %2$s</string>
+    <string name="pm">ukjent melding</string>
+    <string name="pmp">%1$s sendte deg et bilde</string>
+    <string name="pmd">%1$s sendte deg en drodling</string>
+    <string name="pmdp">%1$s sendte deg et DoodlePic</string>
+    <string name="pmv">%1$s sendte deg en video</string>
+    <string name="pmy">%1$s  sendte en video: %2$s</string>
+    <string name="pmvc">%1$s sendte deg en stemmemelding</string>
+    <string name="pms">%1$s sendte deg en sang: %2$s av %3$s</string>
+    <string name="pml">%1$s sendte deg en lokalisasjon: %2$s</string>
+    <string name="pmlc">%1$s sendte deg deres lokalisering</string>
+    <string name="pmc">%1$s delte en kontakt med deg: %2$s</string>
+    <string name="pmst">%1$s sendte deg et klistremerke</string>
+    <string name="pabmo">Fant en venn på MessageMe</string>
+    <string name="pabm">Fant %1$s venner på MessageMe</string>
+    <string name="pabm_missing_count_value">Fant venner på MessageMe</string>
+    <string name="pm_unsupported">sendte deg en melding</string>
+    <string name="messageme_system_notif_title">MessageMe</string>
+
+    <!-- Forgot Reset -->
+    <string name="login_forgot_your_password">Glemt passordet ditt?</string>
+    <string name="login_forgot_password">Glemt passord</string>
+    <string name="login_forgot_enter_email">Skriv inn e-posten som tilhører kontoen din.</string>
+    <string name="login_enter_valid_email">Skriv inn en gyldig e-postadresse.</string>
+    <string name="login_password_reset_message">Vi har send en e-post til adressen som du oppgav, e-posten inneholder instruksjoner om hvordan du kan tilbakestille passordet ditt.</string>
+    <string name="reset">Tilbakestill</string>
+    <string name="login_contact_support_message">Det oppstod en feil. Send en e-post til support@messageme.com for å tilbakestille passordet ditt.</string>
+
+    <!-- MessagesFragment labels to display -->
+    <string name="convo_preview_msg_desc_self_picture">Du sendte et bilde</string>
+    <string name="convo_preview_msg_desc_other_picture">%1$s sendte et bilde</string>
+    <string name="convo_preview_msg_desc_self_doodle">Sendte deg en drodling</string>
+    <string name="convo_preview_msg_desc_other_doodle">%1$s sendte en drodling</string>
+    <string name="convo_preview_msg_desc_self_doodlepic">Du sendte et DoodlePic</string>
+    <string name="convo_preview_msg_desc_other_doodlepic">%1$s sendte et DoodlePic</string>
+    <string name="convo_preview_msg_desc_self_video">Du sendte en video</string>
+    <string name="convo_preview_msg_desc_other_video">%1$s sendte en video</string>
+    <string name="convo_preview_msg_desc_self_youtube">Du sendte en video: %1$s</string>
+    <string name="convo_preview_msg_desc_other_youtube">%1$s sendte en video: %2$s</string>
+    <string name="convo_preview_msg_desc_self_voice">Du sendte en stemmemelding</string>
+    <string name="convo_preview_msg_desc_other_voice">%1$s sendte en stemmemelding</string>
+    <string name="convo_preview_msg_desc_self_song">Du sendte en sang: %1$s</string>
+    <string name="convo_preview_msg_desc_other_song">%1$s sendte en sang: %2$s</string>
+    <string name="convo_preview_msg_desc_self_song">Du sendte en sang: %1$s</string>
+    <string name="convo_preview_msg_desc_other_song">%1$s sendte en sang: %2$s</string>
+    <string name="convo_preview_msg_desc_self_location_current">Du sendte lokaliteten din</string>
+    <string name="convo_preview_msg_desc_other_location_current">%1$s sendte sin lokalitet</string>
+    <string name="convo_preview_msg_desc_self_location">Du sendte en lokalisasjon: %1$s</string>
+    <string name="convo_preview_msg_desc_other_location">%1$s sendte en lokalisasjon: %2$s</string>
+    <string name="convo_preview_msg_desc_self_contact">Du videresendte en kontakt: %1$s</string>
+    <string name="convo_preview_msg_desc_other_contact">%1$s videresendte en kontakt: %2$s</string>
+    <string name="convo_preview_msg_desc_self_unknown">Du sendte en ukjent melding</string>
+    <string name="convo_preview_msg_desc_other_unknown">%1$s sendte en ukjent melding</string>
+    <string name="convo_preview_msg_desc_self_sticker">Sendte deg et klistremerke</string>
+    <string name="convo_preview_msg_desc_other_sticker">%1$s sendte et klistremerke</string>
+
+    <!-- No GCM Message Notification -->
+    <string name="no_gcm_notification_title">Varslinger er slått av</string>
+    <string name="no_gcm_notification_message_both">Meldinger mottas bare når MessageMe er åpen. For å slå på varslinger må du konfigurere en Google-konto, installere Google Play Store og starte enheten din på nytt.</string>
+    <string name="no_gcm_notification_message_account">Meldinger kan bare mottaes når MessageMe er åpen. For å slå på varslinger, konfigurer en Google-konto og start enheten på nytt.</string>
+    <string name="no_gcm_notification_message_play_app">Meldinger mottas bare når MessageMe er åpen. For å slå på varslinger må du installere Google Play Store og starte enheten din på nytt.</string>
+    <string name="no_gcm_notification_message_unrecognized">Det oppstod en feil på MessageMe ved varslingsaktivering. Varslinger er midlertidig utilgjengelig.</string>
+
+    <!-- Errors -->
+    <string name="no_camera_title">Fant ingen kamera</string>
+    <string name="no_camera_message">MessageMe kunne ikke finne kamera på denne enheten.</string>
+    <string name="no_image_capture_app_title">Kan ikke ta bilde</string>
+    <string name="no_image_capture_app_message">Du har ikke installert en app for å ta bilder.</string>
+    <string name="no_video_camera_app_title">Ingen videoopptaker</string>
+    <string name="no_video_camera_app_message">MessageMe fant ikke en app for å ta opp video.</string>
+    <string name="no_video_playback_app_title">Kan ikke spille av video</string>
+    <string name="no_video_playback_app_message">Du har ikke installert en app for å spille av denne videofilen. </string>
+
+    <!-- Title when failing to record a voice message -->
+    <string name="unable_to_record_title">Kunne ikke ta opp</string>
+
+    <!-- Rate the app popup -->
+    <string name="rating_prompt_title">Rate MessageMe</string>
+    <string name="rating_prompt_msg">Dersom du liker MessageMe, gi den en rating. Takk for hjelpen!</string>
+    <string name="remind_me_later">Kanskje senere</string>
+    <string name="rating_prompt_option_postpone">Kanskje senere</string>
+    <string name="rating_prompt_option_rate">Rate MessageMe</string>
+    <string name="rating_prompt_option_support">Kontakt kundeservice</string>
+    <string name="rating_prompt_option_never">Nei</string>
+
+    <!-- Invite flow -->
+    <string name="confirm_invites_title">Bekreft invitasjoner</string>
+    <string name="confirm_invites_body">Du valgte at %1$s invitasjoner skal sendes via SMS. Operatørkostnader gjelder.</string>
+    <string name="invites_sent_title">Takk!</string>
+    <string name="invites_sent_body">Dine invitasjoner sendes. Takk for hjelpen!</string>
+    <string name="multi_invite_select_all">VELG ALLE</string>
+    <string name="multi_invite_deselect_all">FJERN ALL MERKING</string>
+    <string name="multi_invite_friends_selected">%1$s  VENNER VALGT</string>
+
+    <!-- Share Image -->
+    <string name="sharing_image_not_available_title">Kan ikke dele</string>
+    <string name="sharing_image_not_available_message">Bildet er ikke tilgjengelig.</string>
+
+    <!-- Stickers -->
+    <string name="sticker_bundle_controller_title">Detaljer for klistremerkepakke</string>
+    <string name="sticker_settings_controller_title">Mine klistremerker</string>
+    <string name="sticker_buy_button_install">Installer</string>
+    <string name="sticker_buy_button_installed">Installert</string>
+    <string name="sticker_buy_button_purchased">Kjøpt</string>
+    <string name="sticker_expires_day">Begrensning: utløper om 1 dag</string>
+    <string name="sticker_expires_days">Begrensning: utløper om %1$s dager</string>
+    <string name="sticker_expires_hour">Begrensning: utløper om 1 time</string>
+    <string name="sticker_expires_hours">Begrensning: utløper om %1$s timer</string>
+    <string name="sticker_expires_minute">Begrensning: utløper om 1 minutt</string>
+    <string name="sticker_expires_minutes">Begrensning: utløper om %1$s minutter</string>
+    <string name="sticker_expired">Er ikke lengre tilgjengelig</string>
+    <string name="sticker_shop_controller_title">Få flere klistremerker</string>
+    <string name="sticker_alert_installed_title">Klistremerkepakke installert</string>
+    <string name="sticker_alert_installed_body">Du kan nå sende klistremerker fra %1$s til vennene dine.</string>
+    <string name="sticker_message_none_installed">Du har ikke installert noen klistremerkepakker.</string>
+    <string name="sticker_message_none_purchased">Du har ikke kjøpt noen klistremerkepakker.</string>
+    <string name="sticker_button_get_more">Få flere klistremerker</string>
+
+    <!-- Country names -->
+    <string name="AF">Afghanistan</string>
+    <string name="AL">Albania</string>
+    <string name="DZ">Algerie</string>
+    <string name="AS">Amerikansk Samoa</string>
+    <string name="AD">Andorra</string>
+    <string name="AO">Angola</string>
+    <string name="AI">Anguilla</string>
+    <string name="AG">Antigua og Barbuda</string>
+    <string name="AR">Argentina</string>
+    <string name="AM">Armenia</string>
+    <string name="AW">Aruba</string>
+    <string name="AU">Australia</string>
+    <string name="AT">Østerrike</string>
+    <string name="AZ">Aserbajdsjan</string>
+    <string name="BS">Bahamas</string>
+    <string name="BH">Bahrain</string>
+    <string name="BD">Bangladesh</string>
+    <string name="BB">Barbados</string>
+    <string name="BY">Hviterussland</string>
+    <string name="BE">Belgia</string>
+    <string name="BZ">Belize</string>
+    <string name="BJ">Benin</string>
+    <string name="BM">Bermuda</string>
+    <string name="BT">Bhutan</string>
+    <string name="BO">Bolivia</string>
+    <string name="BA">Bosnia og Herzegovina</string>
+    <string name="BW">Botswana</string>
+    <string name="BR">Brasil</string>
+    <string name="IO">Det britiske territoriet i Indiahavet</string>
+    <string name="BN">Brunei</string>
+    <string name="BG">Bulgaria</string>
+    <string name="BF">Burkina Faso</string>
+    <string name="BI">Burundi</string>
+    <string name="KH">Kambodsja</string>
+    <string name="CM">Kamerun</string>
+    <string name="CA">Canada</string>
+    <string name="CV">Kapp Verde</string>
+    <string name="KY">Caymanøyene</string>
+    <string name="CF">Den sentralafrikanske republikk</string>
+    <string name="TD">Tsjad</string>
+    <string name="CL">Chile</string>
+    <string name="CN">Kina</string>
+    <string name="CX">Christmasøya</string>
+    <string name="CC">Kokosøyene</string>
+    <string name="CO">Colombia</string>
+    <string name="CG">Kongo</string>
+    <string name="CK">Cookøyene</string>
+    <string name="CR">Costa Rica</string>
+    <string name="CI">Elfenbenskysten</string>
+    <string name="HR">Kroatia</string>
+    <string name="CU">Cuba</string>
+    <string name="CW">Curaçao</string>
+    <string name="CY">Kypros</string>
+    <string name="CZ">Tsjekkia</string>
+    <string name="CD">Den demokratiske republikken Kongo</string>
+    <string name="DK">Danmark</string>
+    <string name="DJ">Djibouti</string>
+    <string name="DM">Dominica</string>
+    <string name="DO">Den dominikanske republikk</string>
+    <string name="EC">Ecuador</string>
+    <string name="EG">Egypt</string>
+    <string name="SV">El Salvador</string>
+    <string name="GQ">Ekvatorial-Guinea</string>
+    <string name="ER">Eritrea</string>
+    <string name="EE">Estland</string>
+    <string name="ET">Etiopia</string>
+    <string name="FK">Falklandsøyene</string>
+    <string name="FO">Færøyene</string>
+    <string name="FJ">Fiji</string>
+    <string name="FI">Finland</string>
+    <string name="FR">Frankrike</string>
+    <string name="GF">Fransk Guyana</string>
+    <string name="PF">Fransk Polynesia</string>
+    <string name="GA">Gabon</string>
+    <string name="GM">Gambia</string>
+    <string name="GE">Georgia</string>
+    <string name="DE">Tyskland</string>
+    <string name="GH">Ghana</string>
+    <string name="GI">Gibraltar</string>
+    <string name="GR">Hellas</string>
+    <string name="GL">Grønland</string>
+    <string name="GD">Grenada</string>
+    <string name="GP">Guadeloupe</string>
+    <string name="GU">Guam</string>
+    <string name="GT">Guatemala</string>
+    <string name="GG">Guernsey</string>
+    <string name="GN">Guinea</string>
+    <string name="GW">Guinea-Bissau</string>
+    <string name="GY">Guyana</string>
+    <string name="HT">Haiti</string>
+    <string name="VA">Den hellige stol (Vatikanstaten)</string>
+    <string name="HN">Honduras</string>
+    <string name="HK">Hong Kong</string>
+    <string name="HU">Ungarn</string>
+    <string name="IS">Island</string>
+    <string name="IN">India</string>
+    <string name="ID">Indonesia</string>
+    <string name="IR">Iran</string>
+    <string name="IQ">Irak</string>
+    <string name="IE">Irland</string>
+    <string name="IM">Man</string>
+    <string name="IL">Israel</string>
+    <string name="IT">Italia</string>
+    <string name="JM">Jamaica</string>
+    <string name="JP">Japan</string>
+    <string name="JE">Jersey</string>
+    <string name="JO">Jordan</string>
+    <string name="KZ">Kasakhstan</string>
+    <string name="KE">Kenya</string>
+    <string name="KI">Kiribati</string>
+    <string name="KW">Kuwait</string>
+    <string name="KG">Kirgisistan</string>
+    <string name="LA">Laos</string>
+    <string name="LV">Latvia</string>
+    <string name="LB">Libanon</string>
+    <string name="LS">Lesotho</string>
+    <string name="LR">Liberia</string>
+    <string name="LY">Libya</string>
+    <string name="LI">Liechtenstein</string>
+    <string name="LT">Litauen</string>
+    <string name="LU">Luxembourg</string>
+    <string name="MO">Macau</string>
+    <string name="MK">Makedonia</string>
+    <string name="MG">Madagaskar</string>
+    <string name="MW">Malawi</string>
+    <string name="MY">Malaysia</string>
+    <string name="MV">Maldivene</string>
+    <string name="ML">Mali</string>
+    <string name="MT">Malta</string>
+    <string name="MH">Marshalløyene</string>
+    <string name="MQ">Martinique</string>
+    <string name="MR">Mauritania</string>
+    <string name="MU">Mauritius</string>
+    <string name="YT">Mayotte</string>
+    <string name="MX">Mexico</string>
+    <string name="FM">Mikronesia</string>
+    <string name="MD">Moldova</string>
+    <string name="MC">Monaco</string>
+    <string name="MN">Mongolia</string>
+    <string name="ME">Montenegro</string>
+    <string name="MS">Montserrat</string>
+    <string name="MA">Marokko</string>
+    <string name="MZ">Mosambik</string>
+    <string name="MM">Myanmar</string>
+    <string name="NA">Namibia</string>
+    <string name="NR">Nauru</string>
+    <string name="NP">Nepal</string>
+    <string name="NL">Nederland</string>
+    <string name="NC">Ny-Caledonia</string>
+    <string name="NZ">New Zealand</string>
+    <string name="NI">Nicaragua</string>
+    <string name="NE">Niger</string>
+    <string name="NG">Nigeria</string>
+    <string name="NU">Niue</string>
+    <string name="NF">Norfolkøya</string>
+    <string name="MP">Nordlige Marianas</string>
+    <string name="NO">Norge</string>
+    <string name="OM">Oman</string>
+    <string name="PK">Pakistan</string>
+    <string name="PW">Palau</string>
+    <string name="PS">De palestinske territoriene</string>
+    <string name="PA">Panama</string>
+    <string name="PG">Papua Ny-Guinea</string>
+    <string name="PY">Paraguay</string>
+    <string name="PE">Peru</string>
+    <string name="PH">Filippinene</string>
+    <string name="PL">Polen</string>
+    <string name="PT">Portugal</string>
+    <string name="PR">Puerto Rico</string>
+    <string name="QA">Qatar</string>
+    <string name="RE">Reunion</string>
+    <string name="RO">Romania</string>
+    <string name="RU">Russland</string>
+    <string name="RW">Rwanda</string>
+    <string name="BL">Saint Barthélemy</string>
+    <string name="SH">Saint Helena</string>
+    <string name="KN">Saint Kitts og Nevis</string>
+    <string name="LC">Saint Lucia</string>
+    <string name="MF">Saint Martin (fransk del)</string>
+    <string name="PM">Saint Pierre og Miquelon</string>
+    <string name="VC">Saint Vincent og Grenadinene</string>
+    <string name="WS">Samoa</string>
+    <string name="SM">San Marino</string>
+    <string name="ST">São Tomé og Príncipe</string>
+    <string name="SA">Saudi-Arabia</string>
+    <string name="SN">Senegal</string>
+    <string name="RS">Serbia</string>
+    <string name="SC">Seychelles</string>
+    <string name="SL">Sierra Leone</string>
+    <string name="SG">Singapore</string>
+    <string name="SX">Sint Maarten</string>
+    <string name="SK">Slovakia</string>
+    <string name="SI">Slovenia</string>
+    <string name="SB">Salomonøyene</string>
+    <string name="SO">Somalia</string>
+    <string name="ZA">Sør-Afrika</string>
+    <string name="SS">Sør-Sudan</string>
+    <string name="KR">Sør-Korea</string>
+    <string name="ES">Spania</string>
+    <string name="LK">Sri Lanka</string>
+    <string name="SD">Sudan</string>
+    <string name="SR">Surinam</string>
+    <string name="SJ">Svalbard og Jan Mayen</string>
+    <string name="SZ">Swaziland</string>
+    <string name="SE">Sverige</string>
+    <string name="CH">Sveits</string>
+    <string name="SY">Syria</string>
+    <string name="TW">Taiwan</string>
+    <string name="TJ">Tadsjikistan</string>
+    <string name="TZ">Tanzania</string>
+    <string name="TH">Thailand</string>
+    <string name="TL">Øst-Timor</string>
+    <string name="TG">Togo</string>
+    <string name="TK">Tokelau</string>
+    <string name="TO">Tonga</string>
+    <string name="TT">Trinidad og Tobago</string>
+    <string name="TN">Tunisia</string>
+    <string name="TR">Tyrkia</string>
+    <string name="TM">Turkmenistan</string>
+    <string name="TC">Turks-og Caicosøyene</string>
+    <string name="TV">Tuvalu</string>
+    <string name="UG">Uganda</string>
+    <string name="UA">Ukraina</string>
+    <string name="AE">De forente arabiske emirater</string>
+    <string name="GB">Storbritannia</string>
+    <string name="US">USA</string>
+    <string name="UY">Uruguay</string>
+    <string name="UZ">Usbekistan</string>
+    <string name="VU">Vanuatu</string>
+    <string name="VE">Venezuela</string>
+    <string name="VN">Vietnam</string>
+    <string name="VG">De britiske jomfruøyene</string>
+    <string name="VI">De amerikanske jomfruøyene</string>
+    <string name="WF">Wallis og Futuna</string>
+    <string name="YE">Jemen</string>
+    <string name="ZM">Zambia</string>
+    <string name="ZW">Zimbabwe</string>
+
+</resources>

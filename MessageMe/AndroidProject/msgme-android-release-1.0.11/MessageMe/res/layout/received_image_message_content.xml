@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    
+    <include
+        android:id="@+id/date_divider"
+        layout="@layout/date_divider_layout" />
+
+    <include
+        android:id="@+id/message_sender"        
+        layout="@layout/messages_received_sender" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/message_sender" >
+
+        <ProgressBar
+            android:id="@+id/image_message_loader"
+            style="?android:attr/android:progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <!--
+             The width and height are set in ImageLoader.displayMessageBubble
+             as it knows the aspect ratio of the image
+        -->
+
+        <ImageView
+            android:id="@+id/image_message_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:contentDescription="@string/msg_bubble_received_photo"
+            android:minHeight="@dimen/min_message_bubble_height"
+            android:minWidth="@dimen/min_message_bubble_width"
+            android:scaleType="fitXY"
+            android:src="@drawable/messagesview_bubble_thumb_overlay_other" />
+    </FrameLayout>
+
+</RelativeLayout>

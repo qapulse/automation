@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/tabs_background" >
+
+    <ImageView
+        android:id="@+id/notification_user_picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="8dip"
+        android:background="@drawable/profilepic_generic_user_small"
+        android:contentDescription="@string/notification_icon_description" />
+
+    <LinearLayout
+        android:id="@+id/notification_text_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dip"
+        android:layout_toLeftOf="@+id/internal_notification_close"
+        android:layout_toRightOf="@id/notification_user_picture"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/notification_title"
+            style="@style/InternalNotificationTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/notification_description"
+            style="@style/InternalNotificationText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:scrollHorizontally="true" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/internal_notification_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:background="@null"
+        android:contentDescription="@null"
+        android:padding="8dip"
+        android:src="@drawable/actionbar_top_icon_cancel" />
+
+</RelativeLayout>

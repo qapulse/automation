@@ -1,0 +1,10 @@
+start_test_server_in_background
+exit
+start_test_server_in_background
+start_test_server_in_background
+exit
+start_test_server_in_background
+touch ("* id:'package_chooser_button'")
+performAction('click_on_screen',90, 10)
+performAction('wait_for_view_by_id', 'picture_button')
+exit

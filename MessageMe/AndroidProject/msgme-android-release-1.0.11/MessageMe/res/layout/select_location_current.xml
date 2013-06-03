@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/select_location_header"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    android:background="@color/white" >
+
+    <Button
+        style="@style/ItemPlaceName"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/min_row_height"
+        android:layout_alignParentLeft="true"
+        android:background="@android:color/transparent"
+        android:gravity="left|center_vertical"
+        android:onClick="doSelectCurrentLocation"
+        android:text="@string/select_location_current" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/common_map_maker_self"
+        android:contentDescription="@null" />
+
+</RelativeLayout>

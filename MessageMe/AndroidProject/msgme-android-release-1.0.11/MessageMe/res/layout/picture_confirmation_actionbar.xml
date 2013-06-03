@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/picture_confirmation_botton_actionbar_holder"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/actionbar_compat_height"
+    android:layout_alignParentBottom="true"
+    android:background="@color/messages_background" >
+
+    <ImageButton
+        android:id="@+id/picture_confirmation_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/picture_confirmation_page_default_margin"
+        android:background="@drawable/picture_confirmation_selector"
+        android:contentDescription="@null"
+        android:src="@drawable/interstitial_common_actionbar_button_icon_reject" />
+
+    <ImageButton
+        android:id="@+id/picture_confirmation_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/picture_confirmation_accept"
+        android:layout_toRightOf="@+id/picture_confirmation_cancel"
+        android:background="@drawable/picture_confirmation_selector"
+        android:contentDescription="@null"
+        android:src="@drawable/interstitial_common_actionbar_button_icon_doodle" />
+
+    <ImageButton
+        android:id="@+id/picture_confirmation_accept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/picture_confirmation_page_default_margin"
+        android:background="@drawable/picture_confirmation_selector"
+        android:contentDescription="@null"
+        android:src="@drawable/interstitial_common_actionbar_button_icon_send" />
+
+</RelativeLayout>

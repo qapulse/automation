@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/group_creation_viewflipper"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/groupedtable_background"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/create_group_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:contentDescription="@null"
+        android:src="@drawable/creategroupview_ornament_group" />
+
+    <EditText
+        android:id="@+id/group_name_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/creategroupview_input_name_base"
+        android:hint="@string/group_name_input"
+        android:imeOptions="actionNext|flagNoExtractUi"
+        android:inputType="textCapWords"
+        android:singleLine="true"
+        android:textColor="@android:color/black"
+        android:textColorHint="@color/text_hint_color"
+        android:textSize="24sp"
+        android:textStyle="bold" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/group_creation_question_label"
+        android:textColor="@color/disclaimer_text_color"
+        android:textStyle="bold" />
+
+</LinearLayout>

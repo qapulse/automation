@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/song_message_item_height"
+    android:background="@null"
+    android:orientation="horizontal"
+    android:paddingLeft="4dp" >
+
+    <com.littleinc.MessageMe.widget.PlayButtonImageView
+        android:id="@+id/play_button"
+        android:layout_width="@dimen/song_message_play_btn_width"
+        android:layout_height="@dimen/song_message_play_btn_height"
+        android:layout_centerVertical="true"
+        android:layout_margin="5dp"
+        android:background="@null"
+        android:clickable="true"
+        android:contentDescription="@string/media_message_playback_label" />
+
+    <ProgressBar
+        android:id="@+id/progress_spinner"
+        style="@style/Widget.ProgressBar.MediaMessage"
+        android:layout_width="@dimen/song_message_play_btn_width"
+        android:layout_height="@dimen/song_message_play_btn_height"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:background="@null" />
+
+    <ImageView
+        android:id="@+id/media_thumbnail"
+        android:layout_width="@dimen/song_message_thumbnail_width"
+        android:layout_height="@dimen/song_message_thumbnail_height"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/play_button"
+        android:background="@color/media_placeholder_background"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/empty_photo" />
+
+    <LinearLayout
+        android:id="@+id/media_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/media_thumbnail"
+        android:background="@null"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/media_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dip"
+            android:background="@null"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/media_author"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dip"
+            android:background="@null"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</RelativeLayout>

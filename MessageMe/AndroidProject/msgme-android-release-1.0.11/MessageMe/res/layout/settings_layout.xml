@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/groupedtable_background" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="8dip"
+            android:paddingTop="8dip" >
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dip"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:src="@drawable/groupedtable_misc_logo" />
+
+            <TextView
+                style="@style/gtableVersionInfoText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dip"
+                android:layout_marginRight="3dip"
+                android:text="@string/version_lbl" />
+
+            <TextView
+                android:id="@+id/version"
+                style="@style/gtableVersionInfoText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/get_help_btn"
+            style="@style/primaryButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dip"
+            android:text="@string/get_help" />
+
+        <TextView
+            android:id="@+id/user_email"
+            style="@style/gtableSettingLabelPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dip"
+            android:background="@drawable/cell_single_selector"
+            android:drawableLeft="@drawable/groupedtable_cell_icon_setting_email"
+            android:drawablePadding="8dip"
+            android:gravity="center_vertical" />
+
+        <Button
+            android:id="@+id/change_password"
+            style="@style/gtableSettingLabelPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_bottom_selector"
+            android:drawableLeft="@drawable/groupedtable_cell_icon_setting_password"
+            android:drawablePadding="8dip"
+            android:gravity="center_vertical"
+            android:text="@string/change_password"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/edit_profile"
+            style="@style/gtableSettingLabelPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_single_selector"
+            android:clickable="true"
+            android:drawableLeft="@drawable/profilepic_generic_user_small"
+            android:drawablePadding="8dip"
+            android:gravity="center_vertical"
+            android:text="@string/edit_profile" />
+
+        <TextView
+            style="@style/gtableSectionTitle"
+            android:text="@string/notifications_label" />
+
+        <include layout="@layout/alert_settings" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_single_selector" >
+
+            <TextView
+                style="@style/gtableSettingLabelPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/setting_page_alert_play_sound" />
+
+            <CheckBox
+                android:id="@+id/alert_sound_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:button="@drawable/dark_checkbox" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_single_selector" >
+
+            <TextView
+                style="@style/gtableSettingLabelPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/settings_page_alert_vibrate" />
+
+            <CheckBox
+                android:id="@+id/alert_vibrate_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:button="@drawable/dark_checkbox" />
+        </RelativeLayout>
+
+        <TextView
+            style="@style/gtableSectionTitle"
+            android:text="@string/connected_accounts" />
+
+        <TextView
+            style="@style/gtableSectionDescription"
+            android:text="@string/connect_with_friends" />
+
+        <TextView
+            android:id="@+id/phone_number"
+            style="@style/gtableSettingLabelPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/cell_single_selector"
+            android:drawableLeft="@drawable/groupedtable_cell_icon_setting_phone"
+            android:drawablePadding="8dip"
+            android:gravity="center_vertical" />
+
+        <Button
+            style="@style/gtableSettingLabelPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_bottom_selector"
+            android:gravity="center"
+            android:text="@string/add_new_phone"
+            android:visibility="gone" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/cell_top_selector"
+            android:drawableLeft="@drawable/groupedtable_cell_icon_setting_facebook"
+            android:drawablePadding="8dip"
+            android:gravity="center_vertical"
+            android:text="@string/facebook"
+            android:textColor="@color/black"
+            android:visibility="gone" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_bottom_selector"
+            android:drawableLeft="@drawable/groupedtable_cell_icon_setting_twitter"
+            android:drawablePadding="8dip"
+            android:gravity="center_vertical"
+            android:text="@string/twitter"
+            android:textColor="@color/black"
+            android:visibility="gone" />
+
+        <!--
+             The diagnostics section is hidden until the user does a triple
+             tap on the MessageMe logo at the top of the Settings page
+        -->
+
+        <LinearLayout
+            android:id="@+id/diagnostics_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                style="@style/gtableSectionTitle"
+                android:text="@string/diagnostics_section_title" />
+
+            <TextView
+                style="@style/gtableSectionDescription"
+                android:text="@string/diagnostics_section_description" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_single_selector" >
+
+                <TextView
+                    style="@style/gtableSettingLabelPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/logging_label" />
+
+                <CheckBox
+                    android:id="@+id/logging_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:button="@drawable/dark_checkbox" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/send_logs_btn"
+                style="@style/baseButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dip"
+                android:layout_marginTop="8dip"
+                android:text="@string/send_logs" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_bottom_selector"
+            android:drawableLeft="@drawable/groupedtable_cell_icon_setting_twitter"
+            android:drawablePadding="8dip"
+            android:gravity="center_vertical"
+            android:text="@string/twitter"
+            android:textColor="@color/black"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/about_btn"
+            style="@style/baseButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dip"
+            android:layout_marginTop="8dip"
+            android:text="@string/about" />
+
+        <Button
+            android:id="@+id/logout_btn"
+            style="@style/baseButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/logout" />
+    </LinearLayout>
+
+</ScrollView>

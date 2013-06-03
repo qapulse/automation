@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="86dip"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/detailview_actionbar_base"
+    android:padding="0dip" >
+
+    <TextView
+        android:id="@+id/detail_screen_action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:drawablePadding="8dip"
+        android:gravity="center_vertical"
+        android:padding="8dip"
+        android:textColor="@android:color/white"
+        android:textIsSelectable="false"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/detail_screen_exports"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@null"
+        android:contentDescription="@null"
+        android:padding="8dip"
+        android:src="@drawable/detailview_actionbar_button_icon_export" />
+
+</RelativeLayout>

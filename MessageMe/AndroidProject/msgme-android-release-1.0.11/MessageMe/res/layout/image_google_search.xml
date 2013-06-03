@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/groupedtable_background"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/search_box_layout"
+        layout="@layout/search_box_layout" />
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/search_box_layout"
+        android:columnWidth="@dimen/web_image_search_width"
+        android:gravity="center"
+        android:horizontalSpacing="5dp"
+        android:numColumns="auto_fit" >
+    </GridView>
+
+    <include layout="@layout/empty_list_layout" />
+
+</RelativeLayout>

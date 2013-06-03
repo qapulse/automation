@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="text_message_options">
+        <item>@string/copy_lbl</item>
+        <item>@string/delete_lbl</item>
+        <item>@string/forward</item>
+    </string-array>
+    
+    <string-array name="generic_message_options">
+        <item>@string/forward</item>
+    </string-array>
+    
+    <string-array name="delete_options">
+        <item>@string/delete_lbl</item>
+    </string-array>
+    
+    <string-array name="photo_message_dialog_options">
+        <item>@string/google_images_lbl</item>
+        <item>@string/take_photo_lbl</item>
+        <item>@string/choose_existing_lbl</item>
+    </string-array>
+    
+    <string-array name="pic_action_dialog_options">
+        <item>@string/google_images_lbl</item>
+        <item>@string/take_photo_lbl</item>
+        <item>@string/choose_existing_lbl</item>
+        <item>@string/doodle_label</item>
+    </string-array>
+    
+    <string-array name="video_dialog_options">
+        <item>@string/select_youtube_video</item>
+        <item>@string/select_camera_video</item>
+        <item>@string/select_gallery_video</item>
+    </string-array>
+    
+    <string-array name="background_dialog_options">
+        <item>@string/google_images_lbl</item>
+        <item>@string/take_photo_lbl</item>
+        <item>@string/choose_existing_lbl</item>
+    </string-array>
+    
+    <string-array name="alerts_dialog_options">
+        <item>@string/alerts_on</item>
+        <item>@string/alerts_off_for_1_hour</item>
+        <item>@string/alerts_off_for_3_days</item>
+    </string-array>
+    
+    <string-array name="get_help_options">
+        <item>@string/faq</item>
+        <item>@string/service_status</item>
+    </string-array>
+    
+    <string-array name="about_mm_options">
+        <item>@string/terms_service</item>
+        <item>@string/privacy_policy</item>
+    </string-array>
+
+</resources>

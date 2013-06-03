@@ -1,0 +1,12 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_marginRight="14dip"
+    android:shadowColor="@color/messages_meta_text_shadow"
+    android:shadowDx="0"
+    android:shadowDy="2"
+    android:shadowRadius="1"
+    android:textColor="@color/messages_meta_text"
+    android:textSize="13sp"
+    android:textStyle="bold" />

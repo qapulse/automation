@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/legend_container"
+        style="@style/gtableInstructionContainer"
+        android:visibility="gone" >
+            
+        <TextView
+            android:id="@+id/legend"
+            android:text="@string/choose_country_legend"
+            style="@style/gtableInstructionText" />
+        
+    </LinearLayout>
+    
+    <include layout="@layout/search_box_layout" />
+
+    <ListView
+        android:id="@+id/country_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/list_view_divider"
+        android:dividerHeight="1dip"
+        android:fastScrollEnabled="true" />
+
+</LinearLayout>

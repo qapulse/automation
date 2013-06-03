@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/groupedtable_background" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/my_profile_background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="30dip"
+        android:paddingLeft="16dip"
+        android:paddingRight="16dip"
+        android:paddingTop="30dip" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dip"
+            android:gravity="left"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@null"
+                android:src="@drawable/addfriendsview_icon_addfriend" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/insetText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/friends_invite_header"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/insetText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/friends_invite_sub_header"
+                    android:textColor="@color/gray" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/friends_invite_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/addfriendsview_addfriend_input_base"
+                android:hint="@string/friends_invite_input_hint"
+                android:imeOptions="actionSearch|flagNoExtractUi"
+                android:inputType="textNoSuggestions|textEmailAddress"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/text_hint_color"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/friends_invite_input"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="3dp"
+        android:contentDescription="@null"
+        android:src="@drawable/my_profile_separator" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dip"
+        android:background="@drawable/cell_single_selector"
+        android:clickable="true"
+        android:drawableLeft="@drawable/addfriendsview_icon_addressbook"
+        android:drawablePadding="8dip"
+        android:gravity="center_vertical"
+        android:onClick="inviteYourFriends"
+        android:text="@string/friends_invite_button"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cell_bottom_selector"
+        android:clickable="true"
+        android:drawableLeft="@drawable/addfriendsview_icon_facebook"
+        android:drawablePadding="8dip"
+        android:gravity="center_vertical"
+        android:onClick="addFacebookFriends"
+        android:text="@string/friends_invite_facebook_button"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+</LinearLayout>

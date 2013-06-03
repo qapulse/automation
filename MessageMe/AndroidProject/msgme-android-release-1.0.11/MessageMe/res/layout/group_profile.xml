@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/groupedtable_background" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/my_profile_cover_picture_height"
+            android:background="@color/profile_image_background" >
+
+            <ImageView
+                android:id="@+id/group_profile_cover_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:adjustViewBounds="false"
+                android:contentDescription="@null"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/group_profile_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/profilepic_generic_group_large"
+                android:contentDescription="@null" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/group_profile_send_message"
+            style="@style/primaryButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dip"
+            android:text="@string/group_profile_send_message" />
+
+        <Button
+            android:id="@+id/group_profile_invite"
+            style="@style/baseButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/group_profile_invite" />
+
+        <TextView
+            android:id="@+id/group_profile_num_members"
+         	style="@style/gtableSectionTitle"
+            android:text="@string/group_profile_num_members" />
+
+        <LinearLayout
+            android:id="@+id/group_profile_members"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <TextView
+			style="@style/gtableSectionTitle"
+            android:text="@string/menu_settings" />
+
+        <include layout="@layout/alert_settings" />
+
+        <Button
+            android:id="@+id/group_profile_leave"
+            style="@style/baseButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dip"
+            android:text="@string/group_profile_leave" />
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+    
+    <include
+        android:id="@+id/date_divider"
+        layout="@layout/date_divider_layout" />
+                
+    <include layout="@layout/sent_message_status_indicator" />
+
+    <LinearLayout
+        android:id="@+id/bubble"
+        android:orientation="horizontal"
+        android:background="@drawable/messagesview_bubble_text_base_self"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/date_divider" >
+        
+	    <ImageView
+	        android:id="@+id/contact_image"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/profilepic_generic_user_small"
+	        android:contentDescription="@null" />
+	    
+	    <TextView
+	        android:id="@+id/contact_name"
+	        android:layout_width="wrap_content" 
+	        android:layout_height="wrap_content"       
+	        android:layout_gravity="center_vertical"
+	        android:layout_marginLeft="10dip"
+	        android:minHeight="20dp"
+	        android:textColor="@color/black"
+	        android:textIsSelectable="false"
+	        android:textSize="16sp" />
+	
+	    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:src="@drawable/messagesview_bubble_common_icon_disclosure_self"
+            android:background="@null"
+            android:contentDescription="@null" />
+	    
+	</LinearLayout>
+	    
+    <include layout="@layout/readers_label"/>
+
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#303030</color>
+    <color name="green">#008000</color>
+    <color name="light_green">#c2ffa6</color>
+    <color name="gray">#999999</color>
+    <color name="light_gray">#e6e6e6</color>
+    <color name="action_bar_start_blue">#32579a</color>
+    <color name="action_bar_end_blue">#303d6e</color>
+    <color name="action_bar_separator_color">#4f99e5</color>
+    <color name="dark_gray">#676767</color>
+    <color name="transparent_dark_gray">#d2676767</color>
+    <color name="aqua_blue">#4bbaee</color>
+    <color name="ocean_blue">#2e7ec7</color>
+    <color name="dark_blue">#2f608c</color>
+    <color name="bone_white">#fdfcfc</color>
+    <color name="white_gray">#d4d0cb</color>
+    <color name="asphalt_gray">#2a2b2c</color>
+    <color name="light_blue">#2389e3</color>
+    <color name="text_hint_color">#cecece</color>
+    <color name="disclaimer_text_color">#737373</color>
+    <color name="bright_blue">#5d92d9</color>
+    <color name="text_pill_color">#606060</color>
+    <color name="profile_background">#ebe8e6</color>
+    <color name="my_profile_background">#e5e5e3</color>
+    <color name="profile_image_background">#242129</color>
+    <color name="profile_label">#868281</color>
+    <color name="reader_label_color">#808080</color>
+    <color name="red">#a31d1d</color>
+    <color name="list_view_divider">#eeeeee</color>
+    <color name="list_view_background">#f4f4f4</color>
+    <color name="list_view_separator_background">#f4f4f4</color>
+    <color name="messages_background">#dce0e6</color>
+    <color name="messages_meta_text">#686f78</color>
+    <color name="messages_meta_text_shadow">#f0f1f2</color>
+    <color name="messages_bubble_secondary_text">#7e858e</color>
+    <color name="groupedtable_background">#efeeeb</color>
+    <color name="groupedtable_instruction_background">#1a1c23</color>
+    <color name="translucent_black">#77000000</color>
+    <color name="tabs_background">#373240</color>
+    <color name="tabs_indicator"> #8c81a1</color>
+    <color name="tabs_top_border">#1c212c</color>
+    <color name="inactive_actionbar_text">#9d97a7</color>
+    <color name="tabs_divider">#4c4558</color>
+    <color name="top_actionbar_background">#50549c</color>
+    <color name="date_divider_separator">#d1d1d1</color>
+    <color name="shadow_color">#c3c8cd</color>
+    <color name="unsuported_message_text_color">#5e636b</color>
+    <color name="actionbar_white_border">#aeafb1</color>
+    <color name="media_placeholder_background">#2b2b2b</color>
+    <color name="messagesview_packagepicker_base">#292b2e</color>
+    <color name="unread_message_counter_background">#18161c</color>
+    <color name="unread_message_counter_border">#0b0a0d</color>
+
+    <!-- Doodle Composer -->
+    <color name="doodle_canvas_bg_color">#FFFFFF</color>
+
+</resources>

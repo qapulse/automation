@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/groupedtable_background" >
+    
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:gravity="center" >
+	
+	    <LinearLayout style="@style/gtableInstructionContainer" >
+	        
+	        <TextView
+		        android:text="@string/phone_entry_legend"
+		        style="@style/gtableInstructionText" />
+	        
+	    </LinearLayout>
+	
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:clickable="true"
+	        android:id="@+id/country_container"
+	        android:background="@drawable/groupedtable_button_base_default"
+	        android:orientation="horizontal"
+	        android:layout_marginTop="4dp"
+	        android:gravity="center|left" >
+	        
+	        <TextView
+	            android:id="@+id/country_code"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_vertical"
+	            android:layout_marginLeft="8dp"
+	            android:layout_marginRight="16dip"
+	            android:textColor="@color/black"
+	            android:textSize="18sp"
+	            android:textStyle="bold" />
+	        
+	        <ImageView
+	            android:layout_width="1dp"
+	            android:layout_height="35dp"
+	            android:contentDescription="@null"
+	            android:src="@drawable/groupedtable_divider_vertical"
+	            android:scaleType="fitXY" />
+	
+	        <TextView
+	            android:id="@+id/country_name"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_vertical"      
+	            android:textColor="@color/black"
+	            android:layout_marginLeft="16dip"
+	            android:textSize="18sp"
+	            android:textStyle="bold" />
+	
+	    </LinearLayout>
+	
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/groupedtable_cell_base_single"
+	        android:orientation="horizontal"
+	        android:gravity="center|left" >
+	        
+	        <ImageView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:contentDescription="@null"
+	            android:src="@drawable/signup_input_icon_phone"
+	            android:layout_marginLeft="8dp"
+	            android:layout_marginRight="16dp" />
+	        
+	     <EditText
+	         android:id="@+id/phone_number_text"
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+	         android:background="@null"
+	         android:hint="@string/phone_entry_hint"
+	         android:imeOptions="actionDone"
+	         android:inputType="phone"
+	         android:singleLine="true"
+	         android:textSize="24sp" />
+	     
+	    </LinearLayout>
+	    
+	</LinearLayout>
+	
+</ScrollView>

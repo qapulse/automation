@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/failure_try_again"
+        android:title="@string/chat_failure_try_again"/>
+    <item
+        android:id="@+id/failure_delete"
+        android:title="@string/chat_failure_delete">
+    </item>
+    <item
+        android:id="@+id/failure_cancel"
+        android:title="@string/chat_failure_cancel">
+    </item>
+
+</menu>
