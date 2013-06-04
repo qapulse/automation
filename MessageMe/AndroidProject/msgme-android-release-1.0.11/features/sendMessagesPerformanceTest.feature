@@ -16,7 +16,7 @@ Scenario: As a User I want to log in and send many messages using the special fu
 	Then I touch the "Bri Ca" text
 	Then I wait to see "Send Message"
 	Then I press the "Send Message" button
-	Then I send "2" test messages
+	Then I send "5" test messages
 	Then I wait for 30 seconds
 	
 Scenario: Delete a conversation
