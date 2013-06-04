@@ -188,6 +188,7 @@ Then /^I send "([^\"]*)" test messages$/ do |messagesNumber|
 		performAction('click_on_screen',90, 15)
 		performAction('wait', 20)
 		performAction('click_on_screen',60, 45)
+		performAction('wait', 15)
 		performAction('wait_for_view_by_id', 'picture_confirmation_accept')
 		touch ("* id:'picture_confirmation_accept'")
 		wait_for(:timeout => 15) { query("* id:'package_chooser_button'").size > 0 }
@@ -205,6 +206,7 @@ Then /^I send "([^\"]*)" test messages$/ do |messagesNumber|
 		performAction('click_on_screen',90, 15)
 		performAction('wait', 20)
 		performAction('click_on_screen',60, 45)
+		performAction('wait', 15)
 		performAction('wait_for_view_by_id', 'picture_button')
 		performAction('click_on_screen',90, 10)
 		wait_for(:timeout => 15) { query("* id:'package_chooser_button'").size > 0 }
