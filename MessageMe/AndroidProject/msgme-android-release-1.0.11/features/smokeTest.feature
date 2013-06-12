@@ -23,24 +23,30 @@ Scenario: As a User I want to log in
 	Then I wait to see "MESSAGES"
 	
 Scenario: Block an user
+	#Given I wait to see "Notifications are Off" or "MESSAGES" if "Notifications are Off" is visible tab on "OK"/
 	Given I wait to see "MESSAGES"
 	Then I touch the "CONTACTS" text
 	Then I touch the "Bri Ca" text
+	Then I scroll down 
+	Then I wait to see "Block"
+	Then I wait for 3 seconds
 	Then I press the "Block" button
 	Then I wait to see "Blocked"
 
 Scenario: Unblock an user
-	Given I wait to see "Rate MessageMe"
-	Then I tab on the "Maybe Later" text
-	Then I wait to see "MESSAGES"
+#Given I wait to see "Notifications are Off" or "MESSAGES" if "Notifications are Off" is visible tab on "OK"/
+	Given I continue if rate message me is not visible
+	Given I wait to see "MESSAGES"
 	Then I touch the "CONTACTS" text
 	#Then find a contact
 	Then I wait for 3 seconds
 	Then I tab on the "Bri Ca" text
+	Then I wait to see "Unblock"
 	Then I press the "Unblock" button
 	Then I wait to see "Send Message"
 	
 Scenario: Create Group
+#Given I wait to see "Notifications are Off" or "MESSAGES" if "Notifications are Off" is visible tab on "OK"/
 	Given I wait to see "MESSAGES"
 	Then I touch the "CONTACTS" text
 	Then I wait to see "New Group Chat"
@@ -53,10 +59,12 @@ Scenario: Create Group
 	Then I wait to see "Select members"
 	Then I tab on the "Bri Ca" text
 	Then I tab on the "David Logn" text
+	Then I wait for 3 seconds
 	Then I tab on the "Next" text
 	Then I wait to see "Automation Group"
 	
 Scenario: Delete a conversation
+#Given I wait to see "Notifications are Off" or "MESSAGES" if "Notifications are Off" is visible tab on "OK"/
 	Given I wait to see "MESSAGES"
 	Then I long press "Automation Group"
 	Then I wait to see "Conversation"
@@ -65,6 +73,7 @@ Scenario: Delete a conversation
 	Then I tab on the "Delete Conversation" text
 	
 Scenario: Send message to the group
+#Given I wait to see "Notifications are Off" or "MESSAGES" if "Notifications are Off" is visible tab on "OK"/
 	Given I wait to see "MESSAGES"
 	Then I touch the "CONTACTS" text
 	Then I wait to see "Automation Group"
@@ -75,6 +84,7 @@ Scenario: Send message to the group
 	Then I wait
 
 Scenario: Delete a conversation
+#Given I wait to see "Notifications are Off" or "MESSAGES" if "Notifications are Off" is visible tab on "OK"/
 	Given I wait to see "MESSAGES"
 	Then I long press "Automation Group"
 	Then I wait to see "Conversation"
@@ -83,6 +93,7 @@ Scenario: Delete a conversation
 	Then I tab on the "Delete Conversation" text
 	
 Scenario: Leave a Group
+#Given I wait to see "Notifications are Off" or "MESSAGES" if "Notifications are Off" is visible tab on "OK"/
 	Given I wait to see "MESSAGES"
 	Then I touch the "CONTACTS" text
 	# Wait until the group the user want to leave appear
@@ -91,12 +102,14 @@ Scenario: Leave a Group
 	Then I wait to see "Settings"
 	Then I scroll down 
 	Then I wait to see "Leave Group"
+	Then I wait for 3 seconds
 	Then I press the "Leave Group" button
 	Then I wait to see "Are you sure?"
 	Then I tab on the "Leave Group" text
 	Then I wait to see "CONTACTS"
 	
 Scenario: Log out
+#Given I wait to see "Notifications are Off" or "MESSAGES" if "Notifications are Off" is visible tab on "OK"/
 	Given I wait to see "MESSAGES"
 	Then I touch the "MY PROFILE" text
 	Then I touch the "Settings" text
@@ -112,12 +125,16 @@ Scenario: Create a valid account
 	Then I wait to see "Connect with Facebook"
 	Then I tab on the "No" text
 	Then I enter valid user information new user
+	Then I scroll down
+	Then I wait to see "Start Messaging"
 	Then I press the "Start Messaging" button
+	Then I wait for 3 seconds
 	Then I wait to see "Would you like"
 	Then I tab on the "Cancel" text
 	Then I wait to see "MESSAGES"
 	
 Scenario: Invite an user and send many messages
+#Given I wait to see "Notifications are Off" or "MESSAGES" if "Notifications are Off" is visible tab on "OK"/
 	Given I wait to see "MESSAGES"
 	Then I touch the "CONTACTS" text
 	Then I press new contact button
@@ -127,12 +144,12 @@ Scenario: Invite an user and send many messages
 	Then I wait for 3 seconds
 	Then I press the "Send Message" button
 	Then I wait for 3 seconds
-	Then I send a doddle by message with a google image as background
+	Then I send a new text message
 	Then I wait for 3 seconds
 
 Scenario: Invite an user and add him as a friend
-	Given I wait to see "Rate MessageMe"
-	Then I tab on the "Maybe Later" text
+#Given I wait to see "Notifications are Off" or "MESSAGES" if "Notifications are Off" is visible tab on "OK"/
+	Given I continue if rate message me is not visible
 	Then I wait to see "MESSAGES"
 	Then I touch the "CONTACTS" text
 	Then I press new contact button
@@ -144,6 +161,7 @@ Scenario: Invite an user and add him as a friend
 	Then I tab on the "OK" text	
 	
 Scenario: Update the Profile Name
+#Given I wait to see "Notifications are Off" or "MESSAGES" if "Notifications are Off" is visible tab on "OK"/
 	Given I wait to see "MESSAGES"
 	Then I touch the "MY PROFILE" text
 	Then I press change profile name button

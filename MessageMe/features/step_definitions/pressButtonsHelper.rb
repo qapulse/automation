@@ -42,3 +42,85 @@ end
 Then /^I touch the screeen to activate it$/ do
     performAction('click_on_screen',90, 50)
 end
+
+Given /^I continue if rate message me is not visible/ do 
+    
+# buscar si el texto esta en la pantalla 
+ $textVisible = waitUntilTextisOnScreen("Rate MessageMe","MESSAGES")
+
+
+    if $textVisible == "Rate MessageMe"
+        touch(query("* marked:'Maybe Later'"))
+    end
+
+end
+
+Given /^I wait to see "([^\"]*)" or "([^\"]*)" if "([^\"]*)" is visible tab on "([^\"]*)"/ do  |fristCondition, secondCondition, toEvaluate, textToTab|
+    
+# buscar si el texto esta en la pantalla 
+ $textVisible = waitUntilTextisOnScreen(fristCondition,secondCondition)
+
+
+    if $textVisible == toEvaluate
+        touch(query("* marked:'#{textToTab}'"))
+    end
+
+end
+
+
+#I press change name button in profile screen
+Then /^I test$/ do
+    puts "entre al i test"
+    $textVisible = waitUntilTextisOnScreen("Log In","Start Messaging")
+    puts   "sali del  i test"
+    puts  $textVisible
+
+    if $textVisible == "Log In"
+        puts = "estoy en el login"
+    else
+        if $textVisible == "Start Messaging"
+            puts = "Es lo de crear cueta"
+        end
+    end
+    puts = "fin del ciclo"
+
+end
+
+
+def waitUntilTextisOnScreen(mytext1, mytext2)
+
+    $isOnScreen = false
+    $mytimeout = 0
+    $toReturn = ""
+
+    #do it until the text is present
+    while $isOnScreen == false
+
+        if $mytimeout > 6
+            $isOnScreen=true 
+           
+        else
+         performAction('wait',3)
+
+            checkforFirstTextisVisible = query("* marked:'#{mytext1}'")
+            checkforSecondTextisVisible = query("* marked:'#{mytext2}'")
+
+            if checkforFirstTextisVisible.any?
+                $isOnScreen=true
+                $toReturn = mytext1
+               
+            else
+                if checkforSecondTextisVisible.any?
+                    $isOnScreen=true  
+                    $toReturn = mytext2   
+                    
+                end
+            end
+        end
+        
+        #Increase the timeout value
+        $mytimeout = $mytimeout + 1
+    end
+
+    return $toReturn
+end

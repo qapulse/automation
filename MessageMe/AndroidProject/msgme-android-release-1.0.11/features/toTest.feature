@@ -1,5 +1,15 @@
 Feature: Create an new account using the email invite an user and and send messages
 
+Scenario: As a User I want to try to log in  using invalid credentials
+	Given I wait to see "Log In"
+	Then I wait for 2 seconds
+	Then I touch the screeen to activate it
+	Then I press the "Log In" button
+	Then I wait to see "Email"
+	Then I enter invalid credentials
+	Then I press the "Log In" button
+	Then I wait until I see the login invalid credentials error message
+
 Scenario: As a User I want to log in
 	Given I wait to see "Log In"
 	Then I wait for 2 seconds
@@ -11,18 +21,35 @@ Scenario: As a User I want to log in
 	Then I wait to see "Would you like"
 	Then I tab on the "Cancel" text
 	Then I wait to see "MESSAGES"
-	Then I touch the "CONTACTS" text
-	Then I wait to see "Bri Ca"
-	Then I touch the "Bri Ca" text
-	Then I wait to see "Send Message"
-	Then I press the "Send Message" button
-	Then I send "2" test messages
-	Then I wait for 30 seconds
 	
-Scenario: Delete a conversation
+Scenario: Block an user
 	Given I wait to see "MESSAGES"
-	Then I long press "Bri Ca"
-	Then I wait to see "Conversation"
-	Then I tab on the "Delete" text
-	Then I wait to see "Confirm Deletion"
-	Then I tab on the "Delete Conversation" text
+	Then I touch the "CONTACTS" text
+	
+	Scenario: Block an user
+	Given I wait to see "MESSAGES"
+	Then I touch the "CONTACTS" tex
+
+	Scenario: Block an user
+	Given I wait to see "MESSAGES"
+	Then I touch the "CONTACTS" tex
+
+	Scenario: Block an user
+	Given I wait to see "MESSAGES"
+	Then I touch the "CONTACTS" tex
+
+	Scenario: Block an user
+	Given I wait to see "MESSAGES"
+	Then I touch the "CONTACTS" tex
+
+	Scenario: Block an user
+	Given I wait to see "MESSAGES"
+	Then I touch the "CONTACTS" tex
+
+	Scenario: Block an user
+	Given I wait to see "MESSAGES"
+	Then I touch the "CONTACTS" tex
+	Scenario: Block an user
+	Given I wait to see "MESSAGES"
+	Then I touch the "CONTACTS" tex
+	
