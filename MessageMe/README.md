@@ -9,16 +9,14 @@ Installation
 
 ### Installation
 
-Install `calabash-android` by running
-
-- `gem install calabash-android`
+- Install `calabash-android` by running`gem install calabash-android`
 - You might have to run `sudo gem install calabash-android` if you do not have the right permissions.
 
 ### Smoke Test
 
-calabash-android run /path/<MessageMe.apk> features/smoketest.feature
+`calabash-android run /path/<MessageMe.apk> features/smoketest.feature`
 
 ### Perf Test
 
-calabash-android run /path/<MessageMe.apk> features/sendMessagesPerformanceTest.feature
+`calabash-android run /path/<MessageMe.apk> features/sendMessagesPerformanceTest.feature`
 
