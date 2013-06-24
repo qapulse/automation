@@ -13,7 +13,7 @@ Installation
 - You might have to run `sudo gem install calabash-android` if you do not have the right permissions.
 
 
-TEST EXECUTION
+Test Execution
 ==============
 Start MessageMe app from eclipse choosing appropriate target (emulator or usb conneted device). 
 Calabash tests are run from command line and shows color coded test results in console. 
