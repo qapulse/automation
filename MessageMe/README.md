@@ -6,6 +6,9 @@ Installation
 - Android SDK 
 - Set `ANDROID_HOME` environment variable pointing to Android SDK home
 - Ant 1.8 (or higher)
+- Set `ANT_HOME` environment variable pointing to Ant folder
+- Add $ANT_HOME/bin to PATH environment variable
+- Set `JAVA_HOME` pointing to Java SDK folder
 
 ### Installation
 
