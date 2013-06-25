@@ -24,6 +24,9 @@ To format test result in html use `--format html --out filename.html` option
 
 ### Smoke Test
 
+Preconditions:
+It must be run in a device with no sim, to let the application to create an account by email.
+
 `calabash-android run /path/<MessageMe.apk> features/smokeTest.feature`
 
 or
