@@ -42,9 +42,9 @@ Tested Environments
 ===================
 
 Version | Status
-3.2.6 | Some tests fail due to slow device, investigating test fixes
+---|---
+3.2.6 | Some tests fail due to slow device response/timeout
 4.0.1 | Tested OK
 4.0.4 | Tested OK
 4.1.2 | Tested OK
 4.2.0 | Tested OK
-3.2.6 
