@@ -26,6 +26,7 @@ To format test result in html use `--format html --out filename.html` option
 
 Preconditions:
 It must be run in a device with no sim, to let the application to create an account by email.
+Before running the test update email address in `features/support/users.rb`. Add +10 to the number in email (didier.corrales+708@lognllc.com). 
 
 `calabash-android run /path/<MessageMe.apk> features/smokeTest.feature`
 
