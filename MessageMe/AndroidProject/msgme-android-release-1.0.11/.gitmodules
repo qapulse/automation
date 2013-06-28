@@ -1,3 +1,0 @@
-[submodule "msgme-protobuf"]
-	path = msgme-protobuf
-	url = git@github.com:littleinc/msgme-protobuf.git

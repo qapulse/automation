@@ -1,5 +1,0 @@
-<!-- Test border to use when debugging layout problems -->
-<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle" >
-   <solid android:color="#ffffff" />
-   <stroke android:width="1dip" android:color="#4fa5d5"/>
-</shape>

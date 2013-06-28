@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:drawable="@drawable/messagesview_bubble_audio_player_base_other" />
-    <!-- Using a bitmap ensures the image won't be resized -->
-    <item>
-	  <bitmap android:src="@drawable/messagesview_bubble_audio_player_icon_play"
-	          android:gravity="center" />
-	</item>
-</layer-list>

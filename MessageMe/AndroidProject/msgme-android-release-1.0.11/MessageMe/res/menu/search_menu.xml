@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android" >
-    <item
-        android:id="@+id/menu_search_btn"
-        android:icon="@drawable/actionbar_top_icon_search"
-        android:showAsAction="always"
-        android:title="@string/menu_search"/>
-
-</menu>

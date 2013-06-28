@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android" >
-    
-    <item android:drawable="@drawable/messagesview_bubble_text_base_other" android:state_selected="false"/>
-    <item android:drawable="@drawable/messagesview_bubble_text_base_pressed_other" android:state_selected="true"></item>
-    
-    
-
-</selector>
