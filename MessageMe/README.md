@@ -25,8 +25,9 @@ To format test result in html use `--format html --out filename.html` option
 ### Smoke Test
 
 Preconditions:
-It must be run in a device with no sim, to let the application to create an account by email.
-Before running the test update email address in `features/support/users.rb`. Add +10 to the number in email (didier.corrales+708@lognllc.com). 
+- It must be run in a device with no sim, to let the application to create an account by email.
+- Before running the test update email address in `features/support/users.rb` file.  To change it, update the "email" field in "NEWUSER" object. The new email must be unique and can't belong to existing user on MessageMe server. 
+For example: If the test user is a gmail account just add a "+" and a number at the end of the user. If the account for testing is "messagemetestaccount@gmail", in every run update the email field, in the first run it would be "messagemetestaccount+1@gmail.com", in the second one it would be "messagemetestaccount+2@gmail.com" and so on.
 
 `calabash-android run /path/<MessageMe.apk> features/smokeTest.feature`
 
