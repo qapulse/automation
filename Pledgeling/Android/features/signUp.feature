@@ -51,7 +51,7 @@ Feature: Sign Up
 	Given I wait to see "Sign In"
 	Then I touch the "Sign Up" text
 	Then I enter text "brian carrillo" into field with id "editTextFullName"
-	Then I enter text "mail@mail01.com" into field with id "editTextEmail"
+	Then I enter text "mail@mail02.com" into field with id "editTextEmail"
 	Then I enter text "password" into field with id "editTextPassword"
 	Then I press the "Sign Up" button	
 	Then I wait to see "Welcome to Pledgeling"
