@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<suite name="Test Login  for BlueSky UI" parallel="tests"
+    thread-count="5">
+
+    <test name="Login Test - Login Success - Dev Site">
+        <parameter name="host" value="localhost" />
+        <parameter name="browser" value="chrome" />
+        <parameter name="port" value="4444" />
+        <parameter name="siteUrl" value="http://devbs1.ednovo.org/BlueskyCSG/#login" />
+        <classes>
+            <class name="BlueSky.Login" >
+	            <methods>
+	          		<include name="openSite" />	
+	          		<include name="clikOnSingIn" />	
+	          		<include name="enterUserInformation" />
+	          		<include name="clickSingInButton" />		
+	          		<include name="verifyLogged" />	
+	          	</methods>
+          	</class>
+        </classes>
+    </test>
+    
+     <test name="Login Test - Login Success - Staging Site">
+        <parameter name="host" value="localhost" />
+        <parameter name="browser" value="chrome" />
+        <parameter name="port" value="4444" />
+        <parameter name="siteUrl" value="http://blueskystg.ednovo.org/Bluesky/#login" />
+        <classes>
+            <class name="BlueSky.Login" >
+	            <methods>
+	          		<include name="openSite" />	
+	          		<include name="clikOnSingIn" />	
+	          		<include name="enterUserInformation" />
+	          		<include name="clickSingInButton" />		
+	          		<include name="verifyLogged" />	
+	          	</methods>
+          	</class>
+        </classes>
+    </test>
+    
+    <test name="Login Test - Login Success - PGA Site">
+        <parameter name="host" value="localhost" />
+        <parameter name="browser" value="chrome" />
+        <parameter name="port" value="4444" />
+        <parameter name="siteUrl" value="http://bluesky-366877661.us-west-2.elb.amazonaws.com/gooru_gwt_bsky/#login" />
+        <classes>
+            <class name="BlueSky.Login" >
+	            <methods>
+	          		<include name="openSite" />	
+	          		<include name="clikOnSingIn" />	
+	          		<include name="enterUserInformation" />
+	          		<include name="clickSingInButton" />		
+	          		<include name="verifyLogged" />	
+	          	</methods>
+          	</class>
+        </classes>
+    </test>
+</suite>
+
