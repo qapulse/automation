@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<suite name="Test Login  for BlueSky UI" parallel="tests"
+    thread-count="5">
+
+    <test name="Login Test - Login Success - Click on the page  - PGA Site - chrome">
+        <parameter name="host" value="192.168.0.106" />
+        <parameter name="browser" value="chrome" />
+        <parameter name="port" value="4444" />
+        <parameter name="siteUrl" value="http://bluesky-366877661.us-west-2.elb.amazonaws.com/gooru_gwt_bsky/#login" />
+        <classes>
+            <class name="BlueSky.LoginWithFunctionalTestClickingOnTabs" >
+	            <methods>
+	          		<include name="openSite" />	
+	          		<include name="clikOnSingIn" />	
+	          		<include name="enterUserInformation" />
+	          		<include name="clickSingInButton" />	
+	          		<include name="clickOnSecondTabs" />
+	          		<include name="clickOnFirstTabs" />
+	          		<include name="clickOnMinutesButton" />
+	          		<include name="waitTenMinutes" />
+	          		<include name="clickOnSecondTabs1" />
+	          		<include name="clickOnFirstTabs1" />
+	          	</methods>
+          	</class>
+        </classes>
+    </test>
+    
+     <test name="Login Test - Login Success - Click on the page  - PGA Site - firefox">
+        <parameter name="host" value="192.168.0.106" />
+        <parameter name="browser" value="firefox" />
+        <parameter name="port" value="4444" />
+        <parameter name="siteUrl" value="http://bluesky-366877661.us-west-2.elb.amazonaws.com/gooru_gwt_bsky/#login" />
+        <classes>
+            <class name="BlueSky.LoginWithFunctionalTestClickingOnTabs" >
+	            <methods>
+	          		<include name="openSite" />	
+	          		<include name="clikOnSingIn" />	
+	          		<include name="enterUserInformation" />
+	          		<include name="clickSingInButton" />	
+	          		<include name="clickOnSecondTabs" />
+	          		<include name="clickOnFirstTabs" />
+	          		<include name="clickOnMinutesButton" />
+	          		<include name="waitTenMinutes" />
+	          		<include name="clickOnSecondTabs1" />
+	          		<include name="clickOnFirstTabs1" />
+	          	</methods>
+          	</class>
+        </classes>
+    </test>
+    
+</suite>
