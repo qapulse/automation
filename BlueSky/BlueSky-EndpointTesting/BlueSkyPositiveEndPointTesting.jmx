@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="2.4" jmeter="2.9 r1437961">
+  <hashTree>
+    <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+      <boolProp name="ResultCollector.error_logging">false</boolProp>
+      <objProp>
+        <name>saveConfig</name>
+        <value class="SampleSaveConfiguration">
+          <time>false</time>
+          <latency>false</latency>
+          <timestamp>false</timestamp>
+          <success>false</success>
+          <label>false</label>
+          <code>false</code>
+          <message>false</message>
+          <threadName>false</threadName>
+          <dataType>false</dataType>
+          <encoding>false</encoding>
+          <assertions>false</assertions>
+          <subresults>false</subresults>
+          <responseData>false</responseData>
+          <samplerData>false</samplerData>
+          <xml>true</xml>
+          <fieldNames>false</fieldNames>
+          <responseHeaders>false</responseHeaders>
+          <requestHeaders>false</requestHeaders>
+          <responseDataOnError>false</responseDataOnError>
+          <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+          <assertionsResultsToSave>0</assertionsResultsToSave>
+        </value>
+      </objProp>
+      <stringProp name="filename"></stringProp>
+    </ResultCollector>
+    <hashTree/>
+  </hashTree>
+</jmeterTestPlan>
