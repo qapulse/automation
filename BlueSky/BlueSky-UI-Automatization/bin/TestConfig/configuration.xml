@@ -7,7 +7,7 @@
         <parameter name="host" value="localhost" />
         <parameter name="browser" value="chrome" />
         <parameter name="port" value="4444" />
-        <parameter name="siteUrl" value="http://devbs1.ednovo.org/BlueskyCSG/#login" />
+        <parameter name="siteUrl" value="http://bluesky-1243317054.us-east-1.elb.amazonaws.com/gooru_gwt_bsky/" />
         <classes>
             <class name="BlueSky.Login" >
 	            <methods>
@@ -25,7 +25,7 @@
         <parameter name="host" value="localhost" />
         <parameter name="browser" value="chrome" />
         <parameter name="port" value="4444" />
-        <parameter name="siteUrl" value="http://blueskystg.ednovo.org/Bluesky/#login" />
+        <parameter name="siteUrl" value="http://bluesky-1243317054.us-east-1.elb.amazonaws.com/gooru_gwt_bsky/" />
         <classes>
             <class name="BlueSky.Login" >
 	            <methods>
@@ -43,7 +43,7 @@
         <parameter name="host" value="localhost" />
         <parameter name="browser" value="chrome" />
         <parameter name="port" value="4444" />
-        <parameter name="siteUrl" value="http://bluesky-366877661.us-west-2.elb.amazonaws.com/gooru_gwt_bsky/#login" />
+        <parameter name="siteUrl" value="http://bluesky-1243317054.us-east-1.elb.amazonaws.com/gooru_gwt_bsky/" />
         <classes>
             <class name="BlueSky.Login" >
 	            <methods>

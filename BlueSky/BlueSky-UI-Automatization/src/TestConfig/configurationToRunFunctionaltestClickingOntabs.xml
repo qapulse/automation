@@ -4,10 +4,10 @@
     thread-count="5">
 
     <test name="Login Test - Login Success - Click on the page  - PGA Site - chrome">
-        <parameter name="host" value="192.168.0.106" />
+        <parameter name="host" value="localhost" />
         <parameter name="browser" value="chrome" />
         <parameter name="port" value="4444" />
-        <parameter name="siteUrl" value="http://bluesky-366877661.us-west-2.elb.amazonaws.com/gooru_gwt_bsky/#login" />
+        <parameter name="siteUrl" value="http://bluesky-1243317054.us-east-1.elb.amazonaws.com/gooru_gwt_bsky/" />
         <classes>
             <class name="BlueSky.LoginWithFunctionalTestClickingOnTabs" >
 	            <methods>
@@ -27,10 +27,10 @@
     </test>
     
      <test name="Login Test - Login Success - Click on the page  - PGA Site - firefox">
-        <parameter name="host" value="192.168.0.106" />
+        <parameter name="host" value="localhost" />
         <parameter name="browser" value="firefox" />
         <parameter name="port" value="4444" />
-        <parameter name="siteUrl" value="http://bluesky-366877661.us-west-2.elb.amazonaws.com/gooru_gwt_bsky/#login" />
+        <parameter name="siteUrl" value="http://bluesky-1243317054.us-east-1.elb.amazonaws.com/gooru_gwt_bsky/" />
         <classes>
             <class name="BlueSky.LoginWithFunctionalTestClickingOnTabs" >
 	            <methods>
