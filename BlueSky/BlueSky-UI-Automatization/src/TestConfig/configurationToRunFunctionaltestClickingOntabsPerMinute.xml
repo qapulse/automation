@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"    ?>
+
+<suite name="Test Login  for BlueSky UI" parallel="tests"
+    thread-count="5">
+
+    <test name="Login Test - Login Success - Click on the page  - PGA Site - chrome">
+        <parameter name="host" value="localhost" />
+        <parameter name="browser" value="chrome" />
+        <parameter name="port" value="4444" />
+        <parameter name="siteUrl" value="http://bluesky-1243317054.us-east-1.elb.amazonaws.com/gooru_gwt_bsky/" />
+        <classes>
+            <class name="BlueSky.LoginWithFunctionalTestClickingOnTabsPerMinute" >
+	            <methods>
+	          		<include name="openSite" />	
+	          		<include name="clikOnSingIn" />	
+	          		<include name="enterUserInformation" />
+	          		<include name="clickSingInButton" />	
+	          		<include name="clickOnSecondTab" />		 
+	          		<include name="waitAMinuteFrist" />		 
+	          		<include name="clickOnFirstTab" />
+	          		
+	          			<include name="w1" />
+	          		<include name="dosclickOnSecondTab" />		 
+	          		<include name="waitAMinuteSecond" />		 
+	          		<include name="dosclickOnFirstTab" />
+	          		
+	          		<include name="w2" />
+	          		
+	          		<include name="tresclickOnSecondTab" />		 
+	          		<include name="treswaitAMinuteSecond" />		 
+	          		<include name="tresclickOnFirstTab" />
+	          		
+	          		<include name="w3" />
+	          		
+	          		<include name="cuatroclickOnSecondTab" />		 
+	          		<include name="cuatrowaitAMinuteSecond" />		 
+	          		<include name="cuatroclickOnFirstTab" />
+	          		
+	          		<include name="w4" />
+	          		<include name="cincoclickOnSecondTab" />		 
+	          		<include name="cincowaitAMinuteSecond" />		 
+	          		<include name="cincoclickOnFirstTab" />	 
+	          		<include name="w5" />
+	          		
+	          		<include name="seisclickOnSecondTab" />		 
+	          		<include name="seisowaitAMinuteSecond" />		 
+	          		<include name="seisclickOnFirstTab" />	 
+	          		
+	          		<include name="w6" />
+	          		<include name="sieteclickOnSecondTab" />		 
+	          		<include name="sietewaitAMinuteSecond" />		 
+	          		<include name="sieteclickOnFirstTab" />	 
+	          		
+	          		<include name="w8" />
+	          		<include name="ochoclickOnSecondTab" />		 
+	          		<include name="ochowaitAMinuteSecond" />		 
+	          		<include name="ochoclickOnFirstTab" />	 
+	          		
+	          		<include name="w9" />
+	          		<include name="nueveclickOnSecondTab" />		 
+	          		<include name="nuevewaitAMinuteSecond" />		 
+	          		<include name="nueveclickOnFirstTab" />	 
+	          		
+	          		<include name="w10" />
+	          		<include name="diezclickOnSecondTab" />		 
+	          		<include name="diezwaitAMinuteSecond" />		 
+	          		<include name="diezclickOnFirstTab" />	 
+	          		
+	          		<include name="w11" />
+	          		<include name="onceclickOnSecondTab" />		 
+	          		<include name="oncewaitAMinuteSecond" />		 
+	          		<include name="onceclickOnFirstTab" />	 
+	          		
+	          		<include name="w12" />
+	          		<include name="doceclickOnSecondTab" />		 
+	          		<include name="dosewaitAMinuteSecond" />		 
+	          		<include name="doceclickOnFirstTab" />	 
+	          		
+	          		<include name="w13" />
+	          		<include name="trececlickOnSecondTab" />		 
+	          		<include name="trecewaitAMinuteSecond" />		 
+	          		<include name="trececlickOnFirstTab" />	
+	          		
+	          		<include name="w14" />
+	          		<include name="catorceclickOnSecondTab" />		 
+	          		<include name="quincewaitAMinuteSecond" />		 
+	          		<include name="catorececlickOnFirstTab" />	
+	          		
+	          		<include name="w15" />
+	          		<include name="quinceclickOnSecondTab" />		 
+	          		<include name="catorecewaitAMinuteSecond" />		 
+	          		<include name="quincececlickOnFirstTab" />	
+	          		<include name="w7" />
+	          		
+	          			 	          			          		
+	          	</methods>
+          	</class>
+        </classes>
+    </test>
+
+    
+</suite>

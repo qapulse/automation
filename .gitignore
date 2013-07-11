@@ -1,24 +1,10 @@
 
 *.properties
 
-BlueSky/BlueSky-UI-Automatization/test-output/junitreports/TEST-BlueSky.LoginWithFunctionalTestClickingOnTabs.xml
+*.class
 
 *.html
 
-*.html
 
-*.html
 
-BlueSky/BlueSky-UI-Automatization/test-output/old/Test Login  for BlueSky UI/methods-alphabetical.html
 
-BlueSky/BlueSky-UI-Automatization/test-output/old/Test Login  for BlueSky UI/methods-not-run.html
-
-BlueSky/BlueSky-UI-Automatization/test-output/old/Test Login  for BlueSky UI/methods.html
-
-*.xml
-
-*.xml
-
-*.html
-
-BlueSky/BlueSky-UI-Automatization/test-output/index.html
