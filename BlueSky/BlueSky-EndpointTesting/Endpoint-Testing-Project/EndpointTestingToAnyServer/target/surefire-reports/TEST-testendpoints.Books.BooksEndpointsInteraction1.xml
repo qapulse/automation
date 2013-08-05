@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite failures="4" time="14.95" errors="1" skipped="0" tests="30" name="testendpoints.Books.BooksEndpointsInteraction1">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Libraries"/>
+    <property name="java.vm.version" value="20.51-b01-457"/>
+    <property name="awt.nativeDoubleBuffering" value="true"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="mrj.build" value="11M4509"/>
+    <property name="java.vm.vendor" value="Apple Inc."/>
+    <property name="java.vendor.url" value="http://www.apple.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="test" value="BooksEndpointsInteraction1"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/dcorrales/Google Drive/Workspaces/BlueSky/EndpointTestingToAnyServer"/>
+    <property name="java.runtime.version" value="1.6.0_51-b11-457-11M4509"/>
+    <property name="java.awt.graphicsenv" value="apple.awt.CGraphicsEnvironment"/>
+    <property name="basedir" value="/Users/dcorrales/Google Drive/Workspaces/BlueSky/EndpointTestingToAnyServer"/>
+    <property name="java.endorsed.dirs" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="surefire.real.class.path" value="/Users/dcorrales/Google Drive/Workspaces/BlueSky/EndpointTestingToAnyServer/target/surefire/surefirebooter5216028766667697654.jar"/>
+    <property name="java.io.tmpdir" value="/var/folders/bj/plg_p3dd2yncczdpfq5dgkpw0000gn/T/"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc."/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="sun.jnu.encoding" value="MacRoman"/>
+    <property name="java.library.path" value=".:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="surefire.test.class.path" value="/Users/dcorrales/Google Drive/Workspaces/BlueSky/EndpointTestingToAnyServer/target/test-classes:/Users/dcorrales/Google Drive/Workspaces/BlueSky/EndpointTestingToAnyServer/target/classes:/Users/dcorrales/.m2/repository/junit/junit/4.10/junit-4.10.jar:/Users/dcorrales/.m2/repository/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar:/Users/dcorrales/.m2/repository/com/thetransactioncompany/cors-filter/1.3.2/cors-filter-1.3.2.jar:/Users/dcorrales/.m2/repository/com/thetransactioncompany/java-property-utils/1.6/java-property-utils-1.6.jar:/Users/dcorrales/.m2/repository/net/bull/javamelody/javamelody-core/1.20.0/javamelody-core-1.20.0.jar:/Users/dcorrales/.m2/repository/org/jrobin/jrobin/1.5.9/jrobin-1.5.9.jar:/Users/dcorrales/.m2/repository/com/sun/jersey/jersey-server/1.17.1/jersey-server-1.17.1.jar:/Users/dcorrales/.m2/repository/asm/asm/3.1/asm-3.1.jar:/Users/dcorrales/.m2/repository/com/sun/jersey/jersey-core/1.17.1/jersey-core-1.17.1.jar:/Users/dcorrales/.m2/repository/com/sun/jersey/jersey-test-framework/jersey-test-framework-grizzly/1.17.1/jersey-test-framework-grizzly-1.17.1.jar:/Users/dcorrales/.m2/repository/com/sun/grizzly/grizzly-servlet-webserver/1.9.45/grizzly-servlet-webserver-1.9.45.jar:/Users/dcorrales/.m2/repository/com/sun/grizzly/grizzly-http/1.9.45/grizzly-http-1.9.45.jar:/Users/dcorrales/.m2/repository/com/sun/grizzly/grizzly-framework/1.9.45/grizzly-framework-1.9.45.jar:/Users/dcorrales/.m2/repository/com/sun/grizzly/grizzly-rcm/1.9.45/grizzly-rcm-1.9.45.jar:/Users/dcorrales/.m2/repository/com/sun/grizzly/grizzly-portunif/1.9.45/grizzly-portunif-1.9.45.jar:/Users/dcorrales/.m2/repository/com/sun/grizzly/grizzly-utils/1.9.45/grizzly-utils-1.9.45.jar:/Users/dcorrales/.m2/repository/com/sun/grizzly/grizzly-lzma/1.9.45/grizzly-lzma-1.9.45.jar:/Users/dcorrales/.m2/repository/com/sun/grizzly/grizzly-http-servlet/1.9.45/grizzly-http-servlet-1.9.45.jar:/Users/dcorrales/.m2/repository/com/sun/jersey/jersey-grizzly/1.17.1/jersey-grizzly-1.17.1.jar:/Users/dcorrales/.m2/repository/com/sun/jersey/jersey-test-framework/jersey-test-framework-core/1.17.1/jersey-test-framework-core-1.17.1.jar:/Users/dcorrales/.m2/repository/javax/servlet/javax.servlet-api/3.0.1/javax.servlet-api-3.0.1.jar:/Users/dcorrales/.m2/repository/com/sun/jersey/jersey-servlet/1.17.1/jersey-servlet-1.17.1.jar:/Users/dcorrales/.m2/repository/com/sun/jersey/jersey-test-framework/jersey-test-framework-external/1.17.1/jersey-test-framework-external-1.17.1.jar:/Users/dcorrales/.m2/repository/com/sun/jersey/jersey-test-framework/jersey-test-framework-http/1.17.1/jersey-test-framework-http-1.17.1.jar:/Users/dcorrales/.m2/repository/com/sun/jersey/contribs/jersey-apache-client/1.17.1/jersey-apache-client-1.17.1.jar:/Users/dcorrales/.m2/repository/commons-httpclient/commons-httpclient/3.1/commons-httpclient-3.1.jar:/Users/dcorrales/.m2/repository/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4.jar:/Users/dcorrales/.m2/repository/commons-codec/commons-codec/1.2/commons-codec-1.2.jar:/Users/dcorrales/.m2/repository/com/sun/jersey/contribs/jersey-spring/1.17.1/jersey-spring-1.17.1.jar:/Users/dcorrales/.m2/repository/org/codehaus/jettison/jettison/1.1/jettison-1.1.jar:/Users/dcorrales/.m2/repository/stax/stax-api/1.0.1/stax-api-1.0.1.jar:/Users/dcorrales/.m2/repository/com/sun/jersey/jersey-client/1.17.1/jersey-client-1.17.1.jar:/Users/dcorrales/.m2/repository/javax/servlet/servlet-api/2.3/servlet-api-2.3.jar:"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="50.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.8.4"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/dcorrales"/>
+    <property name="user.timezone" value="America/Costa_Rica"/>
+    <property name="java.awt.printerjob" value="apple.awt.CPrinterJob"/>
+    <property name="java.specification.version" value="1.6"/>
+    <property name="file.encoding" value="MacRoman"/>
+    <property name="user.name" value="dcorrales"/>
+    <property name="java.class.path" value="/Users/dcorrales/Google Drive/Workspaces/BlueSky/EndpointTestingToAnyServer/target/test-classes:/Users/dcorrales/Google Drive/Workspaces/BlueSky/EndpointTestingToAnyServer/target/classes:/Users/dcorrales/.m2/repository/junit/junit/4.10/junit-4.10.jar:/Users/dcorrales/.m2/repository/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar:/Users/dcorrales/.m2/repository/com/thetransactioncompany/cors-filter/1.3.2/cors-filter-1.3.2.jar:/Users/dcorrales/.m2/repository/com/thetransactioncompany/java-property-utils/1.6/java-property-utils-1.6.jar:/Users/dcorrales/.m2/repository/net/bull/javamelody/javamelody-core/1.20.0/javamelody-core-1.20.0.jar:/Users/dcorrales/.m2/repository/org/jrobin/jrobin/1.5.9/jrobin-1.5.9.jar:/Users/dcorrales/.m2/repository/com/sun/jersey/jersey-server/1.17.1/jersey-server-1.17.1.jar:/Users/dcorrales/.m2/repository/asm/asm/3.1/asm-3.1.jar:/Users/dcorrales/.m2/repository/com/sun/jersey/jersey-core/1.17.1/jersey-core-1.17.1.jar:/Users/dcorrales/.m2/repository/com/sun/jersey/jersey-test-framework/jersey-test-framework-grizzly/1.17.1/jersey-test-framework-grizzly-1.17.1.jar:/Users/dcorrales/.m2/repository/com/sun/grizzly/grizzly-servlet-webserver/1.9.45/grizzly-servlet-webserver-1.9.45.jar:/Users/dcorrales/.m2/repository/com/sun/grizzly/grizzly-http/1.9.45/grizzly-http-1.9.45.jar:/Users/dcorrales/.m2/repository/com/sun/grizzly/grizzly-framework/1.9.45/grizzly-framework-1.9.45.jar:/Users/dcorrales/.m2/repository/com/sun/grizzly/grizzly-rcm/1.9.45/grizzly-rcm-1.9.45.jar:/Users/dcorrales/.m2/repository/com/sun/grizzly/grizzly-portunif/1.9.45/grizzly-portunif-1.9.45.jar:/Users/dcorrales/.m2/repository/com/sun/grizzly/grizzly-utils/1.9.45/grizzly-utils-1.9.45.jar:/Users/dcorrales/.m2/repository/com/sun/grizzly/grizzly-lzma/1.9.45/grizzly-lzma-1.9.45.jar:/Users/dcorrales/.m2/repository/com/sun/grizzly/grizzly-http-servlet/1.9.45/grizzly-http-servlet-1.9.45.jar:/Users/dcorrales/.m2/repository/com/sun/jersey/jersey-grizzly/1.17.1/jersey-grizzly-1.17.1.jar:/Users/dcorrales/.m2/repository/com/sun/jersey/jersey-test-framework/jersey-test-framework-core/1.17.1/jersey-test-framework-core-1.17.1.jar:/Users/dcorrales/.m2/repository/javax/servlet/javax.servlet-api/3.0.1/javax.servlet-api-3.0.1.jar:/Users/dcorrales/.m2/repository/com/sun/jersey/jersey-servlet/1.17.1/jersey-servlet-1.17.1.jar:/Users/dcorrales/.m2/repository/com/sun/jersey/jersey-test-framework/jersey-test-framework-external/1.17.1/jersey-test-framework-external-1.17.1.jar:/Users/dcorrales/.m2/repository/com/sun/jersey/jersey-test-framework/jersey-test-framework-http/1.17.1/jersey-test-framework-http-1.17.1.jar:/Users/dcorrales/.m2/repository/com/sun/jersey/contribs/jersey-apache-client/1.17.1/jersey-apache-client-1.17.1.jar:/Users/dcorrales/.m2/repository/commons-httpclient/commons-httpclient/3.1/commons-httpclient-3.1.jar:/Users/dcorrales/.m2/repository/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4.jar:/Users/dcorrales/.m2/repository/commons-codec/commons-codec/1.2/commons-codec-1.2.jar:/Users/dcorrales/.m2/repository/com/sun/jersey/contribs/jersey-spring/1.17.1/jersey-spring-1.17.1.jar:/Users/dcorrales/.m2/repository/org/codehaus/jettison/jettison/1.1/jettison-1.1.jar:/Users/dcorrales/.m2/repository/stax/stax-api/1.0.1/stax-api-1.0.1.jar:/Users/dcorrales/.m2/repository/com/sun/jersey/jersey-client/1.17.1/jersey-client-1.17.1.jar:/Users/dcorrales/.m2/repository/javax/servlet/servlet-api/2.3/servlet-api-2.3.jar:"/>
+    <property name="java.vm.specification.version" value="1.0"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home"/>
+    <property name="sun.java.command" value="/Users/dcorrales/Google Drive/Workspaces/BlueSky/EndpointTestingToAnyServer/target/surefire/surefirebooter5216028766667697654.jar /Users/dcorrales/Google Drive/Workspaces/BlueSky/EndpointTestingToAnyServer/target/surefire/surefire5175118396632394113tmp /Users/dcorrales/Google Drive/Workspaces/BlueSky/EndpointTestingToAnyServer/target/surefire/surefire4499589222245188691tmp"/>
+    <property name="java.specification.vendor" value="Sun Microsystems Inc."/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="apple.awt.CToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.6.0_51"/>
+    <property name="java.ext.dirs" value="/Library/Java/Extensions:/System/Library/Java/Extensions:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext"/>
+    <property name="sun.boot.class.path" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsfd.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar:/System/Library/Frameworks/JavaVM.framework/Frameworks/JavaRuntimeSupport.framework/Resources/Java/JavaRuntimeSupport.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/ui.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/laf.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/sunrsasign.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsse.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jce.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/charsets.jar"/>
+    <property name="java.vendor" value="Apple Inc."/>
+    <property name="localRepository" value="/Users/dcorrales/.m2/repository"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.apple.com/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="mrj.version" value="1070.1.6.0_51-457"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase time="1.525" classname="testendpoints.Books.BooksEndpointsInteraction1" name="getBookRegisteredDetails"/>
+  <testcase time="0.45" classname="testendpoints.Books.BooksEndpointsInteraction1" name="getBookRegisteredDetailsWithoutDetail"/>
+  <testcase time="0.503" classname="testendpoints.Books.BooksEndpointsInteraction1" name="getTerritories"/>
+  <testcase time="1.231" classname="testendpoints.Books.BooksEndpointsInteraction1" name="getAuthors"/>
+  <testcase time="0.383" classname="testendpoints.Books.BooksEndpointsInteraction1" name="getAuthorsSendingStringTerritory"/>
+  <testcase time="0.349" classname="testendpoints.Books.BooksEndpointsInteraction1" name="getAuthorsSendingNoTerritory"/>
+  <testcase time="0.374" classname="testendpoints.Books.BooksEndpointsInteraction1" name="getAuthorsSendingInvalidValuesTerritory"/>
+  <testcase time="0.275" classname="testendpoints.Books.BooksEndpointsInteraction1" name="getAuthorsSendingInvalidValuesTerritoryAndSchool"/>
+  <testcase time="0.297" classname="testendpoints.Books.BooksEndpointsInteraction1" name="getAuthorsSendingInvalidValuesSchool"/>
+  <testcase time="0.293" classname="testendpoints.Books.BooksEndpointsInteraction1" name="getAuthorsWithoutSchool"/>
+  <testcase time="0.305" classname="testendpoints.Books.BooksEndpointsInteraction1" name="getSchools"/>
+  <testcase time="0.328" classname="testendpoints.Books.BooksEndpointsInteraction1" name="getSchoolsSendingStringTerritory"/>
+  <testcase time="0.316" classname="testendpoints.Books.BooksEndpointsInteraction1" name="getSchoolsSendingNoTerritory"/>
+  <testcase time="0.236" classname="testendpoints.Books.BooksEndpointsInteraction1" name="getSchoolsSendingInvalidValuesTerritory"/>
+  <testcase time="0.285" classname="testendpoints.Books.BooksEndpointsInteraction1" name="getSalesRepReportSendingStringTerritory"/>
+  <testcase time="0.27" classname="testendpoints.Books.BooksEndpointsInteraction1" name="getSalesRepReportSendingNoTerritory"/>
+  <testcase time="0.244" classname="testendpoints.Books.BooksEndpointsInteraction1" name="getSalesRepReportSendingInvalidValuesTerritory"/>
+  <testcase time="0.727" classname="testendpoints.Books.BooksEndpointsInteraction1" name="getSalesRepReportSendingInvalidValuesTerritoryAndSchool"/>
+  <testcase time="0.356" classname="testendpoints.Books.BooksEndpointsInteraction1" name="getSalesRepReportSendingInvalidValuesSchool"/>
+  <testcase time="0.328" classname="testendpoints.Books.BooksEndpointsInteraction1" name="getSalesRepReportsWithoutSchool"/>
+  <testcase time="0.367" classname="testendpoints.Books.BooksEndpointsInteraction1" name="getSalesRepReportSendingInvalidAuthor">
+    <failure message="expected:&lt;200&gt; but was:&lt;500&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;200&gt; but was:&lt;500&gt;
+	at org.junit.Assert.fail(Assert.java:93)
+	at org.junit.Assert.failNotEquals(Assert.java:647)
+	at org.junit.Assert.assertEquals(Assert.java:128)
+	at org.junit.Assert.assertEquals(Assert.java:472)
+	at org.junit.Assert.assertEquals(Assert.java:456)
+	at testendpoints.Books.BooksEndpointsInteraction1.getSalesRepReportSendingInvalidAuthor(BooksEndpointsInteraction1.java:474)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:35)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:115)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:97)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.booter.ProviderFactory$ClassLoaderProxy.invoke(ProviderFactory.java:103)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:150)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcess(SurefireStarter.java:91)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:69)
+</failure>
+    <system-err>Aug 5, 2013 4:40:27 PM testendpoints.Books.BooksEndpointsInteraction1 getSalesRepReportSendingInvalidAuthor
+INFO: Method: getSalesRepReportSendingInvalidAuthor , Results:
+Aug 5, 2013 4:40:27 PM testendpoints.Books.BooksEndpointsInteraction1 getSalesRepReportSendingInvalidAuthor
+INFO: {&quot;status&quot;:&quot;error&quot;,&quot;errorCode&quot;:&quot;500&quot;,&quot;message&quot;:&quot;1&quot;}
+</system-err>
+  </testcase>
+  <testcase time="0.756" classname="testendpoints.Books.BooksEndpointsInteraction1" name="getSalesRepReportSendingInvalidValuesAuthor">
+    <failure message="expected:&lt;200&gt; but was:&lt;500&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;200&gt; but was:&lt;500&gt;
+	at org.junit.Assert.fail(Assert.java:93)
+	at org.junit.Assert.failNotEquals(Assert.java:647)
+	at org.junit.Assert.assertEquals(Assert.java:128)
+	at org.junit.Assert.assertEquals(Assert.java:472)
+	at org.junit.Assert.assertEquals(Assert.java:456)
+	at testendpoints.Books.BooksEndpointsInteraction1.getSalesRepReportSendingInvalidValuesAuthor(BooksEndpointsInteraction1.java:498)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:35)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:115)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:97)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.booter.ProviderFactory$ClassLoaderProxy.invoke(ProviderFactory.java:103)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:150)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcess(SurefireStarter.java:91)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:69)
+</failure>
+    <system-err>Aug 5, 2013 4:40:27 PM testendpoints.Books.BooksEndpointsInteraction1 getSalesRepReportSendingInvalidValuesAuthor
+INFO: Method: getSalesRepReportSendingInvalidAuthor , Results:
+Aug 5, 2013 4:40:27 PM testendpoints.Books.BooksEndpointsInteraction1 getSalesRepReportSendingInvalidValuesAuthor
+INFO: {&quot;status&quot;:&quot;error&quot;,&quot;errorCode&quot;:&quot;500&quot;,&quot;message&quot;:&quot;1&quot;}
+</system-err>
+  </testcase>
+  <testcase time="0.359" classname="testendpoints.Books.BooksEndpointsInteraction1" name="getSalesRepReportSendingJustOneValueAuthor"/>
+  <testcase time="0.369" classname="testendpoints.Books.BooksEndpointsInteraction1" name="getSalesRepReport"/>
+  <testcase time="0.433" classname="testendpoints.Books.BooksEndpointsInteraction1" name="getBookCCCOrders"/>
+  <testcase time="0.3" classname="testendpoints.Books.BooksEndpointsInteraction1" name="getBookCCCOrdersWithoutParameter"/>
+  <testcase time="0.344" classname="testendpoints.Books.BooksEndpointsInteraction1" name="getBookCCCOrdersInvalidParameter"/>
+  <testcase time="1.944" classname="testendpoints.Books.BooksEndpointsInteraction1" name="checkOrderDetailStatus">
+    <failure message="expected:&lt;200&gt; but was:&lt;404&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;200&gt; but was:&lt;404&gt;
+	at org.junit.Assert.fail(Assert.java:93)
+	at org.junit.Assert.failNotEquals(Assert.java:647)
+	at org.junit.Assert.assertEquals(Assert.java:128)
+	at org.junit.Assert.assertEquals(Assert.java:472)
+	at org.junit.Assert.assertEquals(Assert.java:456)
+	at testendpoints.Books.BooksEndpointsInteraction1.checkOrderDetailStatus(BooksEndpointsInteraction1.java:624)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:35)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:115)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:97)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.booter.ProviderFactory$ClassLoaderProxy.invoke(ProviderFactory.java:103)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:150)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcess(SurefireStarter.java:91)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:69)
+</failure>
+    <system-err>Aug 5, 2013 4:40:31 PM testendpoints.Books.BooksEndpointsInteraction1 checkOrderDetailStatus
+INFO: Method: checkOrderDetailStatus, Results:
+Aug 5, 2013 4:40:31 PM testendpoints.Books.BooksEndpointsInteraction1 checkOrderDetailStatus
+INFO: {&quot;status&quot;:&quot;error&quot;,&quot;errorCode&quot;:&quot;101&quot;,&quot;message&quot;:&quot;CCC_201 Unauthorized access. Username provided does not have the privilege to access the order with the ID specified.&quot;}
+</system-err>
+  </testcase>
+  <testcase time="0.851" classname="testendpoints.Books.BooksEndpointsInteraction1" name="checkOrderDetailStatusSendingInvalidOrderStatus">
+    <failure message="expected:&lt;200&gt; but was:&lt;404&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;200&gt; but was:&lt;404&gt;
+	at org.junit.Assert.fail(Assert.java:93)
+	at org.junit.Assert.failNotEquals(Assert.java:647)
+	at org.junit.Assert.assertEquals(Assert.java:128)
+	at org.junit.Assert.assertEquals(Assert.java:472)
+	at org.junit.Assert.assertEquals(Assert.java:456)
+	at testendpoints.Books.BooksEndpointsInteraction1.checkOrderDetailStatusSendingInvalidOrderStatus(BooksEndpointsInteraction1.java:643)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:35)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:115)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:97)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.booter.ProviderFactory$ClassLoaderProxy.invoke(ProviderFactory.java:103)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:150)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcess(SurefireStarter.java:91)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:69)
+</failure>
+    <system-err>Aug 5, 2013 4:40:32 PM testendpoints.Books.BooksEndpointsInteraction1 checkOrderDetailStatusSendingInvalidOrderStatus
+INFO: Method: checkOrderDetailStatusSendingInvalidOrderStatus, Results:
+Aug 5, 2013 4:40:32 PM testendpoints.Books.BooksEndpointsInteraction1 checkOrderDetailStatusSendingInvalidOrderStatus
+INFO: {&quot;status&quot;:&quot;error&quot;,&quot;errorCode&quot;:&quot;101&quot;,&quot;message&quot;:&quot;CCC_002 This request failed for technical reasons. Contact customer support.&quot;}
+</system-err>
+  </testcase>
+  <testcase time="0.048" classname="testendpoints.Books.BooksEndpointsInteraction1" name="checkOrderDetailStatusSendingInvalidCharactersInOrderStatus">
+    <error type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException
+	at java.net.URI.create(URI.java:841)
+	at com.sun.jersey.api.client.Client.resource(Client.java:433)
+	at testendpoints.util.BaseTest.getWebResponse(BaseTest.java:56)
+	at testendpoints.Books.BooksEndpointsInteraction1.checkOrderDetailStatusSendingInvalidCharactersInOrderStatus(BooksEndpointsInteraction1.java:655)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:35)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:115)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:97)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.booter.ProviderFactory$ClassLoaderProxy.invoke(ProviderFactory.java:103)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:150)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcess(SurefireStarter.java:91)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:69)
+Caused by: java.net.URISyntaxException: Illegal character in fragment at index 82: http://dev-mycontent.bluesky.lognllc.com:80/csg/api/v1/books/orders/details/@@@@@####/status
+	at java.net.URI$Parser.fail(URI.java:2810)
+	at java.net.URI$Parser.checkChars(URI.java:2983)
+	at java.net.URI$Parser.parse(URI.java:3029)
+	at java.net.URI.&lt;init&gt;(URI.java:577)
+	at java.net.URI.create(URI.java:839)
+	... 32 more
+</error>
+  </testcase>
+</testsuite>
