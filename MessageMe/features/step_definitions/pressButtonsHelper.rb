@@ -38,6 +38,33 @@ Then /^I press change profile name button$/ do
     performAction('wait_for_text', 'Edit My Profile')
 end
 
+#I press the new contacts button in profile screen
+Then /^I touch the new Contacts button$/ do
+    performAction('click_on_screen',15, 95)
+end
+
+#I press the next arrow button in creating account - add friends screen
+Then /^I touch the continue button$/ do
+    performAction('click_on_screen',95, 10)
+end
+
+Given /^I skip adding friends while creating account$/ do 
+    
+# buscar si el texto esta en la pantalla 
+ $textVisible = waitUntilTextisOnScreen("Skip Adding Friends?","MessageMe")
+
+
+    if $textVisible == "Skip Adding Friends?"
+        touch(query("* marked:'Yes'"))
+    end
+
+end
+
+#I press the new My Profile button in profile screen
+Then /^I touch the new MyProfile button$/ do
+    performAction('click_on_screen',95, 95)
+end
+
 #I press change name button in profile screen
 Then /^I touch the screeen to activate it$/ do
     performAction('click_on_screen',90, 50)
