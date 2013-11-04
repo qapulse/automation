@@ -54,49 +54,26 @@ Then /^I send "([^\"]*)" texts messages$/ do |messagesNumber|
 	end
 end  
 
-# Send a google image by message  
-Then /^I send a google image by message$/ do
-    wait_for(:timeout => 5) { query("* id:'package_chooser_button'").size > 0 }
-	touch ("* id:'package_chooser_button'")
-    performAction('wait', 3)
-	touch ("* id:'picture_btn'")
-	performAction('wait_for_text', 'Google Images')
-	touch (query("* marked:'Google Images'"))
-	performAction('wait', 3)
-	#Then I enter text "doddle" into field with id "search_box"
-	performAction('enter_text_into_id_field','doddle', 'search_box')
-	performAction('click_on_screen',90, 15)
-	performAction('wait', 20)
-	performAction('click_on_screen',60, 45)
-	performAction('wait', 10)
-	performAction('click_on_screen',90, 50)
-	performAction('wait', 10)
-	performAction('wait_for_view_by_id', 'picture_confirmation_accept')
-	touch ("* id:'picture_confirmation_accept'")
-	wait_for(:timeout => 5) { query("* id:'package_chooser_button'").size > 0 }
-	
-end
-
-# Send a google image by message  
-Then /^I send "([^\"]*)" google image by messages$/ do |messagesNumber|
+# Send N google image messages  
+Then /^I send (\d+) google image messages?$/ do |messagesNumber|
     wait_for(:timeout => 5) { query("* id:'package_chooser_button'").size > 0 }
 	
 	#Send # messages
 	for i in 0...Integer(messagesNumber)
 		touch ("* id:'package_chooser_button'")
 		performAction('wait', 3)
-		touch ("* id:'picture_btn'")
-		performAction('wait_for_text', 'Google Images')
-		touch (query("* marked:'Google Images'"))
-		performAction('wait', 3)
-		#Then I enter text "doddle" into field with id "search_box"
-		performAction('enter_text_into_id_field','doddle', 'search_box')
+		touch ("* id:'image_search_btn'")
+		performAction('wait_for_text', 'Image Search')
+		touch ("* id:'search_box'")
+		performAction('wait', 2)
+		#Then I enter the image search text
+		performAction('enter_text_into_id_field','cheese', 'search_box')
 		performAction('click_on_screen',90, 15)
-		performAction('wait', 20)
+		performAction('wait', 10)
 		performAction('click_on_screen',60, 45)
-		performAction('wait', 10)
+		performAction('wait', 5)
 		performAction('click_on_screen',90, 50)
-		performAction('wait', 10)
+		performAction('wait', 5)
 		performAction('wait_for_view_by_id', 'picture_confirmation_accept')
 		touch ("* id:'picture_confirmation_accept'")
 		wait_for(:timeout => 15) { query("* id:'package_chooser_button'").size > 0 }

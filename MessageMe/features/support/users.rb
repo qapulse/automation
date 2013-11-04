@@ -1,7 +1,7 @@
 USERS = {
     :valid => {
-        :email => "katie+user2@lognllc.com",
-        :password => "logn$"
+        :email => "dan.jarvis.test+auto@gmail.com",
+        :password => "sfccgh"
     },
     :invalid => {
         :email => "jonas2@lesspainful.com",
@@ -11,9 +11,9 @@ USERS = {
 
 NEWUSER = {
     :valid => {
-		:firstName => "Didier",
-		:lastName => "To test",
-        :email => "didier.corrales+708@lognllc.com",
-        :password => "logn$"
+		:firstName => "DAJ",
+		:lastName => "Automation",
+        :email => "dan.jarvis.test+auto0002@gmail.com",
+        :password => "sfccgh"
     }
 }
